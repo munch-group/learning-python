@@ -9,6 +9,11 @@ execute:
 book:
   title: "Learning Python"
   author: "Kasper Munch"
+  sidebar:
+    search: true
+    collapse-level: 1    
+    style: "docked"
+
   chapters:
     - index.qmd
     - part: "Lecture notes"
@@ -59,10 +64,6 @@ format:
     toc-depth: 2
     notebook-links: global
     number-sections: false
-
-website:
-  sidebar:
-    collapse-level: 1    
 
 # website:
 #   sidebar:
