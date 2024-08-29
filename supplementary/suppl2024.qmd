@@ -1,9 +1,11 @@
-## Week 1
+# Week 1
 
-### Monday
+## Monday
 
+Unfortunately, the Monday recording failed :/
 
-### Wednesday
+## Wednesday
 
 {{< video https://www.youtube.com/embed/6Kl6b3r2uJ4 >}}
+
 
