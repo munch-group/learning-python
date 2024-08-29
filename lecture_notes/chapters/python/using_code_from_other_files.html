@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Learning Python</title>
+<title>A module is a file with code {-} –&gt; – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lecture_notes/chapters/project/assembly_project.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" rel="next">
+<link href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +96,9 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Learning Python</a> 
+      <a href="../../../">
+      Learning Python
+      </a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -107,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
@@ -122,108 +125,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
+  <a href="../../../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
+  <a href="../../../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
+  <a href="../../../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
+  <a href="../../../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
+  <a href="../../../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
+  <a href="../../../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
+  <a href="../../../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
+  <a href="../../../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
+  <a href="../../../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
+  <a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
+  <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
+  <a href="../../../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
+  <a href="../../../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
+  <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What defines the type of an object?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
+  <a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using code in other files</span></a>
   </div>
 </li>
@@ -240,42 +243,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
+  <a href="../../../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
+  <a href="../../../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
+  <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in *Streptococcus* bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
+  <a href="../../../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
+  <a href="../../../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
+  <a href="../../../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 1</span></a>
+  <a href="../../../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -301,22 +304,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul class="collapse">
-  <li><a href="#monday" id="toc-monday" class="nav-link active" data-scroll-target="#monday">Monday</a></li>
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span class="chapter-title">A module is a file with code {-} –&gt;</span></h1>
 </div>
 
 
@@ -333,16 +329,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="monday" class="level2">
-<h2 class="anchored" data-anchor-id="monday">Monday</h2>
-<p>Unfortunately, the Monday recording failed :/</p>
-</section>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6Kl6b3r2uJ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<!-- TODO: Add Chapter: "Using code from other files" -->
+<!-- # Using code from other files
+
+*This chapter is about  ...*
 
 
-</section>
+
+
+
+:::{#quarto-navigation-envelope .hidden}
+[Learning Python]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar-title"}
+[Learning Python]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-navbar-title"}
+[Using code in other files]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-next"}
+[What defines the type of an object?]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-prev"}
+[Project]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/index.htmlProject"}
+[Lecture notes]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:quarto-sidebar-section-1"}
+[<span class='chapter-number'>1</span>  <span class='chapter-title'>How to learn from this book</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/preface.html<span-class='chapter-number'>1</span>--<span-class='chapter-title'>How-to-learn-from-this-book</span>"}
+[<span class='chapter-number'>2</span>  <span class='chapter-title'>Before you begin</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/before_you_begin.html<span-class='chapter-number'>2</span>--<span-class='chapter-title'>Before-you-begin</span>"}
+[<span class='chapter-number'>3</span>  <span class='chapter-title'>Appendix: Conda environment for BSF</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/appendix_conda_and_pymol.html<span-class='chapter-number'>3</span>--<span-class='chapter-title'>Appendix:-Conda-environment-for-BSF</span>"}
+[<span class='chapter-number'>4</span>  <span class='chapter-title'>Writing a program</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/writing_a_program.html<span-class='chapter-number'>4</span>--<span-class='chapter-title'>Writing-a-program</span>"}
+[<span class='chapter-number'>5</span>  <span class='chapter-title'>Dealing with values</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/dealing_with_values.html<span-class='chapter-number'>5</span>--<span-class='chapter-title'>Dealing-with-values</span>"}
+[<span class='chapter-number'>6</span>  <span class='chapter-title'>The order of events</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/the_order_of_events.html<span-class='chapter-number'>6</span>--<span-class='chapter-title'>The-order-of-events</span>"}
+[<span class='chapter-number'>7</span>  <span class='chapter-title'>Course tools</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/course_tools.html<span-class='chapter-number'>7</span>--<span-class='chapter-title'>Course-tools</span>"}
+[<span class='chapter-number'>8</span>  <span class='chapter-title'>Controlling behavior</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/controlling_behavior.html<span-class='chapter-number'>8</span>--<span-class='chapter-title'>Controlling-behavior</span>"}
+[<span class='chapter-number'>9</span>  <span class='chapter-title'>Organising your code</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/organizing_your_code.html<span-class='chapter-number'>9</span>--<span-class='chapter-title'>Organising-your-code</span>"}
+[<span class='chapter-number'>10</span>  <span class='chapter-title'>Python values are objects</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/python_values_are_objects.html<span-class='chapter-number'>10</span>--<span-class='chapter-title'>Python-values-are-objects</span>"}
+[<span class='chapter-number'>11</span>  <span class='chapter-title'>Lists of things</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/lists.html<span-class='chapter-number'>11</span>--<span-class='chapter-title'>Lists-of-things</span>"}
+[<span class='chapter-number'>12</span>  <span class='chapter-title'>Pairs of things</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/dictionaries.html<span-class='chapter-number'>12</span>--<span-class='chapter-title'>Pairs-of-things</span>"}
+[<span class='chapter-number'>13</span>  <span class='chapter-title'>Gluing values in sequence</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/gluing_values_in_sequence.html<span-class='chapter-number'>13</span>--<span-class='chapter-title'>Gluing-values-in-sequence</span>"}
+[<span class='chapter-number'>14</span>  <span class='chapter-title'>Iteration over values</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/iteration_over_values.html<span-class='chapter-number'>14</span>--<span-class='chapter-title'>Iteration-over-values</span>"}
+[<span class='chapter-number'>15</span>  <span class='chapter-title'>Working with data files</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/working_with_data_files.html<span-class='chapter-number'>15</span>--<span-class='chapter-title'>Working-with-data-files</span>"}
+[<span class='chapter-number'>16</span>  <span class='chapter-title'>Structuring data</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/data_structures.html<span-class='chapter-number'>16</span>--<span-class='chapter-title'>Structuring-data</span>"}
+[<span class='chapter-number'>17</span>  <span class='chapter-title'>Unleash your functions</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/unleash_your_functions.html<span-class='chapter-number'>17</span>--<span-class='chapter-title'>Unleash-your-functions</span>"}
+[<span class='chapter-number'>18</span>  <span class='chapter-title'>Testing your code</span>]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/testing_your_code.html<span-class='chapter-number'>18</span>--<span-class='chapter-title'>Testing-your-code</span>"}
+[What defines the type of an object?]{.hidden .quarto-markdown-envelope-contents render-id="quarto-int-sidebar:/lecture_notes/chapters/python/your_own_types_of_objects.htmlWhat-defines-the-type-of-an-object?"}
+[<span class='chapter-number'>19</span>  <span class='chapter-title'>A module is a file with code {-} -->
+<p>]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/python/on_the_shoulders_of_giants.htmlUsing-code-in-other-files">Using code in other files</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-2">Programming projects</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/translation_project.html<span-class='chapter-number'>20</span>--<span-class='chapter-title'>Project:-Translating-open-reading-frames</span>"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Project: Translating open reading frames</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/folding_project.html<span-class='chapter-number'>21</span>--<span-class='chapter-title'>Project:-Primer-analysis</span>"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Project: Primer analysis</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/alignment_project.html<span-class='chapter-number'>22</span>--<span-class='chapter-title'>Project:-Pairwise-global-alignment</span>"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Project: Pairwise global alignment</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/codonbias_project.html<span-class='chapter-number'>23</span>--<span-class='chapter-title'>Project:-Codon-usage-in-*Streptococcus*-bacteria</span>"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/hiv_project.html<span-class='chapter-number'>24</span>--<span-class='chapter-title'>Project:-Identifying-the-subtype-of-an-HIV-sequence</span>"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/seqdist_project.html<span-class='chapter-number'>25</span>--<span-class='chapter-title'>Project:-Clustering-sequences-based-on-distance-⁕</span>"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/orf_project.html<span-class='chapter-number'>26</span>--<span-class='chapter-title'>Project:-Finding-genes-in-bacteria</span>"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Project: Finding genes in bacteria</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/lecture_notes/chapters/project/assembly_project.html<span-class='chapter-number'>27</span>--<span-class='chapter-title'>Project:-Genome-assembly</span>"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Project: Genome assembly</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:quarto-sidebar-section-3">Recordings</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-int-sidebar:/supplementary/suppl2024.html<span-class='chapter-number'>28</span>--<span-class='chapter-title'>Week-1</span>"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Week 1</span></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-breadcrumbs-Lecture-notes">Lecture notes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="quarto-breadcrumbs-<span-class='chapter-number'>19</span>--<span-class='chapter-title'>A-module-is-a-file-with-code-{-}---></span>"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">A module is a file with code {-} –&gt;</span></span> :::</p>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -767,11 +791,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lecture_notes/chapters/project/assembly_project.html" class="pagination-link" aria-label="Project: Genome assembly">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Genome assembly</span></span>
+      <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="pagination-link" aria-label="What defines the type of an object?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What defines the type of an object?</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="pagination-link" aria-label="Using code in other files">
+        <span class="nav-page-text">Using code in other files</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

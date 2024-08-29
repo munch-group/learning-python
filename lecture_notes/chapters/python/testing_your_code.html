@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Learning Python</title>
+<title>Testing your code – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lecture_notes/chapters/project/assembly_project.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" rel="next">
+<link href="../../../lecture_notes/chapters/python/unleash_your_functions.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/testing_your_code.html"><span class="chapter-title">Testing your code</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Learning Python</a> 
+      <a href="../../../">Learning Python</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -107,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
@@ -122,108 +157,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
+  <a href="../../../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
+  <a href="../../../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
+  <a href="../../../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
+  <a href="../../../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
+  <a href="../../../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
+  <a href="../../../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
+  <a href="../../../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
+  <a href="../../../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
+  <a href="../../../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
+  <a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
+  <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
+  <a href="../../../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
+  <a href="../../../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
+  <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Testing your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What defines the type of an object?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
+  <a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using code in other files</span></a>
   </div>
 </li>
@@ -240,42 +275,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
+  <a href="../../../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
+  <a href="../../../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
+  <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
+  <a href="../../../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
+  <a href="../../../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
+  <a href="../../../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 1</span></a>
+  <a href="../../../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -306,17 +341,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#monday" id="toc-monday" class="nav-link active" data-scroll-target="#monday">Monday</a></li>
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
+  <li><a href="#why-test-your-code" id="toc-why-test-your-code" class="nav-link active" data-scroll-target="#why-test-your-code">Why test your code?</a></li>
+  <li><a href="#basic-testing" id="toc-basic-testing" class="nav-link" data-scroll-target="#basic-testing">Basic testing</a></li>
+  <li><a href="#the-project-testing-utility" id="toc-the-project-testing-utility" class="nav-link" data-scroll-target="#the-project-testing-utility">The project testing utility</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/testing_your_code.html"><span class="chapter-title">Testing your code</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span id="sec:testing_your_code" class="quarto-section-identifier"><span class="chapter-title">Testing your code</span></span></h1>
 </div>
 
 
@@ -333,13 +369,83 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="monday" class="level2">
-<h2 class="anchored" data-anchor-id="monday">Monday</h2>
-<p>Unfortunately, the Monday recording failed :/</p>
+<p><em>This chapter is about how you figure out if the code you wrote actually solves the problem in the way you intended. You will be surprised how often that is not the case – even for seasoned programmers.</em></p>
+<section id="why-test-your-code" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="why-test-your-code">Why test your code?</h2>
+<p>There are tons of reasons why you should test your code. Here are what I think are the two most important ones:</p>
+<ol type="1">
+<li><strong>Makes you think:</strong> Testing forces you to slow down and think about exactly what the code is supposed to do. By deciding what tests to do before you start coding, you try to anticipate errors and cases that are not covered by the way you want to solve the problem at hand. The notion of falsification is important in science and in coding too. The idea is that you should try to prove that your idea is wrong and only consider it valid only if this process fails. So testing motivates you to think about ways to break their code, thereby helping you solve your programming problem in a way that is general and robust so that it does exactly what you expect it to do.</li>
+<li><strong>Gives you peace of mind:</strong> Testing increases your confidence that a function you have written actually works as it is supposed to so that you can now stop thinking about how it is implemented and focus on using it as a component in solving a larger problem. Having set up a series of tests also allows you to change and improve the implementation of your function without having to worry that it stops working they way it is supposed to. As long as it passes all the tests is should be ok.</li>
+</ol>
+<p>Testing of code is a <em>big</em> thing in programming. Professional consistently test their code. In time you will too, but in this course, you will only do the very basic testing yourself. Instead, you will have access to readymade testing suites made especially for each of your programming projects.</p>
 </section>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6Kl6b3r2uJ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="basic-testing" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="basic-testing">Basic testing</h2>
+<p>Say that you are asked to make a function that takes a string argument and returns <code>True</code> if that string is a palindrome and <code>False</code> otherwise (hypothetical example). Then you start thinking about which strings should make the function should return <code>True</code> and which should return <code>False</code>. Once you have defined you <code>is_palindrome</code> function you can set up some fairly obvious tests like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'123321'</span>) <span class="op">==</span> <span class="va">True</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'ATGGTA'</span>) <span class="op">==</span> <span class="va">True</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'ATGATG'</span>) <span class="op">==</span> <span class="va">False</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'XY'</span>) <span class="op">==</span> <span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>But if you keep thinking, maybe you come up with more tests to cover all the different types of cases you may encounter:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'12321'</span>) <span class="op">==</span> <span class="va">True</span>) <span class="co"># uneven length</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'121'</span>) <span class="op">==</span> <span class="va">True</span>) <span class="co"># uneven length</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'AA'</span>) <span class="op">==</span> <span class="va">True</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(is_palindome(<span class="st">'A'</span>) <span class="op">==</span> <span class="va">True</span>) <span class="co"># single char</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-project-testing-utility" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="the-project-testing-utility">The project testing utility</h2>
+<p>To keep you focused on the programming part, each of the programming projects that you will do in this course comes with a ready-made suite of tests of the functions you are asked to implement. So for each function, you can run tests to make sure it implements the behaviour it is supposed to.</p>
+<p>Each project comes with two files that you download from the course page. They have their names for a good reason, so do not change them. In the first project about translating DNA, they are called <code>translationproject.py</code> and <code>test_translationproject.py</code>.</p>
+<p>To be able to test your functions, you <em>must</em> write your code in the file called <code>translationproject.py</code>. To run your code you type this in the Terminal as usual:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> translationproject.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To test the functions as you complete each one, you can run the test script <code>test_translationproject.py</code> like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> test_translationproject.py</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The code in <code>test_translationproject.py</code> reads your code in <code>translationproject.py</code> and performs a series of tests of each function. When you run the test script four things may happen depending on the state of your code:</p>
+<p><strong>Case 1:</strong> If you did not yet implement all the functions, the test script will remind you (once for each test) that you did not implement the functions with the names required.</p>
+<pre><code>*********************************************************
+ATTENTION! The following functions are not defined:
+
+    translate_codon
+    split_codons
+    translate_orf
+
+These functions are either not correctly named (spelled)
+or not defined at all. They will be marked as FAILED.
+Check your spelling if this is not what you intend.
+*********************************************************
+
+Ran 16 tests in 0.000s
+
+OK (skipped=14)</code></pre>
+<p>If you have implemented a function but misspelled its name, you will also get this type of reminder. The reminders are meant as a safeguard to ensure that you do not hand in the assignment with missing or misspelled function definitions.</p>
+<p><strong>Case 2:</strong> If a test for one the functions you have written fails, the testing is aborted and the script prints some information to help you understand what the problem could be. Say you wrote the function <code>translate_codon</code> wrongly so that it always returns <code>M</code> for some reason:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> translate_codon(codon):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">'M'</span> <span class="co"># crazy</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>then you would get this message:</p>
+<pre><code>FAILED TEST CASE: test_translate_codon_2
+
+MESSAGE:
+    The call:
+
+        translate_codon('TAA')
+
+    returned:
+
+        'M'
+
+    However, it should return:
+
+        '*'
+
+======================================================================
+Ran 4 tests in 0.001s
+
+FAILED (failures=1)</code></pre>
+<p>It is now left to you to figure out why your function returns the wrong value when called with these arguments.</p>
+<p><strong>Case 3:</strong> If you defined all functions correctly and they all work the way they are supposed to, then the test script just prints:</p>
+<pre><code>Ran 14 tests in 0.140s
+
+OK</code></pre>
 
 
 </section>
@@ -767,11 +873,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lecture_notes/chapters/project/assembly_project.html" class="pagination-link" aria-label="Project: Genome assembly">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Genome assembly</span></span>
+      <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="pagination-link" aria-label="Unleash your functions">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Unleash your functions</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="pagination-link" aria-label="What defines the type of an object?">
+        <span class="nav-page-text">What defines the type of an object?</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

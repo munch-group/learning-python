@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Learning Python</title>
+<title>Project: Primer analysis – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lecture_notes/chapters/project/assembly_project.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../lecture_notes/chapters/project/alignment_project.html" rel="next">
+<link href="../../../lecture_notes/chapters/project/translation_project.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,6 +103,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -80,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html">Programming projects</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/folding_project.html"><span class="chapter-title">Project: Primer analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Learning Python</a> 
+      <a href="../../../">Learning Python</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -107,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
@@ -122,108 +186,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
+  <a href="../../../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
+  <a href="../../../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
+  <a href="../../../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
+  <a href="../../../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
+  <a href="../../../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
+  <a href="../../../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
+  <a href="../../../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
+  <a href="../../../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
+  <a href="../../../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
+  <a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
+  <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
+  <a href="../../../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
+  <a href="../../../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
+  <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What defines the type of an object?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
+  <a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using code in other files</span></a>
   </div>
 </li>
@@ -240,42 +304,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
+  <a href="../../../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
+  <a href="../../../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Project: Primer analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
+  <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
+  <a href="../../../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
+  <a href="../../../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
+  <a href="../../../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +355,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 1</span></a>
+  <a href="../../../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -306,17 +370,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#monday" id="toc-monday" class="nav-link active" data-scroll-target="#monday">Monday</a></li>
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
+  <li><a href="#count-the-number-of-bases-in-your-candidate-primer" id="toc-count-the-number-of-bases-in-your-candidate-primer" class="nav-link active" data-scroll-target="#count-the-number-of-bases-in-your-candidate-primer">Count the number of bases in your candidate primer</a></li>
+  <li><a href="#compute-the-melting-temperature" id="toc-compute-the-melting-temperature" class="nav-link" data-scroll-target="#compute-the-melting-temperature">Compute the melting temperature</a></li>
+  <li><a href="#reverse-complement-the-sequence" id="toc-reverse-complement-the-sequence" class="nav-link" data-scroll-target="#reverse-complement-the-sequence">Reverse complement the sequence</a></li>
+  <li><a href="#check-for-hairpins" id="toc-check-for-hairpins" class="nav-link" data-scroll-target="#check-for-hairpins">Check for hairpins</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html">Programming projects</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/folding_project.html"><span class="chapter-title">Project: Primer analysis</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span class="chapter-title">Project: Primer analysis</span></h1>
 </div>
 
 
@@ -333,13 +399,102 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="monday" class="level2">
-<h2 class="anchored" data-anchor-id="monday">Monday</h2>
-<p>Unfortunately, the Monday recording failed :/</p>
+<p>Say you have a short sequence that you want to use as a PCR primer. To evaluate if it a suitable primer, you need to know the melting temperature of the sequence. You also need to make sure that it will not fold up on itself so that it cannot bind to the DNA sequence you want to amplify.</p>
+<p>On the course page you can download the files you need for this project:</p>
+<ul>
+<li><code>foldingproject.py</code> is an empty file where you must write your code.</li>
+<li><code>test_foldingproject.py</code> is the test program that lets you test the code you write in translationproject.py.</li>
+</ul>
+<p>Put the files in a folder dedicated to this project. On most computers you can right-click on the link and choose “Save file as…” or “Download linked file”.</p>
+<section id="count-the-number-of-bases-in-your-candidate-primer" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="count-the-number-of-bases-in-your-candidate-primer">Count the number of bases in your candidate primer</h2>
+<p>Before you can compute the melting temperature, you need to determine how many times each base occurs in the sequence. You can assume that the only characters in the string are A, T, G, and C.</p>
+<p><em>Write a function</em>, <code>count_bases</code>, which takes one argument:</p>
+<ol type="1">
+<li>A string, which is a DNA sequence.</li>
+</ol>
+<p>The function must return:</p>
+<ul>
+<li>A dictionary, which in which keys are strings that represent bases and values are integers that represent the number of occurrences of each base. If a base is not found in the sequence, its count must be zero.</li>
+</ul>
+<p>Example usage: If the function is called like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>count_bases(<span class="st">"ATGG"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>then it should return (not necessarily with key-value pairs in the same order):</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{<span class="st">"A"</span>: <span class="dv">1</span>, <span class="st">"C"</span>: <span class="dv">0</span>, <span class="st">"G"</span>: <span class="dv">2</span>, <span class="st">"T"</span>: <span class="dv">1</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6Kl6b3r2uJ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="compute-the-melting-temperature" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="compute-the-melting-temperature">Compute the melting temperature</h2>
+<p>Knowing the base composition in your sequence, you can now calculate the melting temperature the double-stranded DNA that forms when your primer pairs up with the sequence to amplify. If the primer has less than 14 bases the formula for calculating melting temperature is:</p>
+<p><span class="math display">\[ Temp = (A + T) * 2 + (G + C) * 4 \]</span></p>
+<p>and if the primer has 14 bases or more it is calculated like this:</p>
+<p><span class="math display">\[ Temp = 64.9 + 41 * (G + C - 16.4) / (A + T + G + C) \]</span></p>
+<p>The A, T, C, and G in the formulas represent the numbers of A, T, C and G in the DNA primer.</p>
+<p>You must write a function that applies these two formulas appropriately by taking the length of the primer into account.</p>
+<p><em>Write a function</em>, <code>melting_temp</code>, which takes one argument:</p>
+<ol type="1">
+<li>A string, which is a DNA sequence (your primer).</li>
+</ol>
+<p>The function must return:</p>
+<ul>
+<li>A number, which represents the melting temperature of the double-stranded DNA corresponding to the DNA string given as argument.</li>
+</ul>
+<p>Example usage: If the function is called like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>melting_temp(<span class="st">"ATG"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>then it should return:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="reverse-complement-the-sequence" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="reverse-complement-the-sequence">Reverse complement the sequence</h2>
+<p>It is possible that one part of the primer forms base pairs with another part of the primer to form a hairpin structure. To figure out if this can happen to your primer, you need to be able to find the reverse complement of DNA sequence. The reverse complement of a DNA sequence is one where the sequence of bases is first reversed, and then each base is replaced with its Watson-Crick complementary base.</p>
+<p><em>Write a function</em>, <code>reverse_complement</code>, which takes one argument:</p>
+<ol type="1">
+<li>A string, which is a DNA sequence.</li>
+</ol>
+<p>The function must return:</p>
+<ul>
+<li>A string, which represents the reverse complement of the DNA string given as argument.</li>
+</ul>
+<p>Example usage: If the function is called like this:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>reverse_complement(<span class="st">"AATTC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>then it should return:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">"GAATT"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!-- TODO: Add function to test if the primer can form a dimer (interacting with another sequence) -->
+</section>
+<section id="check-for-hairpins" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="check-for-hairpins">Check for hairpins</h2>
+<p>You would like to be able to determine if your primer can fold to form a hairpin with some specified minimum number of consequtive base pairs. We assume that hairpin loops are always at least four bases long and that base pairs in the hairpin can only be Watson-Crick basepairs. Here is an example of a hairpin with five basepairs and a loop of four bases (four Cs):</p>
+<pre><code>        C C
+      C     C
+       A - T
+       T - A
+       A - T
+       T - A
+       A - T</code></pre>
+<p>To test if a sequence can form a hairpin with at least four consequtive base pairs, you need to test if the sequence contains any subsequence of length four whose reverse complement is identical to another nonoverlapping subsequence. To take into account that the hairpin loop is at least four bases long, any such two subsequences must be separated by at least four bases.</p>
+<p><em>Write a function</em>, <code>has_hairpin</code>, which takes two arguments:</p>
+<ol type="1">
+<li>A string, which is a DNA sequence.</li>
+<li>An integer, which represents the minimum number of consequtive base pairs in the hairpins to search for.</li>
+</ol>
+<p>The function must return:</p>
+<ul>
+<li><code>True</code> if the sequence contains a hairpin of at least the specified length and <code>False</code> otherwise.</li>
+</ul>
+<p>Example usage: If the function is called like this:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(has_hairpin(<span class="st">"ATATACCCCTATAT"</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>then it should return:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="va">True</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is a hard one, so I will give you a bit of help. Here is the function with some parts missing.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> has_hairpin(s, k):</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    looplen <span class="op">=</span> <span class="dv">4</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(s)<span class="op">-</span>k<span class="op">+</span><span class="dv">1</span>):</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        subs <span class="op">=</span> <span class="co"># Hint A</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        right <span class="op">=</span> <span class="co"># Hint B</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        revcl <span class="op">=</span> reverse_complement(subs)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> revcl <span class="kw">in</span> right[looplen:]:</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="va">True</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Hint A: Here you need to extract a substring of length k starting at i. Hint B: Here you need to extract all the sequence to the right of <code>substr</code>.</p>
 
 
 </section>
@@ -767,11 +922,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lecture_notes/chapters/project/assembly_project.html" class="pagination-link" aria-label="Project: Genome assembly">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Genome assembly</span></span>
+      <a href="../../../lecture_notes/chapters/project/translation_project.html" class="pagination-link" aria-label="Project: Translating open reading frames">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Translating open reading frames</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="pagination-link" aria-label="Project: Pairwise global alignment">
+        <span class="nav-page-text"><span class="chapter-title">Project: Pairwise global alignment</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Learning Python</title>
+<title>Gluing values in sequence – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lecture_notes/chapters/project/assembly_project.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../lecture_notes/chapters/python/iteration_over_values.html" rel="next">
+<link href="../../../lecture_notes/chapters/python/dictionaries.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html"><span class="chapter-title">Gluing values in sequence</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Learning Python</a> 
+      <a href="../../../">Learning Python</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -107,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
@@ -122,108 +157,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
+  <a href="../../../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
+  <a href="../../../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
+  <a href="../../../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
+  <a href="../../../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
+  <a href="../../../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
+  <a href="../../../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
+  <a href="../../../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
+  <a href="../../../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
+  <a href="../../../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
+  <a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Gluing values in sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
+  <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
+  <a href="../../../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
+  <a href="../../../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
+  <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What defines the type of an object?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
+  <a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using code in other files</span></a>
   </div>
 </li>
@@ -240,42 +275,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
+  <a href="../../../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
+  <a href="../../../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
+  <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
+  <a href="../../../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
+  <a href="../../../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
+  <a href="../../../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 1</span></a>
+  <a href="../../../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -306,17 +341,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#monday" id="toc-monday" class="nav-link active" data-scroll-target="#monday">Monday</a></li>
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
+  <li><a href="#tuples" id="toc-tuples" class="nav-link active" data-scroll-target="#tuples">Tuples</a></li>
+  <li><a href="#tuple-assignment" id="toc-tuple-assignment" class="nav-link" data-scroll-target="#tuple-assignment">Tuple assignment</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html"><span class="chapter-title">Gluing values in sequence</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span class="chapter-title">Gluing values in sequence</span></h1>
 </div>
 
 
@@ -333,15 +368,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="monday" class="level2">
-<h2 class="anchored" data-anchor-id="monday">Monday</h2>
-<p>Unfortunately, the Monday recording failed :/</p>
+<section id="tuples" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="tuples">Tuples</h2>
+<p>A tuple is a sequence of values just like a list. However, unlike a list, the elements of a tuple can not be changed. You cannot append to a tuple either. Once a tuple is made it is immutable (or unchangeable). To make a tuple you just use round brackets instead of square brackets:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>fruits <span class="op">=</span> (<span class="st">"apple"</span>, <span class="st">"banana"</span>, <span class="st">"cherry"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>It may seem strange that Python has both tuples and lists. One reason is that whereas lists are more flexible, tuples are more efficient. We will not use tuples a lot, but you need to know what they are.</p>
+<p>You can do most of the operations on a tuple that you can also do on a list. The following exercises should be easy if you remember how to do the same thing on lists:</p>
+<section id="exercise" class="level4">
+<h4 class="anchored" data-anchor-id="exercise">Exercise</h4>
+<p>Find the number of elements in the <code>fruits</code> tuple using the <code>len</code> function.</p>
 </section>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6Kl6b3r2uJ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="exercise-1" class="level4">
+<h4 class="anchored" data-anchor-id="exercise-1">Exercise</h4>
+<p>Extract the second element of the <code>fruits</code> tuple (<code>"banana"</code>) using indexing.</p>
+</section>
+<section id="exercise-2" class="level4">
+<h4 class="anchored" data-anchor-id="exercise-2">Exercise</h4>
+<p>Try to change the second element of the <code>fruits</code> tuple to <code>"apple"</code> and see what happens. It should be someting like this:</p>
+<pre><code>Traceback (most recent call last):
+  File "script.py", line 2, in &lt;module&gt;
+    fruits[3] = "apple"
+TypeError: 'tuple' object does not support item assignment</code></pre>
+<p>You cannot change elements of a tuple because they are immutable (once made, they stay that way).</p>
+</section>
+</section>
+<section id="tuple-assignment" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="tuple-assignment">Tuple assignment</h2>
+<p>Python lets you assign a tuple of values to a tuple of variables like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>father, mother, son <span class="op">=</span> (<span class="st">"Donald"</span>, <span class="st">"Ivana"</span>, <span class="st">"Eric"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>It does the same as the following three assignments:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>father <span class="op">=</span> <span class="st">"Donald"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mother <span class="op">=</span> <span class="st">"Ivana"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>son <span class="op">=</span> <span class="st">"Eric"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>When a tuple is made, the values are “packed” in sequence:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>family <span class="op">=</span> (<span class="st">"Donald"</span>, <span class="st">"Ivana"</span>, <span class="st">"Eric"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Using the same analogy, values can be “unpacked” using tuple assignment:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>father, mother, son <span class="op">=</span> family</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The only requirement is that the number of variables equals the number of values in the tuple.</p>
+<p>Once in a while, it is useful to swap the values of two variables. With conventional assignment statements, we have to use a temporary variable. For example, to swap a and b:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> a</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> b</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> tmp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="exercise-3" class="level4">
+<h4 class="anchored" data-anchor-id="exercise-3">Exercise</h4>
+<p>Try this and read the error message:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>family <span class="op">=</span> (<span class="st">"Donald"</span>, <span class="st">"Ivana"</span>, <span class="st">"Eric"</span>)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>father, mother <span class="op">=</span> family</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="exercise-4" class="level4">
+<h4 class="anchored" data-anchor-id="exercise-4">Exercise</h4>
+<p>Try this and read the err or message:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>family <span class="op">=</span> (<span class="st">"Donald"</span>, <span class="st">"Ivana"</span>, <span class="st">"Eric"</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>father, mother, son, daughter <span class="op">=</span> family</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Compare to the error message in the previous exercise.</p>
+</section>
+<section id="exercise-5" class="level4">
+<h4 class="anchored" data-anchor-id="exercise-5">Exercise</h4>
+<p>Say want to swap the values of two variable <code>a</code> and <code>b</code>. To do that you would need to keep one of the values in an extra variable like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>temp <span class="op">=</span> a</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> b</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> temp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Can you come up with a simple and pretty way of swapping <code>a</code> and <code>b</code> in one statement, using what you have learned in this chapter? Maybe it occurs to you before you realize how it works, so make sure you can connect your solution to the rules of tuples and tuple assignment.</p>
+<!-- TODO: Find annother example than Donald Trump -->
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -767,11 +858,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lecture_notes/chapters/project/assembly_project.html" class="pagination-link" aria-label="Project: Genome assembly">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Genome assembly</span></span>
+      <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="pagination-link" aria-label="Pairs of things">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Pairs of things</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="pagination-link" aria-label="Iteration over values">
+        <span class="nav-page-text"><span class="chapter-title">Iteration over values</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

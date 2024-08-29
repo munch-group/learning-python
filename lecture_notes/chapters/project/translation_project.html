@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Learning Python</title>
+<title>Project: Translating open reading frames – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../lecture_notes/chapters/project/assembly_project.html" rel="prev">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../lecture_notes/chapters/project/folding_project.html" rel="next">
+<link href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" rel="prev">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -80,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html">Programming projects</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html"><span class="chapter-title">Project: Translating open reading frames</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -95,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Learning Python</a> 
+      <a href="../../../">Learning Python</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -107,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project</span></a>
   </div>
 </li>
@@ -122,108 +157,108 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
+  <a href="../../../lecture_notes/chapters/python/preface.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">How to learn from this book</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
+  <a href="../../../lecture_notes/chapters/python/before_you_begin.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before you begin</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
+  <a href="../../../lecture_notes/chapters/python/appendix_conda_and_pymol.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Appendix: Conda environment for BSF</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
+  <a href="../../../lecture_notes/chapters/python/writing_a_program.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Writing a program</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
+  <a href="../../../lecture_notes/chapters/python/dealing_with_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Dealing with values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
+  <a href="../../../lecture_notes/chapters/python/the_order_of_events.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The order of events</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
+  <a href="../../../lecture_notes/chapters/python/course_tools.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Course tools</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
+  <a href="../../../lecture_notes/chapters/python/controlling_behavior.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Controlling behavior</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/organizing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Organising your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
+  <a href="../../../lecture_notes/chapters/python/python_values_are_objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Python values are objects</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/lists.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lists of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
+  <a href="../../../lecture_notes/chapters/python/dictionaries.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Pairs of things</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
+  <a href="../../../lecture_notes/chapters/python/gluing_values_in_sequence.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gluing values in sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
+  <a href="../../../lecture_notes/chapters/python/iteration_over_values.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Iteration over values</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
+  <a href="../../../lecture_notes/chapters/python/working_with_data_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Working with data files</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
+  <a href="../../../lecture_notes/chapters/python/data_structures.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Structuring data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
+  <a href="../../../lecture_notes/chapters/python/unleash_your_functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Unleash your functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
+  <a href="../../../lecture_notes/chapters/python/testing_your_code.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Testing your code</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What defines the type of an object?</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
+  <a href="../../../lecture_notes/chapters/python/using_code_from_other_files.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">A module is a file with code {-} --&gt;</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Using code in other files</span></a>
   </div>
 </li>
@@ -240,42 +275,42 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Translating open reading frames</span></a>
+  <a href="../../../lecture_notes/chapters/project/translation_project.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Project: Translating open reading frames</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
+  <a href="../../../lecture_notes/chapters/project/folding_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Primer analysis</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
+  <a href="../../../lecture_notes/chapters/project/alignment_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Pairwise global alignment</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/codonbias_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Codon usage in <em>Streptococcus</em> bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
+  <a href="../../../lecture_notes/chapters/project/hiv_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Identifying the subtype of an HIV sequence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
+  <a href="../../../lecture_notes/chapters/project/seqdist_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Clustering sequences based on distance ⁕</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
+  <a href="../../../lecture_notes/chapters/project/orf_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Finding genes in bacteria</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
+  <a href="../../../lecture_notes/chapters/project/assembly_project.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Project: Genome assembly</span></a>
   </div>
 </li>
       </ul>
@@ -291,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Week 1</span></a>
+  <a href="../../../supplementary/suppl2024.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Week 1</span></a>
   </div>
 </li>
       </ul>
@@ -306,17 +341,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#monday" id="toc-monday" class="nav-link active" data-scroll-target="#monday">Monday</a></li>
-  <li><a href="#wednesday" id="toc-wednesday" class="nav-link" data-scroll-target="#wednesday">Wednesday</a></li>
+  <li><a href="#translating-a-single-codon" id="toc-translating-a-single-codon" class="nav-link active" data-scroll-target="#translating-a-single-codon">Translating a single codon</a></li>
+  <li><a href="#splitting-an-open-reading-frame-into-codons" id="toc-splitting-an-open-reading-frame-into-codons" class="nav-link" data-scroll-target="#splitting-an-open-reading-frame-into-codons">Splitting an open reading frame into codons</a></li>
+  <li><a href="#translating-an-open-reading-frame" id="toc-translating-an-open-reading-frame" class="nav-link" data-scroll-target="#translating-an-open-reading-frame">Translating an open reading frame</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html">Recordings</a></li><li class="breadcrumb-item"><a href="../supplementary/suppl2024.html"><span class="chapter-title">Week 1</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html">Programming projects</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/project/translation_project.html"><span class="chapter-title">Project: Translating open reading frames</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Week 1</span></h1>
+<h1 class="title"><span class="chapter-title">Project: Translating open reading frames</span></h1>
 </div>
 
 
@@ -333,13 +369,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="monday" class="level2">
-<h2 class="anchored" data-anchor-id="monday">Monday</h2>
-<p>Unfortunately, the Monday recording failed :/</p>
+<p><em>This chapter is about translating DNA into protein. If bacteria can do it, so can you.</em></p>
+<p>In this project you will write the code needed to translate an open reading frame (ORF) on a DNA sequence into into the corresponding sequence of amino acids.</p>
+<p>You need two project files for the project, which you can download from the course page:</p>
+<ul>
+<li><strong>translationproject.py</strong> is an empty file where you must write your code.</li>
+<li><strong>test_translationproject.py</strong> is the test program that lets you test the code you write in translationproject.py.</li>
+</ul>
+<p>The file <code>translationproject.py</code> is for your code. The file <code>test_translationproject.py</code> is the script you use to test the functions you write for this project (see <span class="citation" data-cites="sec:testing_your_code">@sec:testing_your_code</span>).</p>
+<p>In this project you will need a data structure that pairs each codon to the amino acid it encodes. This is an obvious use of a dictionary and at the top of <code>translationproject.py</code> I have defined such a dictionary you can use. Defining it outside the functions means that it is visible inside all your functions (unless you define <em>another</em> variable called <code>codon_map</code> inside a function). Defining variables globally to your program sometimes make sense if some value can be considered a <em>constant</em> in your program and is <em>never</em> changed.</p>
+<blockquote class="blockquote">
+<p>It is normally very bad programming style to access variables outside functions in this way because it may have all kinds of unexpected side effects across function calls. So make it a rule for yourself that code <em>inside</em> a function should never to access variables <em>outside</em> the function. The reason we define <code>codon_map</code> globally in this project is to help you understand that when Python cannot find a variable inside a function, it looks outside the function to find it. In this project functions will find <code>codon_map</code> in this way. However, as I already said, you should <em>never</em> do this yourself. The chance that you make an unexpected mistake is overwhelming.</p>
+</blockquote>
+<section id="translating-a-single-codon" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="translating-a-single-codon">Translating a single codon</h2>
+<p>Write a function, <code>translate_codon</code> that takes one argument:</p>
+<ol type="1">
+<li>A string, which is a codon.</li>
+</ol>
+<p>The function should return:</p>
+<ul>
+<li>A string of length one (one character). If the string argument is a valid codon then this letter should the be an amino acid letter specified by the <code>codon_map</code> dictionary. Note that stop codons are represented by a star (<code>'*'</code>). If the string argument is <em>not</em> a valid codon, the function must return <code>'?'</code>.</li>
+</ul>
+<p>Example usage:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>translate_codon(<span class="st">'ACG'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>should return</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">'T'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Before you start coding you should always outline for yourself intuitively what you need to do to complete the task at hand. In this case want to translate, or map, between a three letter string, codon, and the corresponding one letter string for the amino acid that the codon corresponds to. Notice that the keys in the <code>codon_map</code> dictionary are in upper case, so you must make sure that the keys <em>you</em> use are also in upper case. You can translate codon into an upper case version of itself using the upper() method.</p>
+<p>Try this out first:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>codon <span class="op">=</span> <span class="st">'TTG'</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>amino_acid <span class="op">=</span> codon_map[codon]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(amino_acid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now write the function so it uses the string parameter as a key to look up the corresponding amino acid letter and returns this letter. Before you go on, make a function that does only that.</p>
+<p>Before you are completely done you need to make your function handle the situation when the argument to the function is not a key in the <code>codon_map</code> dictionary. Use an if-else construct to handle the two cases. The boolean expression must test if the function argument is a key in <code>codon_map</code>. Remember that you can use the <code>in</code> operator to do this.</p>
 </section>
-<section id="wednesday" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday">Wednesday</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6Kl6b3r2uJ4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="splitting-an-open-reading-frame-into-codons" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="splitting-an-open-reading-frame-into-codons">Splitting an open reading frame into codons</h2>
+<p>To translate an entire open reading frame into the corresponding amino acid sequence, you need to split the ORF sequence into codons. When we have done that we can translate each codon using the function <code>translate_codon</code> you just wrote.</p>
+<p><em>Write a function</em>, <code>split_codons</code>, that takes one argument:</p>
+<ol type="1">
+<li>A string, which is an ORF sequence</li>
+</ol>
+<p>The function must return:</p>
+<ul>
+<li>A list of strings. Each string must have length 3 and must represent the-non overlapping triplets in the same sequence as they appear in the string given as argument.</li>
+</ul>
+<p>Example usage:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>split_codons(<span class="st">'ATGTATGCCTGA'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>should return</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>[<span class="st">'ATG'</span>, <span class="st">'TAT'</span>, <span class="st">'GCC'</span>, <span class="st">'TGA'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Divide the problem into simpler tasks like above. You need to loop over the sequence to perform operations on it. Start by writing a function that prints each character:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> split_codons(orf):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(orf)):</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(orf[i])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now try to figure out how you can modify the function to make it move over the sequence in jumps of three. Look at the <a href="https://docs.python.org/3/library/stdtypes.html#range">documentation</a> for the <code>range</code> function to see how you can make it iterate over numbers with increments of three like this: 0, 3, 6, 9, 12, … . Modify your function so that it now prints every third character.</p>
+<p>What you want is obviously not every third character. You want three characters. I.e. every third character <em>and</em> the two characters that come right after. You can use the index in the for loop to get the corresponding codon using slicing. Modify your function so that it prints each codon.</p>
+<p>Now all that remains is to put each codon on a list that you can return from the function. You can define a list before your for-loop so you have a list to add codons to.</p>
+</section>
+<section id="translating-an-open-reading-frame" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="translating-an-open-reading-frame">Translating an open reading frame</h2>
+<p>Now you can use the two functions <code>split_codons</code> and <code>translate_codon</code> to write a function that translates an ORF into a protein sequence.</p>
+<p><em>Write a function</em>, <code>translate_orf</code>, that takes one argument:</p>
+<ol type="1">
+<li>A string, which is a DNA sequence.</li>
+</ol>
+<p>The function must return</p>
+<ul>
+<li>A string, which is the protein sequence translated from the ORF sequence argument.</li>
+</ul>
+<p>Example usage:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>translate_orf(<span class="st">'ATGGAGCTTANCAAATAG'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>should return</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">'MEL?K*'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
@@ -767,11 +868,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lecture_notes/chapters/project/assembly_project.html" class="pagination-link" aria-label="Project: Genome assembly">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Project: Genome assembly</span></span>
+      <a href="../../../lecture_notes/chapters/python/on_the_shoulders_of_giants.html" class="pagination-link" aria-label="Using code in other files">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Using code in other files</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../../../lecture_notes/chapters/project/folding_project.html" class="pagination-link" aria-label="Project: Primer analysis">
+        <span class="nav-page-text"><span class="chapter-title">Project: Primer analysis</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
