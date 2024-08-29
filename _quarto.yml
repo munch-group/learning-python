@@ -12,7 +12,7 @@ book:
   sidebar:
     search: true
     collapse-level: 1    
-    style: "docked"
+    # style: "docked"
 
   chapters:
     - index.qmd
