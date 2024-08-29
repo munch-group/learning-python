@@ -56,6 +56,6 @@ format:
     theme: 
       - default
       - custom.scss
-    toc-depth: 2
+    toc-depth: 1
     notebook-links: global
     number-sections: false
