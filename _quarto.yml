@@ -7,21 +7,13 @@ execute:
   echo: true
 
 book:
-  title: "Title of your project"
-  author: "Your Name"
+  title: "Learning Python"
+  author: "Kasper Munch"
   chapters:
     - index.qmd
-    - part: "Notebooks"
+    - part: "Recordings"
       chapters: 
-      - notebooks/01_weather.ipynb
-      - notebooks/02_interaction.ipynb
-    - part: "Reports"
-      chapters: 
-      - reports/manuscript.ipynb
-      - reports/supplementary.qmd
-    - references.qmd
-
-bibliography: references.bib
+      - supplementary/suppl2024.qmd
 
 format:
   html:
