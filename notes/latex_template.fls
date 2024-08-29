@@ -1,0 +1,6 @@
+PWD /Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book
+INPUT /usr/local/texlive/2020/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.tex
+OUTPUT /Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.log

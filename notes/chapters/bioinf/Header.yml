@@ -1,0 +1,16 @@
+---
+title: |
+  Lecture notes on Bioinformatics\
+  2023
+
+author:
+  - Kasper Munch
+
+bibliography:
+  chapters/bibliography.bib
+
+secPrefix:
+  - "exercise"
+  - "exercises"
+---
+

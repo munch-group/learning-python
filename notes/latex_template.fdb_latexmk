@@ -1,0 +1,14 @@
+# Fdb version 3
+["pdflatex"] 1614631896 "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.tex" "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.pdf" "latex_template" 1614631896
+  "$documentclass$.cls" 0 -1 0 ""
+  "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/$documentclass$.cls" 0 -1 0 ""
+  "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.aux" 1614631896 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.tex" 1614631895 18847 14b65232ba6fbcc956c9c1b6482679c6 ""
+  "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
+  "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1609861309 2432472 183edb89c58fe521037be5945e376c0f ""
+  "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
+  "latex_template.tex" 1614631895 18847 14b65232ba6fbcc956c9c1b6482679c6 ""
+  (generated)
+  "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.log"
+  "latex_template.log"
+  "/Users/kmt/Dropbox/Teaching/Courses/BoP/bioinf-prog-course/book/latex_template.pdf"
