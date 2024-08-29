@@ -12,29 +12,28 @@ book:
   chapters:
     - index.qmd
     - part: "Lecture notes"
-      - part: "Week 1"
-        chapters: 
-        - lecture_notes/chapters/python/preface.md
-        - lecture_notes/chapters/python/before_you_begin.md
-        - lecture_notes/chapters/python/appendix_conda_and_pymol.md
-        - lecture_notes/chapters/python/writing_a_program.md
-        - lecture_notes/chapters/python/dealing_with_values.md
-        - lecture_notes/chapters/python/the_order_of_events.md
-        - lecture_notes/chapters/python/course_tools.md
-        - lecture_notes/chapters/python/controlling_behavior.md
-        - lecture_notes/chapters/python/organizing_your_code.md
-        - lecture_notes/chapters/python/python_values_are_objects.md
-        - lecture_notes/chapters/python/lists.md
-        - lecture_notes/chapters/python/dictionaries.md
-        - lecture_notes/chapters/python/gluing_values_in_sequence.md
-        - lecture_notes/chapters/python/iteration_over_values.md
-        - lecture_notes/chapters/python/working_with_data_files.md
-        - lecture_notes/chapters/python/data_structures.md
-        - lecture_notes/chapters/python/unleash_your_functions.md
-        - lecture_notes/chapters/python/testing_your_code.md
-        - lecture_notes/chapters/python/your_own_types_of_objects.md
-        - lecture_notes/chapters/python/using_code_from_other_files.md
-        - lecture_notes/chapters/python/on_the_shoulders_of_giants.md
+      chapters: 
+      - lecture_notes/chapters/python/preface.md
+      - lecture_notes/chapters/python/before_you_begin.md
+      - lecture_notes/chapters/python/appendix_conda_and_pymol.md
+      - lecture_notes/chapters/python/writing_a_program.md
+      - lecture_notes/chapters/python/dealing_with_values.md
+      - lecture_notes/chapters/python/the_order_of_events.md
+      - lecture_notes/chapters/python/course_tools.md
+      - lecture_notes/chapters/python/controlling_behavior.md
+      - lecture_notes/chapters/python/organizing_your_code.md
+      - lecture_notes/chapters/python/python_values_are_objects.md
+      - lecture_notes/chapters/python/lists.md
+      - lecture_notes/chapters/python/dictionaries.md
+      - lecture_notes/chapters/python/gluing_values_in_sequence.md
+      - lecture_notes/chapters/python/iteration_over_values.md
+      - lecture_notes/chapters/python/working_with_data_files.md
+      - lecture_notes/chapters/python/data_structures.md
+      - lecture_notes/chapters/python/unleash_your_functions.md
+      - lecture_notes/chapters/python/testing_your_code.md
+      - lecture_notes/chapters/python/your_own_types_of_objects.md
+      - lecture_notes/chapters/python/using_code_from_other_files.md
+      - lecture_notes/chapters/python/on_the_shoulders_of_giants.md
     - part: "Programming projects"
       chapters:
         - lecture_notes/chapters/project/translation_project.md
