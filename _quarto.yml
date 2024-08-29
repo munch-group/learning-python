@@ -56,6 +56,10 @@ format:
     theme: 
       - default
       - custom.scss
-    toc-depth: 1
+    toc-depth: 2
     notebook-links: global
     number-sections: false
+
+website:
+  sidebar:
+    collapse-level: 1    
