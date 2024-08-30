@@ -187,7 +187,7 @@ conda activate bioprog
 conda config --env --add channels conda-forge
 conda config --env --add channels sepandhaghighi
 conda config --env --add channels kaspermunch
-conda install -y 'python=3.9' pygments textual rich art bp-help
+conda install -y python=3.9 pygments=2.16.1 textual=0.37.1 rich=13.6.0 art=6.1 bp-help
 ```
 
 This commands run the Conda program and tells it to create a new environment with name "bioprog" and to install the packages we need in that environment. Once you hit enter on the last command, Conda works for some time and then writes a long list of packages in your terminal. These are all the packages and dependencies required in versions that all fit together. 
