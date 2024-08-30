@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -508,7 +508,7 @@ conda activate bioprog
 conda config --env --add channels conda-forge
 conda config --env --add channels sepandhaghighi
 conda config --env --add channels kaspermunch
-conda install -y 'python=3.9' pygments textual rich art bp-help</code></pre>
+conda install -y python=3.9 pygments=2.16.1 textual=0.37.1 rich=13.6.0 art=6.1 bp-help</code></pre>
 <p>This commands run the Conda program and tells it to create a new environment with name “bioprog” and to install the packages we need in that environment. Once you hit enter on the last command, Conda works for some time and then writes a long list of packages in your terminal. These are all the packages and dependencies required in versions that all fit together.</p>
 <p>Notice how the command prompt changed from “(base)” to “(bioprog)” to show that you are now in the bioprog environment. Looks like nothing changed, but now you have access to terminal commands not available in the base environment. You will learn about these later. Try this command:</p>
 <pre><code>conda deactivate</code></pre>
