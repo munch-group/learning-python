@@ -12,12 +12,11 @@ Unfortunately, the Monday recording failed :/
 
 ## Monday
 
-{{< video https://www.youtube.com/embed/rCBHslY6QK6OTLp1 >}}
-
+{{< video https://www.youtube.com/embed/s3vKQY8rntw >}}
 
 ## Wednesday
 
-{{< video https://www.youtube.com/embed/wlJwaF0SHbzzpeUL >}}
+{{< video https://www.youtube.com/embed/IkQZI5XuNVU >}}
 
 # Week 3
 
