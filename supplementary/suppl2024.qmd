@@ -8,4 +8,158 @@ Unfortunately, the Monday recording failed :/
 
 {{< video https://www.youtube.com/embed/6Kl6b3r2uJ4 >}}
 
+# Week 2
+
+## Monday
+
+{{< video https://www.youtube.com/embed/rCBHslY6QK6OTLp1 >}}
+
+
+## Wednesday
+
+{{< video https://www.youtube.com/embed/be8smijuNJyhCqJR >}}
+
+# Week 3
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 4
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 5
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 6
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 7
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 8
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 9
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 10
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 11
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 12
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 13
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+# Week 14
+
+## Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
 
