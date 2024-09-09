@@ -49,7 +49,7 @@ book:
         - lecture_notes/chapters/project/seqdist_project.md
         - lecture_notes/chapters/project/orf_project.md
         - lecture_notes/chapters/project/assembly_project.md
-    - part: "Recordings"
+    - part: "Supplementary"
       chapters: 
       - supplementary/suppl2024.qmd
 
