@@ -1,162 +1,168 @@
-# Week 1
+# Lecture recordings
 
-## Monday
+## Week 1
+
+### Monday
 
 Unfortunately, the Monday recording failed :/
 
-## Wednesday
+### Wednesday
 
 {{< video https://www.youtube.com/embed/6Kl6b3r2uJ4 >}}
 
-# Week 2
+## Week 2
 
-## Monday
+### Monday
+
+The sound quality is terrible on this one, sorry.
 
 {{< video https://www.youtube.com/embed/s3vKQY8rntw >}}
 
-## Wednesday
+### Wednesday
+
+The sound quality is terrible on this one, sorry.
 
 {{< video https://www.youtube.com/embed/IkQZI5XuNVU >}}
 
-# Week 3
+## Week 3
 
-## Monday
+### Monday
 
 {{< video https://www.youtube.com/embed/injj7E0_ddI >}}
  
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 4
+## Week 4
+
+### Monday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+### Wednesday
+<!-- 
+{{< video https://www.youtube.com/embed/ >}}
+ -->
+
+## Week 5
 
 ## Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 5
+## Week 6
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 6
+## Week 7
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 7
+## Week 8
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 8
+## Week 9
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 9
+## Week 10
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 10
+## Week 11
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 11
+## Week 12
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 12
+## Week 13
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-# Week 13
+## Week 14
 
-## Monday
+### Monday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
 
-## Wednesday
-<!-- 
-{{< video https://www.youtube.com/embed/ >}}
- -->
-
-# Week 14
-
-## Monday
-<!-- 
-{{< video https://www.youtube.com/embed/ >}}
- -->
-
-## Wednesday
+### Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
