@@ -774,7 +774,7 @@
     "href": "lecture_notes/chapters/python/using_code_from_other_files.html",
     "title": "A module is a file with code {-} –>",
     "section": "",
-    "text": "]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} Using code in other files Programming projects 20  Project: Translating open reading frames 21  Project: Primer analysis 22  Project: Pairwise global alignment 23  Project: Codon usage in Streptococcus bacteria 24  Project: Identifying the subtype of an HIV sequence 25  Project: Clustering sequences based on distance ⁕ 26  Project: Finding genes in bacteria 27  Project: Genome assembly Recordings 28  Lecture recordings Lecture notes 19  A module is a file with code {-} –&gt; :::",
+    "text": "]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} Using code in other files Programming projects 20  Project: Translating open reading frames 21  Project: Primer analysis 22  Project: Pairwise global alignment 23  Project: Codon usage in Streptococcus bacteria 24  Project: Identifying the subtype of an HIV sequence 25  Project: Clustering sequences based on distance ⁕ 26  Project: Finding genes in bacteria 27  Project: Genome assembly Supplementary 28  Lecture recordings Lecture notes 19  A module is a file with code {-} –&gt; :::",
     "crumbs": [
       "Lecture notes",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>A module is a file with code {-} --></span>"
@@ -1215,7 +1215,7 @@
     "section": "",
     "text": "Week 1",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1226,7 +1226,7 @@
     "section": "",
     "text": "Monday\nUnfortunately, the Monday recording failed :/\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1237,7 +1237,7 @@
     "section": "Week 2",
     "text": "Week 2\n\nMonday\nThe sound quality is terrible on this one, sorry.\n\n\n\nWednesday\nThe sound quality is terrible on this one, sorry.",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1248,7 +1248,7 @@
     "section": "Week 3",
     "text": "Week 3\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1259,7 +1259,7 @@
     "section": "Week 4",
     "text": "Week 4\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1270,7 +1270,7 @@
     "section": "Week 5",
     "text": "Week 5",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1281,7 +1281,7 @@
     "section": "Monday",
     "text": "Monday\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1292,7 +1292,7 @@
     "section": "Week 6",
     "text": "Week 6\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1303,7 +1303,7 @@
     "section": "Week 7",
     "text": "Week 7\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1314,7 +1314,7 @@
     "section": "Week 8",
     "text": "Week 8\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1325,7 +1325,7 @@
     "section": "Week 9",
     "text": "Week 9\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1336,7 +1336,7 @@
     "section": "Week 10",
     "text": "Week 10\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1347,7 +1347,7 @@
     "section": "Week 11",
     "text": "Week 11\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1358,7 +1358,7 @@
     "section": "Week 12",
     "text": "Week 12\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1369,7 +1369,7 @@
     "section": "Week 13",
     "text": "Week 13\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
@@ -1380,7 +1380,7 @@
     "section": "Week 14",
     "text": "Week 14\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
-      "Recordings",
+      "Supplementary",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   }
