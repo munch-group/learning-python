@@ -774,7 +774,7 @@
     "href": "lecture_notes/chapters/python/using_code_from_other_files.html",
     "title": "A module is a file with code {-} –>",
     "section": "",
-    "text": "]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} Using code in other files Programming projects 20  Project: Translating open reading frames 21  Project: Primer analysis 22  Project: Pairwise global alignment 23  Project: Codon usage in Streptococcus bacteria 24  Project: Identifying the subtype of an HIV sequence 25  Project: Clustering sequences based on distance ⁕ 26  Project: Finding genes in bacteria 27  Project: Genome assembly Recordings 28  Week 1 Lecture notes 19  A module is a file with code {-} –&gt; :::",
+    "text": "]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} Using code in other files Programming projects 20  Project: Translating open reading frames 21  Project: Primer analysis 22  Project: Pairwise global alignment 23  Project: Codon usage in Streptococcus bacteria 24  Project: Identifying the subtype of an HIV sequence 25  Project: Clustering sequences based on distance ⁕ 26  Project: Finding genes in bacteria 27  Project: Genome assembly Recordings 28  Lecture recordings Lecture notes 19  A module is a file with code {-} –&gt; :::",
     "crumbs": [
       "Lecture notes",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>A module is a file with code {-} --></span>"
@@ -1211,309 +1211,177 @@
   {
     "objectID": "supplementary/suppl2024.html",
     "href": "supplementary/suppl2024.html",
-    "title": "Week 1",
+    "title": "Lecture recordings",
     "section": "",
-    "text": "Monday\nUnfortunately, the Monday recording failed :/",
+    "text": "Week 1",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday",
-    "href": "supplementary/suppl2024.html#wednesday",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-1",
+    "href": "supplementary/suppl2024.html#week-1",
+    "title": "Lecture recordings",
+    "section": "",
+    "text": "Monday\nUnfortunately, the Monday recording failed :/\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-1",
-    "href": "supplementary/suppl2024.html#monday-1",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-2",
+    "href": "supplementary/suppl2024.html#week-2",
+    "title": "Lecture recordings",
+    "section": "Week 2",
+    "text": "Week 2\n\nMonday\nThe sound quality is terrible on this one, sorry.\n\n\n\nWednesday\nThe sound quality is terrible on this one, sorry.",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-1",
-    "href": "supplementary/suppl2024.html#wednesday-1",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-3",
+    "href": "supplementary/suppl2024.html#week-3",
+    "title": "Lecture recordings",
+    "section": "Week 3",
+    "text": "Week 3\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-2",
-    "href": "supplementary/suppl2024.html#monday-2",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-4",
+    "href": "supplementary/suppl2024.html#week-4",
+    "title": "Lecture recordings",
+    "section": "Week 4",
+    "text": "Week 4\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-2",
-    "href": "supplementary/suppl2024.html#wednesday-2",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-5",
+    "href": "supplementary/suppl2024.html#week-5",
+    "title": "Lecture recordings",
+    "section": "Week 5",
+    "text": "Week 5",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-3",
-    "href": "supplementary/suppl2024.html#monday-3",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-3",
-    "href": "supplementary/suppl2024.html#wednesday-3",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
     "objectID": "supplementary/suppl2024.html#monday-4",
     "href": "supplementary/suppl2024.html#monday-4",
-    "title": "Week 1",
+    "title": "Lecture recordings",
     "section": "Monday",
-    "text": "Monday",
+    "text": "Monday\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-4",
-    "href": "supplementary/suppl2024.html#wednesday-4",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-6",
+    "href": "supplementary/suppl2024.html#week-6",
+    "title": "Lecture recordings",
+    "section": "Week 6",
+    "text": "Week 6\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-5",
-    "href": "supplementary/suppl2024.html#monday-5",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-7",
+    "href": "supplementary/suppl2024.html#week-7",
+    "title": "Lecture recordings",
+    "section": "Week 7",
+    "text": "Week 7\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-5",
-    "href": "supplementary/suppl2024.html#wednesday-5",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-8",
+    "href": "supplementary/suppl2024.html#week-8",
+    "title": "Lecture recordings",
+    "section": "Week 8",
+    "text": "Week 8\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-6",
-    "href": "supplementary/suppl2024.html#monday-6",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-9",
+    "href": "supplementary/suppl2024.html#week-9",
+    "title": "Lecture recordings",
+    "section": "Week 9",
+    "text": "Week 9\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-6",
-    "href": "supplementary/suppl2024.html#wednesday-6",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-10",
+    "href": "supplementary/suppl2024.html#week-10",
+    "title": "Lecture recordings",
+    "section": "Week 10",
+    "text": "Week 10\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-7",
-    "href": "supplementary/suppl2024.html#monday-7",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-11",
+    "href": "supplementary/suppl2024.html#week-11",
+    "title": "Lecture recordings",
+    "section": "Week 11",
+    "text": "Week 11\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-7",
-    "href": "supplementary/suppl2024.html#wednesday-7",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-12",
+    "href": "supplementary/suppl2024.html#week-12",
+    "title": "Lecture recordings",
+    "section": "Week 12",
+    "text": "Week 12\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#monday-8",
-    "href": "supplementary/suppl2024.html#monday-8",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
+    "objectID": "supplementary/suppl2024.html#week-13",
+    "href": "supplementary/suppl2024.html#week-13",
+    "title": "Lecture recordings",
+    "section": "Week 13",
+    "text": "Week 13\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
-    "objectID": "supplementary/suppl2024.html#wednesday-8",
-    "href": "supplementary/suppl2024.html#wednesday-8",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
+    "objectID": "supplementary/suppl2024.html#week-14",
+    "href": "supplementary/suppl2024.html#week-14",
+    "title": "Lecture recordings",
+    "section": "Week 14",
+    "text": "Week 14\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-9",
-    "href": "supplementary/suppl2024.html#monday-9",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-9",
-    "href": "supplementary/suppl2024.html#wednesday-9",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-10",
-    "href": "supplementary/suppl2024.html#monday-10",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-10",
-    "href": "supplementary/suppl2024.html#wednesday-10",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-11",
-    "href": "supplementary/suppl2024.html#monday-11",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-11",
-    "href": "supplementary/suppl2024.html#wednesday-11",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-12",
-    "href": "supplementary/suppl2024.html#monday-12",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-12",
-    "href": "supplementary/suppl2024.html#wednesday-12",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#monday-13",
-    "href": "supplementary/suppl2024.html#monday-13",
-    "title": "Week 1",
-    "section": "Monday",
-    "text": "Monday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
-    ]
-  },
-  {
-    "objectID": "supplementary/suppl2024.html#wednesday-13",
-    "href": "supplementary/suppl2024.html#wednesday-13",
-    "title": "Week 1",
-    "section": "Wednesday",
-    "text": "Wednesday",
-    "crumbs": [
-      "Recordings",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Week 1</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   }
 ]
