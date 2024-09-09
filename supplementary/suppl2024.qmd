@@ -21,10 +21,9 @@ Unfortunately, the Monday recording failed :/
 # Week 3
 
 ## Monday
-<!-- 
-{{< video https://www.youtube.com/embed/ >}}
- -->
 
+{{< video https://www.youtube.com/embed/injj7E0_ddI >}}
+ 
 ## Wednesday
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
