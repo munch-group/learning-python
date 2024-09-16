@@ -20,7 +20,7 @@ book:
       chapters: 
       - lecture_notes/chapters/python/preface.md
       - lecture_notes/chapters/python/before_you_begin.md
-      - lecture_notes/chapters/python/appendix_conda_and_pymol.md
+      # - lecture_notes/chapters/python/appendix_conda_and_pymol.md
       - lecture_notes/chapters/python/writing_a_program.md
       - lecture_notes/chapters/python/dealing_with_values.md
       - lecture_notes/chapters/python/the_order_of_events.md
