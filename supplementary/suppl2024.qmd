@@ -38,9 +38,9 @@ The sound quality is terrible on this one, sorry.
 ## Week 4
 
 ### Monday
-<!-- 
-{{< video https://www.youtube.com/embed/ >}}
- -->
+
+{{< video https://www.youtube.com/embed/e86mF44Sgyo >}}
+ 
 
 ### Wednesday
 <!-- 
