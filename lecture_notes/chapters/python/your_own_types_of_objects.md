@@ -1,4 +1,4 @@
-<!-- # Your own types of objects
+# Your type of object
 
 *Do you know that type you are? Python objects do, and this chapter is about how they know.*
 
