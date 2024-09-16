@@ -4,7 +4,7 @@
 
 *This chapter is about dictionaries that, like lists, is another Python value that can contain other Python values. Dictionaries dictionaries lets you build relationships between values, which is what data structures represent.*
 
-## Dictionaries {-}
+## Dictionaries  {.unnumbered}
 
 Lists are useful for storing values when the order of the values is important but lists have one drawback: you can only access a value in a list using the index of the value.
 
@@ -97,7 +97,7 @@ person = {'name': 'Robert Redford',
 print(person)
 ```
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 <!-- TODO: Find annother example than Donald Trump -->
 

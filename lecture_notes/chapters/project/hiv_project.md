@@ -33,11 +33,11 @@ The project is divided into the following parts:
 
 Make sure you read the entire exercise and understand what you are supposed to do before you begin!
 
-## Compute the similarity of two sequences {-}
+## Compute the similarity of two sequences  {.unnumbered}
 
 We need to compare our unknown HIV sequence to all the HIV sequences of known subtypes. That way we can identify the sequence of a known subtype that is most similar to your unknown sequence. We will then assume that our unknown sequence has the same subtype as this sequence. To accomplish this we first need to write some code that compares two sequences so we can compare our HIV sequence to each of the other HIV sequences. 
 
-### Compare two sequences {-}
+### Compare two sequences  {.unnumbered}
 
 *Write a function* `sequence_similarity` that takes two arguments:
 
@@ -65,7 +65,7 @@ def sequence_similarity(seq1, seq2):
 
 Remember that `range(len(seq1))` generates the numbers you can use to index the string `seq1`. You can use those numbers as indexes to look up positions in both strings. You will need a for-loop in your function and a variable that keeps track of how many similarities you have seen as you iterate through the sequences. 
 
-### Compare aligned sequences {-}
+### Compare aligned sequences  {.unnumbered}
 
 All sequences, including the unknown sequence, are from the same multiple alignment. This ensures that sequence positions match up across all sequences but also means that a lot of gap characters (`'-'`) are inserted. To compute similarities between such sequences you need to make function much like `seqeuence_similarity` that does not consider sequence positions where both bases are a gap (`'-'`) characters. In other words, you must not only count the number of characters that are the same, you also need to count how many alignment columns that are `"-"` for both sequences. E.g. the following mini alignment has five such columns and four columns where the bases are the same. So in the following alignment, the similarity is 0.8 (4/5):
 
@@ -95,7 +95,7 @@ seq1[i] == '-' and seq2[i] == '-'
 
 Once your function has computed both the number of identical bases and the number of alignment columns that are not both `'-'`, you can have it return the similarity as the ratio of the two.
 
-## Read the HIV sequences into your program {-}
+## Read the HIV sequences into your program  {.unnumbered}
 
 To use your `alignment_similarity` function to assess similarity between your unknown sequence and the sequences of known subtype, you need to read the sequences into your program. Here is a function that will read the sequences from one of the files you downloaded into a list:
 
@@ -136,7 +136,7 @@ typed_data = load_typed_sequences()
 
 then you can access the list of sequences of subtype A like this: `typed_data['A']`.
 
-## Compare your HIV sequence to HIV sequences of known subtype {-}
+## Compare your HIV sequence to HIV sequences of known subtype  {.unnumbered}
 
 To type you HIV sequence you must compare your sequence to all the database sequences to see which group has the best matching sequence.
 
@@ -179,7 +179,7 @@ similarities = []
 
 This is the list of results that your function must return. To compute the similarity between you unknown sequence and each of the sequences of known subtype, you can use your `alignment_similarity` function inside a for-loop.
 
-## Compute maximum similarity to each subtype {-}
+## Compute maximum similarity to each subtype  {.unnumbered}
 
 To predict the subtype of the unknown HIV sequence you need to compare the unknown sequence to all the sequences of each of the different subtypes. The subtype of the sequence with the highest similarity to your unknown sequence is then our predicted subtype (or our best guess). 
 
@@ -213,7 +213,7 @@ subtypeA_max = max(subtypeA_similarities)
 <!-- TODO: Have them also compute mean similarity to each group -->
 
 
-## Identify the HIV subtype {-}
+## Identify the HIV subtype  {.unnumbered}
 
 Now for the grand finale! You ultimately want to be able to write code like this:
 

@@ -30,9 +30,9 @@ The function returns:
 
 * None, but it *prints* a nice representation of the matrix lined with the bases of the two sequences.
 
-## Filling in the dynamic programming matrix {-}
+## Filling in the dynamic programming matrix  {.unnumbered}
 
-### Make a matrix {-}
+### Make a matrix  {.unnumbered}
 We start out by making a list of lists (a matrix) that has the right shape but only holds `None` values. We use the `None` values as place-holders, which you can later replace with scores. You can think of it as an empty matrix that you can fill scores into, just as we did at the lectures. If you want to align two sequences like `AT` and `GAT` you want a matrix that has 3 rows and 4 columns. Note that the matrix must have one more row than the number of bases in sequence one, and one more column than the number of bases in sequence two.
 
 *Write a function*, `empty_matrix`, that takes two arguments
@@ -94,7 +94,7 @@ If it changed the first value in *all* the lists, it means that all your lists a
 
 
 
-### Fill top row and left column {-}
+### Fill top row and left column  {.unnumbered}
 Now that you can make a matrix with the correct dimensions, you need to write a function that fills in the top row and the left column in accordance with what the gap score is. E.g. if the gap score is `-2` you want the matrix to look something like this when you print it with `print_dp_matrix`:
 
               G    A    T
@@ -128,7 +128,7 @@ must return:
 
 Now all you need to do is replace the right `None` values with *multiples* of the gap score. E.g. the third element in the first sub-list is `matrix[2][0]`, which you would need to assign the value: `2` times the gap score. In the same way `matrix[3][0]` should be `3` times the gap score. So you need to figure out which elements you should replace and which pairs of indexes you need to access those elements. Then use `range` to generate those indexes and for-loops to loop over them. 
 
-### Fill the entire matrix {-}
+### Fill the entire matrix  {.unnumbered}
 Now that we are able to fill the top row and left column we can start thinking about how to fill the whole matrix. 
 
 For that we need a score matrix of match scores. In Python that is most easily represented as a dictionary of dictionaries like this:
@@ -193,7 +193,7 @@ Examine this code and make sure you understand why we give those arguments to `r
 2. The cell above (`matrix[i-1][j]`) plus the gap score.
 3. The diagonal cell (`matrix[i-1][j-1]`) plus the match score for base number `i` (index `i-1`) of sequence one and base number `j` (index `j-1`) of sequence two.
 
-## Reconstructing the optimal alignment {-}
+## Reconstructing the optimal alignment  {.unnumbered}
 
 This is the most difficult part, so I will hold your hand here. Below is first a function that identifies which of three cells (the yellow cells on the slides) some cell (green cell on the slides) is derived from. On the slides, this is the cell pointed to by the red arrow.
 

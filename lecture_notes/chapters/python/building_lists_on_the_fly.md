@@ -1,8 +1,8 @@
 
 # Building lists on the fly
 
-## List comprehensions {-}
+## List comprehensions  {.unnumbered}
 
-## Example from translation project {-}
+## Example from translation project  {.unnumbered}
 
 

@@ -2,13 +2,13 @@
 # Hidden Markov models
 <!-- ★ -->
 
-## What it is {-}
+## What it is  {.unnumbered}
 
 
-## Forward algorithm {-}
+## Forward algorithm  {.unnumbered}
 
 
-## Posterior decoding {-}
+## Posterior decoding  {.unnumbered}
 
 
-## Training / parameter estimation {-}
+## Training / parameter estimation  {.unnumbered}

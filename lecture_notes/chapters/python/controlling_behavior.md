@@ -2,7 +2,7 @@
 
 *This chapter is about how you make your program do different things under different circumstances. Making functionality dependent on data is what makes programs useful.*
 
-## If-statement {-}
+## If-statement  {.unnumbered}
 
 The small programs you have written so far all run the exact same sequence of statements (lines). Imagine if you could control which statements were run depending on the circumstances. Then you would be able to write more flexible and useful programs. Cue the music - and let me introduce: the "if-statement".
 
@@ -78,12 +78,12 @@ print('Hi!')
 
 > By now you have probably know that your text editor is intelligent when it comes to indentation. If you hit Enter after a statement ending with `:`, it will indent the next line with four spaces. Also, if you use the tab in python code, it will produce four spaces for you.
 
-### FAQ {-}
+### FAQ  {.unnumbered}
 
 | **Q:** Isn't "If" a poem by Rudyard Kipling?
 | **A:** [Yes.](https://www.poetryfoundation.org/poems-and-poets/poems/detail/46473)
 
-## Else-statement {-}
+## Else-statement  {.unnumbered}
 
 Sometimes you not only want your program to do something if an expression reduces to `True`, you also want it to do something *else* if it is `False`. It is as simple as it looks:
 
@@ -115,7 +115,7 @@ else:
     print('x is substituted with False in the if-statement')
 ```
 
-### FAQ {-}
+### FAQ  {.unnumbered}
 
 | **Q:** Isn't "Else" a poem by Rudyard Kipling?
 | **A:** No.
@@ -141,7 +141,7 @@ print(status)
 ```
 
 
-## Blocks of code {-}
+## Blocks of code  {.unnumbered}
 
 In the examples above, some lines are indented more than others, and you probably already have some idea of how this is interpreted by Python. Indentation defines blocks of code. Whether each block of code is evaluated when your code runs, is controlled by the `if` and `else` statements. The following three rules define individual blocks of code:
 
@@ -153,7 +153,7 @@ This way, a block can be nested inside another block by indenting it further to 
 
 ![The amount of indentation defines blocks of code](./images/blocks.png){#fig:blocks}
 
-## Elif-statement {-}
+## Elif-statement  {.unnumbered}
 
 Say you need to test a number of mutually exclusive scenarios. E.g. if a base is equal to A, T, C or G. You can do that like in the example below, but it is very verbose and shifts your code further and further to the right. 
 
@@ -224,7 +224,7 @@ z = 4
 ```
 
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 #### Exercise
 Will this print `You are a super star!`?

@@ -1,6 +1,6 @@
 # Gluing values in sequence
 
-## Tuples {-}
+## Tuples  {.unnumbered}
 
 A tuple is a sequence of values just like a list. However, unlike a list, the elements of a tuple can not be changed. You cannot append to a tuple either. Once a tuple is made it is immutable (or unchangeable). To make a tuple you just use round brackets instead of square brackets:
 
@@ -30,7 +30,7 @@ TypeError: 'tuple' object does not support item assignment
 
 You cannot change elements of a tuple because they are immutable (once made, they stay that way).
 
-## Tuple assignment {-}
+## Tuple assignment  {.unnumbered}
 
 Python lets you assign a tuple of values to a tuple of variables like this:
 

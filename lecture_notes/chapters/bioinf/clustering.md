@@ -3,8 +3,8 @@
 <!-- ★ -->
 
 
-## UPGMA {-}
+## UPGMA  {.unnumbered}
 
 
 
-## Neighbor-joining {-}
+## Neighbor-joining  {.unnumbered}

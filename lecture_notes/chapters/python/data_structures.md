@@ -235,7 +235,7 @@ Can you write some code that produces this matrix?:
  [-4,  0,  0,  0,  0]]
 ```
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 > By now you have learned a lot and the general exercises, which serve to keep it all current, get more complicated. But remember: even though the code may mix lists, for-loops, and functions, the *rules* for lists, for-loops and functions are *not* mixed. The separate simple rules for a list, a for-loop and a function are *still* the same. If you get confused, it is time revisit the sections about each separate topic. You will probably have to do that many times during the course.
 

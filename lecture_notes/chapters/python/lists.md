@@ -2,7 +2,7 @@
 
 *This chapter is about lists and dictionaries that are Python values that can contain other Python values. Lists and dictionaries lets you build relationships between values, which is what data structures represent.*
 
-## Lists {-}
+## Lists  {.unnumbered}
 
 For many kinds of data, the order of things is important. Just like the order of characters is important for the meaning of text in a string, we sometimes we want to specify the order of other things because the relative order of items in the list has some meaning. It could be a grocery list where you have listed the things to buy in the order you get to them in the supermarket. This is where Python lists are useful. When you print a list it nicely shows all the values it contains.
 
@@ -88,7 +88,7 @@ print(x)
 print(my_list)
 ```
 
-## Indexing and slicing lists {-}
+## Indexing and slicing lists  {.unnumbered}
 
 Now you know how to make lists, but to work with the values in lists you must also know how to access the individual values that a list contains. Fortunately, indexing lists works just like indexing strings: Each value in a list is identified by an *index* exactly like each character in a string:
 
@@ -277,7 +277,7 @@ You can produce a string by joining the elements of a list (if all the elements 
 
 Notice how you can join something on an empty string. This is a very useful technique; for example if you want to turn a list of characters into a string.
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 What does this expression reduce to? `'aaaaa'`, `'BaBaBa'`, or `'Banan'`. Make up your mind and and then run the expression to check.
 

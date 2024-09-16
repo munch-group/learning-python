@@ -53,9 +53,9 @@ The project is split into four parts:
 3. Convert counts to frequencies.
 4. Build the data structure representing the codon bias information.
 
-## Read an open reading frame and count its codons {-}
+## Read an open reading frame and count its codons  {.unnumbered}
 
-### Read ORFs from a file {-}
+### Read ORFs from a file  {.unnumbered}
 
 You can use this code to read the ORFs into your script:
 
@@ -74,7 +74,7 @@ Try to print the list to see it. Then pick out the first ORF in the list so you 
 test_orf = orf_list[0]
 ```
 
-### Split the ORF into codons {-}
+### Split the ORF into codons  {.unnumbered}
 
 You need a function that splits the ORF into codons. This one you have already implemented in the exercise about translating DNA -- and if, not here it is in my version to get you started.
 
@@ -88,7 +88,7 @@ def split_codons(orf):
 
 Before you go on, make sure you understand/remember how this function works and what it returns.
 
-### Count codons in an ORF {-}
+### Count codons in an ORF  {.unnumbered}
 Now you need to count the number of times each codon occurs in the ORF.
 
 *Write a function*, `count_codons`, that take one argument:
@@ -125,7 +125,7 @@ should return:
 
 In the function, you should use the `split_codons` function to split the ORF into a list of codons. Then create an empty dictionary that you can populate with counts. You want *all* the possible codons to be in your dictionary. That way, the codons you do *not* find in your ORF will have a count of `0`. In this case, such absence is also valuable information. To achieve this you must start by filling the dictionary with a key for each codon and give each a count of `0`. You can do that by iterating over the keys in the dictionary that maps codons to amino acids. Then you must iterate over all the codons in the list of codons produced by the `split_codons` function and add counts to the dictionary as you go.
 
-## Group codon counts by amino acid {-}
+## Group codon counts by amino acid  {.unnumbered}
 
 Having counted how many times each codon appears in the ORF, you need to group the counted codons by the amino acid they encode. 
 
@@ -185,7 +185,7 @@ grouped_counts[acid][codon] = codon_counts[codon]
 
 Your function should begin by defining an empty dictionary to add to. Then use a for-loop to run through all codon/amino-acid pairs and populate your dictionary of dictionaries.
 
-## Turn counts into frequencies {-}
+## Turn counts into frequencies  {.unnumbered}
 
 Now you know how many times each codon represents a certain amino acid, but we would like to know with which *frequency* a certain codon represents an amino acid. So you need to normalize the counts so they become frequencies. You do that by dividing each codon count by the total number of codons encoding the same amino acid. We split the solution to this problem in two. We first write a helper function that turns codon counts for *one* amino acid into frequencies.
 
@@ -249,7 +249,7 @@ def normalize_grouped_counts(grouped_counts):
 
 Amino acids with no codon counts should *not* be part of the data structure. Remember that in this case `normalize_counts` returns `None`, so you can simply test if the return value from `normalize_counts` is `None`
 
-## Compute the codon usage {-}
+## Compute the codon usage  {.unnumbered}
 
 Now all that remains is to tie together the functions you have written in a final function that generates your big data structure from an ORF:
 

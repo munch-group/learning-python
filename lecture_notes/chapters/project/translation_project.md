@@ -15,7 +15,7 @@ In this project you will need a data structure that pairs each codon to the amin
 
 > It is normally very bad programming style to access variables outside functions in this way because it may have all kinds of unexpected side effects across function calls. So make it a rule for yourself that code *inside* a function should never to access variables *outside* the function. The reason we define `codon_map` globally in this project is to help you understand that when Python cannot find a variable inside a function, it looks outside the function to find it. In this project functions will find `codon_map` in this way. However, as I already said, you should *never* do this yourself. The chance that you make an unexpected mistake is overwhelming. 
 
-## Translating a single codon {-}
+## Translating a single codon  {.unnumbered}
 
 Write a function, `translate_codon` that takes one argument:
 
@@ -51,7 +51,7 @@ Now write the function so it uses the string parameter as a key to look up the c
 
 Before you are completely done you need to make your function handle the situation when the argument to the function is not a key in the `codon_map` dictionary. Use an if-else construct to handle the two cases. The boolean expression must test if the function argument is a key in `codon_map`. Remember that you can use the `in` operator to do this.
 
-## Splitting an open reading frame into codons {-}
+## Splitting an open reading frame into codons  {.unnumbered}
 
 To translate an entire open reading frame into the corresponding amino acid sequence, you need to split the ORF sequence into codons. When we have done that we can translate each codon using the function `translate_codon` you just wrote.
 
@@ -89,7 +89,7 @@ What you want is obviously not every third character. You want three characters.
 
 Now all that remains is to put each codon on a list that you can return from the function. You can define a list before your for-loop so you have a list to add codons to.
 
-## Translating an open reading frame {-}
+## Translating an open reading frame  {.unnumbered}
 
 Now you can use the two functions `split_codons` and `translate_codon` to write a function that translates an ORF into a protein sequence.
 

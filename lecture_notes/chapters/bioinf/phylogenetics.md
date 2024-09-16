@@ -3,4 +3,4 @@
 <!-- ★ -->
 
 
-## Likelihood of a tree {-}
+## Likelihood of a tree  {.unnumbered}

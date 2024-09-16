@@ -11,7 +11,7 @@ On the course page you can download the files you need for this project:
 
 Put the files in a folder dedicated to this project. On most computers you can right-click on the link and choose "Save file as..." or "Download linked file".
 
-## Count the number of bases in your candidate primer {-}
+## Count the number of bases in your candidate primer  {.unnumbered}
 
 Before you can compute the melting temperature, you need to determine how many times each base occurs in the sequence. You can assume that the only characters in the string are A, T, G, and C.
 
@@ -35,7 +35,7 @@ then it should return (not necessarily with key-value pairs in the same order):
 {"A": 1, "C": 0, "G": 2, "T": 1}
 ```
 
-## Compute the melting temperature {-}
+## Compute the melting temperature  {.unnumbered}
 
 Knowing the base composition in your sequence, you can now calculate the melting temperature the double-stranded DNA that forms when your primer pairs up with the sequence to amplify. If the primer has less than 14 bases the formula for calculating melting temperature is:
 
@@ -70,7 +70,7 @@ then it should return:
 ```
 
 
-## Reverse complement the sequence {-}
+## Reverse complement the sequence  {.unnumbered}
 
 It is possible that one part of the primer forms base pairs with another part of the primer to form a hairpin structure. To figure out if this can happen to your primer, you need to be able to find the reverse complement of DNA sequence. The reverse complement of a DNA sequence is one where the sequence of bases is first reversed, and then each base is replaced with its Watson-Crick complementary base.
 
@@ -97,7 +97,7 @@ then it should return:
 <!-- TODO: Add function to test if the primer can form a dimer (interacting with another sequence) -->
 
 
-## Check for hairpins {-}
+## Check for hairpins  {.unnumbered}
 
 You would like to be able to determine if your primer can fold to form a hairpin with some specified minimum number of consequtive base pairs. We assume that hairpin loops are always at least four bases long and that base pairs in the hairpin can only be Watson-Crick basepairs. Here is an example of a hairpin with five basepairs and a loop of four bases (four Cs):
 

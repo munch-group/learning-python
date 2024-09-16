@@ -4,4 +4,4 @@
 
 *This chapter is about  ...*
 
-## A module is a file with code {-}
+## A module is a file with code  {.unnumbered}

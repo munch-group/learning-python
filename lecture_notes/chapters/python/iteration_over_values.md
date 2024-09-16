@@ -2,7 +2,7 @@
 
 *This chapter is about how you repeat the same code for many different values -- and the many reasons why this is useful.*
 
-## The for-loop {-}
+## The for-loop  {.unnumbered}
 
 Programs often need to do repetitive things. Consider this example below where `x` is assigned a value that is then printed:
 

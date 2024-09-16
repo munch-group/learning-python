@@ -1,5 +1,5 @@
 # Finding genes in bacteria ★
 
-## Some background {-}
+## Some background  {.unnumbered}
 
-## Do it yourself:  {-}
+## Do it yourself:   {.unnumbered}

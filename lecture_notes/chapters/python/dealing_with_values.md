@@ -2,7 +2,7 @@
 
 *This chapter is about values and variables, the two most central concepts in programming.*
 
-## Math {-}
+## Math  {.unnumbered}
 
 Much programming is done to compute stuff. In Python the usual math operations are done using these arithmetic operators:
 
@@ -135,7 +135,7 @@ print("The squared length of the hypotenuse is:", 5**2 + 2**2)
 However, we are rarely interested in the *squared* length of the hypotenuse. Can you modify the code you wrote in @sec:pythagoras so you compute $c$ instead of $c^2$? Taking the square root of a number is the same as taking that number and exponentiating it to 0.5, so the square root of $x$ is $x^{0.5}$. Do you know of a Python operator that does exponentiation?
 
 
-## Logic {-}
+## Logic  {.unnumbered}
 
 Now you know how to use the comparison operstors to produce a `True` or `False` value. There are three additional operators that lets you express more elaborate “True/False” statements than with the comparison operators alone. These are the *logical* operators: `and`, `or` and `not`.
 
@@ -239,7 +239,7 @@ If you where surprised what was printed, maybe go back and have a look at @sec:a
 Recall the `in` operator from @sec:in_operator? There is also an operator called `not in`. I guess you can imagine what that tests. Try it out.
 
 
-## Variables {-}
+## Variables  {.unnumbered}
 
 > By now you probably feel the first signs of brain-overload. If you do not take breaks, your brain may overheat and explode - we have seen that happen. One of the nice things about the brain is that it works when you rest. Archiving and understanding a lot of new information takes time, and force-feeding your brain will not help. The last part of this chapter is very important so now might be a good time for a good long break.
 
@@ -332,7 +332,7 @@ NameError: name 'tax_percentage' is not defined
 
 It says that the error is on line 3. Can you figure out what is wrong? Hopefully, you will now appreciate how much attention to detail is required when programming. Every tiny, little symbol or character in your code is *essential*.
 
-## Different types of values {-}
+## Different types of values  {.unnumbered}
 
 By now you probably have a pretty good idea about what a value in Python is. So far you have seen text like `'Banana'`, integers like `7` and numbers with a fractional part like `4.25`.
 
@@ -459,7 +459,7 @@ print(dish_two)
 
 Can you figure out what the special character `\t` represents?
 
-## Mixed exercises {-}
+## Mixed exercises  {.unnumbered}
 
 Each chapter in the book ends with a set of mixed exercises that are ment to give you an opportunity to combine what you have learned so far. In this case, they are meant to train your familiarity with the following topics:
 

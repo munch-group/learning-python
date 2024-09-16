@@ -2,7 +2,7 @@
 
 *Do you know that type you are? Python objects do, and this chapter is about how they know.*
 
-## What defines the type of an object? {-}
+## What defines the type of an object?  {.unnumbered}
 
 By now, you know that Python values are objects and that there are different *types* of objects. Strings have type `str`, integers have type `int` and lists have type `list`, just to mention a few of the ones we know. Remember that you can use the built-in `type` function to find out what type an object is. Try this:
 
@@ -21,7 +21,7 @@ Each object carries its own data: different numbers, different stings etc., but 
 ![Objects and type. Each object carries its own data, but refers to the type for a definition of its methods.](./images/objects_and_type.png){#fig:objects_and_type width=50%}
 
 
-## Making your own objects {-}
+## Making your own objects  {.unnumbered}
 
 Imagine if you could create your own types of objects, carrying a particular kind of data and functionality. "Data" can litterally represent anything. It bioinformatics it could be an open reading frame, a patient profile, or a tree. Fortunately Python lets us do this using something called *classes*. New kinds of objects and the functionality they provide are defined by classes. So by defining a new class you define a new type of object, and the methods you define in that class are available to objects of the type that particular kind (type). 
 

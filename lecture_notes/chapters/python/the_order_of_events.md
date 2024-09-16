@@ -2,7 +2,7 @@
 
 *This chapter is about how Python interprets (or evaluates) the code you write. It has a few fancy long words that may seem foreign to you. Do not let that throw you off. They are all just fancy names for something very simple.*
 
-## Precedence of Operators {-}
+## Precedence of Operators  {.unnumbered}
 
 Fear not. Precedence is just a nasty word for something we have already talked about. Precedence simply specifies that some things are done before other things -- or more correctly, that some operations are performed before others. You already know that multiplication is done before addition. Another way of saying that is that multiplication *takes precedence* over addition. The expression below obviously reduces to 7 in two steps: 
 
@@ -68,7 +68,7 @@ Does this reduce to `True` or `False`?
 ```
 
 
-## Statements and Expressions {-}
+## Statements and Expressions  {.unnumbered}
 
 To be able to talk concisely about programming (and to receive more useful help from your instructors) you need a bit of vocabulary. *Statements* and *expressions* are two such words that you need to know. Distinguishing between statements and expressions will help us talk about the code we write.
 
@@ -106,7 +106,7 @@ print(greeting + 'friend')
 How many statements are there in this piece of code? How many expressions?
 
 
-## Substitution and Reduction {-}
+## Substitution and Reduction  {.unnumbered}
 
 Although *substitution* and *reduction* may not sound like your new best friends, they truly are! If you remember to think about your Python code in terms of substitution and reduction, then programming will make a lot of sense. Understanding and using these simple rules you will allow to read and understand any code. If you do not, you may get by for a while - only to find yourself in big big trouble later when things start to become more complicated. 
 
@@ -213,7 +213,7 @@ x += 1
 Compare the final value of `x` to that in @sec:adding_one. Can you see what `+=` is a short hand for? Nifty, right?
 
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 The following exercises are meant to train your familiarity with the topics we have treated so far -- in this case especially:
 

@@ -1,4 +1,4 @@
-# Installation instructions {-}
+# Installation instructions  {.unnumbered}
 
 <!-- TODO: Figure  out whether to tell students from Gregers class to call their environment something different, og whether the environment for both Gregers and Ditlevs classes should both be called "pymol". -->
 
@@ -7,13 +7,13 @@
 
 In this course, we use a distribution of Python called *Anaconda*. Anaconda is simply an easy way of installing Python on and PyMol.
 
-## Install Python {-}
+## Install Python  {.unnumbered}
 
 To install Anaconda, head to [this](https://www.anaconda.com/download) site. Click the big green Download button.
 
 When the download has completed, you should follow the platform specific instructions. It is important accept the default installation settings.
 
-## Install PyMol {-}
+## Install PyMol  {.unnumbered}
 
 If you are on a Windows machine, find the program called "Anaconda Powershell Prompt". If you are on a Mac, find the program called "Terminal". These are both programs where you can type commands to run other programs. When you open *Anaconda Powershell Prompt* you should see something like @fig:prompt. The OSX Terminal looks like @fig:terminal, possibly with a different background color.
 
@@ -66,7 +66,7 @@ Executing transaction: done
 #     $ conda deactivate
 ```
 
-## Start PyMol {-}
+## Start PyMol  {.unnumbered}
 
 From now on, you can start PyMol by typing these commands in Anaconda Powershell Prompt if you are on windows, or Terminal if you are on Mac:
 

@@ -2,7 +2,7 @@
 
 *This chapter is about how you can organize your code into chunks that you can call upon to perform a well defined tasks in your program.*
 
-## Functions {-}
+## Functions  {.unnumbered}
 
 Buckle down for the most powerful and useful thing in programming. Functions! Functions serve as mini-programs that perform small well-defined tasks in your program. 
 
@@ -186,7 +186,7 @@ print(lucky_number() + lucky_number())
 ```        
 
 
-## Functions can take arguments {-}
+## Functions can take arguments  {.unnumbered}
 
 The functions we have written so far are not very flexible because they return the same thing every time they are called. Now write and run this beauty:
 
@@ -259,7 +259,7 @@ print(nr_apples, "apples is", assess_number(nr_apples))
 What happens when x is 2, 3, 50, 200? Think about it first.
 
 
-## Functions and variables {-}
+## Functions and variables  {.unnumbered}
 
 A function call is temporary little world only exists from the function is *called* and until it *returns* its value. It did not exist *before* the function was called and it does not exist *after* the function returns its value. By necessity, the variables defined in your function are also temporary. 
 
@@ -332,7 +332,7 @@ print(result)
 Do *all* substations and reductions for each line of code from top to bottom. Keep the sequence of events in mind and remember that a function definition is merely a template describing a mini-world that is created anew everytime the function is called.
 
 
-## Builtin functions {-}
+## Builtin functions  {.unnumbered}
 
 So far we have only talked about functions you write yourself, but Python also has built-in functions that are already available to you. They work just like a function you would write yourself. You already know the `print` function quite well, and that is an example of a function that prints something but returns `None`. There are many other useful builtin function, but for now, I will just tell you about another two: Those are `len` and `type`. 
 
@@ -371,7 +371,7 @@ print(print("Hello world"))
 ```
 
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 The following exercises treat the areas we have worked on in this and previous chapters. They are meant to train your familiarity with if-statements and functions. Remember that the purpose of the exercises is not to answer the questions but to train the chain of thought that *allows* you to answer them. Play around with the code for each example and see what happens if you change it a bit.
 
@@ -568,7 +568,7 @@ and = 2
 ```
 
 
-### FAQ - Frequently Asked Questions {-}
+### FAQ - Frequently Asked Questions  {.unnumbered}
 
 | **Q:** Can function names be anything?
 | **A:** Just about. The rules that apply to variable names also apply to function names. Good function names are lower case with  underscores (`_`) to separate words, like in the examples above.

@@ -227,9 +227,9 @@ Enrichment Analysis: Perform enrichment analysis to identify functional themes w
 Integration: Combine STRING data with other omics data to gain a holistic understanding of cellular processes.
 STRING is a versatile tool for researchers investigating protein interactions, cellular pathways, and systems-level biology. Its user-friendly interface, comprehensive data sources, and advanced analysis features make it an essential resource for studying the complex molecular networks that govern biological functions.
 
-## Sequence databases {-}
+## Sequence databases  {.unnumbered}
 
-## Genome browsers {-}
+## Genome browsers  {.unnumbered}
 
 The UCSC Genome Browser is a widely used and comprehensive online tool for visualizing and exploring genomic information from a wide range of organisms. Developed and maintained by the University of California, Santa Cruz (UCSC), this browser offers a user-friendly interface to navigate and analyze genomes, gene structures, regulatory elements, genetic variations, and other genomic features. Here's an overview of the UCSC Genome Browser and its key features:
 
@@ -272,7 +272,7 @@ Analyze and Download: Analyze gene structures, regulatory elements, and genetic 
 The UCSC Genome Browser serves as an invaluable resource for researchers, educators, and students seeking to understand and analyze genomic information across various organisms. Its intuitive interface, extensive collection of annotation tracks, and powerful visualization capabilities make it a cornerstone tool in the field of genomics.
 
 
-## list of databases {-}
+## list of databases  {.unnumbered}
 
 GenBank
 UniProt
@@ -379,8 +379,8 @@ BioCyc
 
 
 
-## Knowledege data bases {-}
+## Knowledege data bases  {.unnumbered}
 
-## Do it yourself:  {-}
+## Do it yourself:   {.unnumbered}
 
 

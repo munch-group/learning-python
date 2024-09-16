@@ -1,9 +1,9 @@
 # Genome-wide association studies
 <!-- ★ -->
 
-## Genetic disease association {-}
+## Genetic disease association  {.unnumbered}
 
-## Common disease common variant hypothesis {-}
+## Common disease common variant hypothesis  {.unnumbered}
 
 The common disease common variant (CDCV) hypothesis is a concept in human genetics that seeks to explain the genetic basis of common complex diseases by focusing on the prevalence of common genetic variants in the population. This hypothesis contrasts with the "rare variant" hypothesis, which suggests that rare genetic variants with larger effects play a significant role in disease susceptibility.
 
@@ -33,9 +33,9 @@ While the CDCV hypothesis has provided valuable insights into the genetic basis 
 
 In recent years, advancements in sequencing technologies and analysis methods have allowed researchers to explore the role of rare variants in disease susceptibility, blurring the distinction between the CDCV hypothesis and the "rare variant" hypothesis. It's increasingly recognized that both common and rare variants contribute to the overall genetic architecture of complex diseases, and a comprehensive understanding of disease risk requires considering both types of variants.
 
-## Testing association {-}
+## Testing association  {.unnumbered}
 
-## Genome-wide association {-}
+## Genome-wide association  {.unnumbered}
 
 Introduction:
 
@@ -83,7 +83,7 @@ Linkage Disequilibrium and Fine-Mapping:
 Genetic variants in close proximity on the same chromosome often exhibit linkage disequilibrium (LD), meaning they are inherited together more frequently than expected by chance. This property allows researchers to pinpoint the region of the genome where the causal variant likely resides. Fine-mapping techniques aim to narrow down the location of the true causal variant within an associated region.
 
 In conclusion, GWAS represent a powerful approach to uncovering the genetic factors influencing traits and diseases. By combining advanced genotyping technologies, robust statistical methods, and meticulous study designs, researchers can identify key genetic variants associated with various conditions, shedding light on the underlying biological mechanisms and paving the way for more personalized approaches to healthcare and disease prevention.
-## Do it yourself: Exploring an association with Parkinsons disease {-}
+## Do it yourself: Exploring an association with Parkinsons disease  {.unnumbered}
 
 The purpose of this exercise is to expose you to the different kinds of information that are stored in databases relevant to bioinformatics. It takes experience and skill to navigate the user interface of these databases. Here you will see a few of the important ones, but there are many more. I have put a list at the end of this exercise with some additional relevant ones. Browse them at your harts content.
 

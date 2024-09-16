@@ -2,7 +2,7 @@
 
 *This chapter is about how you figure out if the code you wrote actually solves the problem in the way you intended. You will be surprised how often that is not the case -- even for seasoned programmers.*
 
-## Why test your code? {-}
+## Why test your code?  {.unnumbered}
 
 There are tons of reasons why you should test your code. Here are what I think are the two most important ones:
 
@@ -11,7 +11,7 @@ There are tons of reasons why you should test your code. Here are what I think a
 
 Testing of code is a *big* thing in programming. Professional consistently test their code. In time you will too, but in this course, you will only do the very basic testing yourself. Instead, you will have access to readymade testing suites made especially for each of your programming projects.
 
-## Basic testing {-}
+## Basic testing  {.unnumbered}
 
 Say that you are asked to make a function that takes a string argument and returns `True` if that string is a palindrome and `False` otherwise (hypothetical example). Then you start thinking about which strings should make the function should return `True` and which should return `False`. Once you have defined you `is_palindrome` function you can set up some fairly obvious tests like this:
 
@@ -31,7 +31,7 @@ print(is_palindome('AA') == True)
 print(is_palindome('A') == True) # single char
 ```
 
-## The project testing utility {-}
+## The project testing utility  {.unnumbered}
 
 To keep you focused on the programming part, each of the programming projects that you will do in this course comes with a ready-made suite of tests of the functions you are asked to implement. So for each function, you can run tests to make sure it implements the behaviour it is supposed to.
 

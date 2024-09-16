@@ -2,9 +2,9 @@
 # Protein substitution matrices
 <!-- ★ -->
 
-## Scoring protein alignments {-}
+## Scoring protein alignments  {.unnumbered}
 
-## PAM matrices {-}
+## PAM matrices  {.unnumbered}
 
 The PAM (Point Accepted Mutation) matrices are a family of substitution matrices used in bioinformatics for comparing protein sequences. PAM matrices are derived from an evolutionary model that assumes a specific rate of amino acid substitution over time. The number in the PAM matrix represents the fraction of accepted mutations (amino acid substitutions) at a specific position over a certain evolutionary distance. Here's how to compute a PAM120 substitution matrix:
 
@@ -40,7 +40,7 @@ Present the calculated values in a matrix format, where rows and columns corresp
 
 It's important to note that computing PAM matrices requires a deep understanding of evolutionary models, bioinformatics algorithms, and statistical concepts. PAM matrices are typically provided as precomputed matrices for various evolutionary distances, and their calculation involves complex mathematics. Therefore, most bioinformatics applications use precomputed PAM matrices rather than attempting to compute them from scratch.
 
-## BLOSUM matrices {-}
+## BLOSUM matrices  {.unnumbered}
 
 The BLOSUM (BLOcks SUbstitution Matrix) series of substitution matrices are widely used in bioinformatics for comparing protein sequences. BLOSUM matrices are derived from a set of aligned protein sequences and provide substitution scores that reflect the observed frequencies of substitutions between different amino acids. Here's how to compute a BLOSUM62 substitution matrix:
 

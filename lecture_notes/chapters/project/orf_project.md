@@ -28,9 +28,9 @@ Start by reading through the exercise before you do anything else. That way you 
 
 ![](./images/orf_overview.jpeg)
 
-## Finding Open Reading Frames {-}
+## Finding Open Reading Frames  {.unnumbered}
 
-### Find the start positions of ORFs in a DNA sequence {-}
+### Find the start positions of ORFs in a DNA sequence  {.unnumbered}
 
 The first task is to write a function that finds all the possible positions where an ORF can begin.
 
@@ -76,7 +76,7 @@ Then try and make your function print `i` only when `i` is the first base of a s
 
 Finally, modify the function so all the relevant values of `i` are collected in a list using the same technique as in the `split_codons(orf)` function, and then return this list from the function.
 
-### Finding the next occurrence of some codon in an ORF {-}
+### Finding the next occurrence of some codon in an ORF  {.unnumbered}
 
 Now that you can find where the ORFs begin in our sequence you must also be able to identify where each of these end. As you know, an ORF ends at any of three different stop codons in the same reading frame as the start codon. So, starting at the start codon of the ORF, we need to be able to find the next occurrence of some specific codon. I.e. you should look at all codons after the start codon and find the first occurrence of some specified codon. If the function does not find that codon in the string it should return `None`.
 
@@ -116,7 +116,7 @@ When you have that working, use the slicing technique to instead print the codon
 
 Finally, add an if-statement that tests if each codon is equal to `codon`. When this is true, the function should return the value of `idx`.
 
-### Finding the first stop codon in an ORF {-}
+### Finding the first stop codon in an ORF  {.unnumbered}
 
 Now that you can find the next occurrence of any codon, you are well set up to write a function that finds the index for the beginning of the next in-frame *stop codon* in an ORF.
 
@@ -149,7 +149,7 @@ Here is some inspiration:
 5. If you do, you should return the smallest index in the list. I.e  the ones closest to the start codon.
 6. If you did not find any stop codons the function must return `None` to indicate this.
 
-### Finding ORFs {-}
+### Finding ORFs  {.unnumbered}
 
 Now you can write a function that uses `find_start_positions` and `find_next_stop_codon` to extract the start and end indexes of each ORF in a genomic sequence.
 
@@ -190,13 +190,13 @@ orf_coordinate_list.append([start, stop])
 
 Test your function. Chances are that some of the end positions you get are None. This is because some of the start codons were not followed by an in-frame stop codon. Add an if-statement to your function that controls that only start-stop pairs with a valid stop coordinate are added to the list of results.
 
-## Translation of open reading frames {-}
+## Translation of open reading frames  {.unnumbered}
 
 We need to translate the reading frames we find into the proteins they may encode. So why not use the code you already wrote in the programming project where you translated open frames? Copy the content of `translationproject.py` into `orfproject.py`. Now you can use the function `translate_orf` to translate your ORFs.
 
-## Put everything together {-}
+## Put everything together  {.unnumbered}
 
-### Read in genomic sequences {-}
+### Read in genomic sequences  {.unnumbered}
 
 The file `e_coli_O157_H157_str_Sakai.fasta` contains the genome that we want to analyze to find open reading frames. This is an especially nasty strain of *Escherichia coli* O157:H7 isolated after a [massive outbreak](https://www.ncbi.nlm.nih.gov/pubmed/10522649) of infection in school children in Sakai City, Japan, associated with consumption of white radish sprouts.
 
@@ -247,7 +247,7 @@ The function should call `find_orfs` to get the list of start-end pairs. For eac
 
 **Hint:** To check your result note that all returned sequences should start with a start codon `'M'`, end with a stop codon `'*'` and contain no stop codons in the middle.
 
-### On your own {-}
+### On your own  {.unnumbered}
 
 This is where this project ends, but *you* can continue if you like. Given a long list of candidate proteins of all sizes, what would you do to narrow down your prediction to a smaller set of very likely genes? If you have some ideas, then try them out.
 

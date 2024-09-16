@@ -2,7 +2,7 @@
 
 *A birds eye view of Biopython to give you an impression of what you can do if you know just a little bit about modules classes*
 
-## The Seq class {-}
+## The Seq class  {.unnumbered}
 
 
-## Reading and writing sequence formats {-}
+## Reading and writing sequence formats  {.unnumbered}

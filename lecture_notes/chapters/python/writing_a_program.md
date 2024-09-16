@@ -2,7 +2,7 @@
 
 *Lets get you started...*
 
-## Hello World {-}
+## Hello World  {.unnumbered}
 
 Dive in and make your first program. Begin by creating a new file in your editor (*VScode*) and save it as `hello.py`. The `.py` suffix tells your editor that this file contains Python code. As you will see, this makes your life a whole lot easier. Such a file with Python code is usually called a *script*, but we can also call it a program.
 
@@ -75,7 +75,7 @@ Hello Sarah!
 #### Exercise
 Add more lines of code to your program to make it print something else. Can you make your program print the same thing ten times?
 
-## Error Messages {-}
+## Error Messages  {.unnumbered}
 
 Did you get everything just right with your first program or did you get error messages when you executed your code with `python`? Maybe you wrote the following code (adding an extra closing parenthesis):
 
@@ -118,7 +118,7 @@ The `^` character tells you when your code stopped making sense to Python. Some 
 Try to make other kinds of errors. Which error messages do you see? Do you see the same error message every time, or are they different? Try googling the error messages you get. Can you figure out why the change you made broke the program? How many different error messages can you produce?
 
 
-## Strings {-}
+## Strings  {.unnumbered}
 
 In programs, text values are called *strings*, and you have already used strings a lot in your first program. A string is simply a piece of text, but we call it a string because it is a "string of characters". In Python, we represent a string like this:
 
@@ -155,7 +155,7 @@ SyntaxError: EOL while scanning string literal
 
 It is Python's way of saying: "I got to the end of the line (EOL) without finding an matching end quote".
 
-## Comments {-}
+## Comments  {.unnumbered}
 You have already learnt that Python reads and executes one line of code at a time until your program has no more lines of code.
 
 However, we can make a line invisible to Python by putting a `#` symbol in front of it, like this:

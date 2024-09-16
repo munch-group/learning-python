@@ -59,7 +59,7 @@ Here is an overview of the functions you will write in each part of the project 
 
 Make sure you read the entire exercise and understand what you are supposed to do before you begin!
 
-## Read and analyze the sequencing reads {-}
+## Read and analyze the sequencing reads  {.unnumbered}
 
 The first task is to read and parse the input data. The sequence reads for the mini-assembly are in the file `sequencing_reads.txt`. The first two lines of the file look like this:
 
@@ -70,7 +70,7 @@ Read2 CTTTACCCGGAAGAGCGGGACGCTGCCCTGCGCGATTCCAGGCTCCCCACGGG
 
 Each line represents a read. The first field on each line is the name of the read and the second field is the read sequence itself. So for the first line `Read1` is the name and `ATGCG...` is the sequence.
 
-### Read the sequencing reads into your program {-}
+### Read the sequencing reads into your program  {.unnumbered}
 
 *Write a function*, `read_data`, that takes one argument:
 
@@ -113,7 +113,7 @@ def read_data(file_name):
 
 The `line` variable in the for loop holds each line in the file including the `\n` newline character at the end. To split each line into the name of the read and the read sequence, you can use the `split` method of strings. You can see the documentation for that method by typing `pydoc str.split` in your terminal.
 
-### Compute the mean length of reads {-}
+### Compute the mean length of reads  {.unnumbered}
 
 Having written that function we would like to get some idea about how long the reads are. More often than not there are too many reads to look at them manually, so we need to make a function that computes the mean length of the reads.
 
@@ -142,11 +142,11 @@ def mean_length(reads):
 
 Remember that you can use the `len` function to find the length of a read.
 
-## Compute overlaps between reads {-}
+## Compute overlaps between reads  {.unnumbered}
 
 Next thing is to figure out which reads overlap each other. To do that we need a function that takes two read sequences and computes their overlap. Remember that in the input data none of the reads are completely nested in another read.
 
-### Compute the overlap between two reads {-}
+### Compute the overlap between two reads  {.unnumbered}
 
 We know that there are no sequencing errors, so in the overlap, the sequence match will be perfect. To compute the overlap between the 3' (right) end of the left read with the 5' (left) end of the right read, you need to loop over all possible overlaps honoring that one sequence is the left one and the other is the right one. In the for loop, start with the largest possible overlap ( `min(len(left), len(right))`) and evaluate smaller and smaller overlaps until you find an exact match.
 
@@ -206,7 +206,7 @@ def get_all_overlaps(reads):
     return overlaps
  -->
 
-### Compute all read overlaps {-}
+### Compute all read overlaps  {.unnumbered}
 
 When you have written `get_overlap` you can use it to evaluate the overlap between all pairs of reads in both left-right and right-left orientations.
 
@@ -237,7 +237,7 @@ should return the following dictionary of dictionaries (but not necessarily with
 
 Hint: You can use the `get_overlap` function you just made to find the overlap between a pair of reads. To generate all combinations of reads you need two for-loops. One looping over reads in left positions and another (inside the first one) looping over reads in right position. Remember that we do *not* want the overlap of a read to itself, so there should be an if-statement in the checking of the left and right reads are the same.
 
-### Print overlaps as a nice table {-}
+### Print overlaps as a nice table  {.unnumbered}
 
 The dictionary returned by `get_all_overlaps` is a little messy to look at. We want to print it in a nice matrix-like format so we can better see which pairs overlap in what orientations.
 
@@ -284,11 +284,11 @@ def pretty_print(d):
 
 Make sure you understand how it works. You can look up in the documentation what `"{: >6}".format(i)` does.
 
-## Find the right order of reads {-}
+## Find the right order of reads  {.unnumbered}
 
 Now that we know how the reads overlap we can chain them together pair by pair from left to right to get the order in which they represent the genomic sequence. To do this we take the first (left-most) read and identify which read has the largest overlap to its right end. Then we take that read and find the read with the largest overlap to the right end of that - and so on until we reach the rightmost (last) read.
 
-### Find the first read {-}
+### Find the first read  {.unnumbered}
 
 The first thing you need to do is to identify the first (leftmost) read so we know where to start. This read is identified as the one that has no significant (>2) overlaps to its left end (it only has a good overlap when positioned to the left of other reads). In the example output from `pretty_print` above the first read would be read `'Read4'` because the `'Read4'` column has no significant overlaps (no one larger than two).
 
@@ -339,7 +339,7 @@ should return
 'Read4'
 ```
 
-### Find the order of reads {-}
+### Find the order of reads  {.unnumbered}
 
 Now that we have the first read we can find the correct ordering of reads. We want a list of the read names in the right order.
 
@@ -378,11 +378,11 @@ should return:
 
 Make sure you understand why this is the right list of read names before you try to implement the function.
 
-## Reconstruct the genomic sequence {-}
+## Reconstruct the genomic sequence  {.unnumbered}
 
 Now that you have the number of overlapping bases between reads and the correct order of the reads you can reconstruct the genomic sequence.
 
-### Reconstruct the genomic sequence from the reads {-}
+### Reconstruct the genomic sequence from the reads  {.unnumbered}
 
 *Write a function*, `reconstruct_sequence`, that takes three arguments:
 
@@ -410,7 +410,7 @@ CGTCTTCAGTAGAAAATTGTTTTTTTCTTCCAAGAGGTCGGAGTCGTGAACACATCAGT
 
 Hint: iterate over the reads in order and use the overlap information to extract and join the appropriate parts of the reads.
 
-### Putting the whole thing together {-}
+### Putting the whole thing together  {.unnumbered}
 
 Now that you have written functions to take care of each step you can write one last function that uses them to do the entire assembly.
 

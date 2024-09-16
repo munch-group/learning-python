@@ -1,7 +1,7 @@
 
 # Course tools
 
-## Wax on, wax off {-}
+## Wax on, wax off  {.unnumbered}
 
 > Mr. Miyagi: First, wash all car. Then wax. Wax on...
 > 
@@ -55,7 +55,7 @@ Your task is to put them in the right order so that the original expression is a
 Now, you repeat this process until the order is correct (the program will let you know when it is). The fewer lines you grab to produce the right order, the more points you earn. Problems with longer lists of expressions also earn you more points. As problems become harder and include more aspects of Python, solving them also awards more points. Each week has a score goal to guide your effort. Reaching this goal ensures that you practice as much as you should. Practicing a bit every day daily is more effective than practicing a lot a few days a week. To provide an incentive, the points you earn slowly expire, so the easiest way to maintain your score is to practice a bit every day.
 
 
-## A helping hand {-}
+## A helping hand  {.unnumbered}
 
 Using the `myiagi`, you train your ability to read and understand Python expressions. Seeing a similar breakdown of a Python expression in your code may also be helpful. For that purpose, I have written another tool called `print-steps`. Say you have some code like the one below and need clarification on how the single value assigned to z is produced (here, you are probably not).
 

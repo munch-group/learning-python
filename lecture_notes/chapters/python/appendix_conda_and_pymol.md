@@ -8,7 +8,7 @@ In bioinformatics, we install packages and programs so we can use them in our an
 
 The small worlds that Conda creates are called "environments". You can create as many environments as you like, and then use each one for a separate bioinformatics project, a course, a bachelor project, or whatever you would like to insulate from everything else. Conda also downloads and installs the packages for you and it makes sure that the software packages you install in each environment are compatible. It even makes sure that packages needed by packages (dependencies) are also installed. Conda is truly awesome.
 
-## Creating an environment for BSF {-}
+## Creating an environment for BSF  {.unnumbered}
 
 When you install Anaconda, Conda makes a single base environment for you. It is called "base" and this is why it says "(base)" on your terminal.
 
@@ -59,7 +59,7 @@ conda deactivate
 
 Notice how it now again says "(base)" on your command prompt. That is because you are back in your base environment. Try to type `pymol` (and hit enter), you terminal will tell you that it could not find anything called `pymol`. This is the way it should be. That is because PyMols is installed in the BSF environment, *not* in the base environment. It illustrates how the base environment is entirely separate from the BSF environment you just made.
 
-## Starting PyMol {-}
+## Starting PyMol  {.unnumbered}
 
 From now on, you can start PyMol by typing these commands into the terminal (Anaconda Powershell Prompt on Windows):
 

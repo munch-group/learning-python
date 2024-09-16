@@ -2,7 +2,7 @@
 
 *This chapter introduces the notion of an object, one of the most central aspects of Python. Once you get catch your breath, you will love that all Python values are objects.*
 
-## Methods {-}
+## Methods  {.unnumbered}
 
 In Python, a value like an integer or string, not only holds data. It is also packaged with a lot of useful functionality relevant to the particular *type* of value. When a value is packaged with such relevant functionality and meta information, programmers call it an *object* - and in Python *all* values are objects.
 
@@ -80,7 +80,7 @@ and this
 
 What do the methods do and what do they return?
 
-## Using the Python documentation {-}
+## Using the Python documentation  {.unnumbered}
 
 Now that you are well underway to becoming a programmer, you should know your way around the [Python documentation](https://docs.python.org/3). Especially the part called the [Python standard library](https://docs.python.org/3/library). There is a *lot* of details in there that we do not cover in this course. These are mainly are tools and techniques that for writing more efficient, extensible, robust and flexible code. The parts we cover in this course are is the minimal set that will allow you to write a program that can do *anything*.
 
@@ -98,7 +98,7 @@ You can look it up in the [Python documentation](https://docs.python.org/3/libra
 Browse through all the [string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) to get am impression of all the functionality that is packaged with string objects. 
 
 
-## String formatting {-}
+## String formatting  {.unnumbered}
 
 You have already tried string formatting in @sec:first_format_exe. String formatting is a simple but powerful technique that lets you generate pretty strings from pre-computed values. You may have noticed that every time we print a floating-point number, a lot of decimals are shown. Not very pretty if you are only interested in two decimals anyway. To format a string, you use the `format` method (surprise). In its simplest use, `format` replaces occurrences of `{}` with the arguments that is passed to it - like this:
 
@@ -215,7 +215,7 @@ print(n1.__add__(n2))
 This is one of many examples of how objects allow Python to implement functionality that fits each particular type of value. This was just to show how Python does this. Just like yellow and black stripes in nature means "don't touch me!" -- double underscores (`__`) is Python's way of saying "do not use this!". You are supposed to use the `+` operator not the `__add__` method.
 
 
-## Indexing and slicing strings {-}
+## Indexing and slicing strings  {.unnumbered}
 
 Another feature of string objects is that they allow you to extract individual parts of the string.
 
@@ -366,7 +366,7 @@ print(s[::-1])
 ```
 
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 #### Exercise
 Will this print `Bananas rule!`? Do all the substitutions and reductions. 

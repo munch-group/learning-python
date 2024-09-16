@@ -2,15 +2,15 @@
 # Pairwise alignment
 <!-- ★ -->
 
-## An optimal alignment {-}
+## An optimal alignment  {.unnumbered}
 
 - What is an alignment?
 - What do we want it to represent?
 - Scoring an alignment
 
-## A recursive solution {-}
+## A recursive solution  {.unnumbered}
 
-## Global pairwise alignment {-}
+## Global pairwise alignment  {.unnumbered}
 
 If i give you the following three optimal alignments: n-1, m-1; n, m-1; n-1, m can you the. Give me the optimal alignment of n,m?
 
@@ -49,9 +49,9 @@ The Needleman-Wunsch algorithm has a time and space complexity of O(M * N), wher
 
 In summary, the Needleman-Wunsch algorithm is a foundational tool for performing global sequence alignment, allowing researchers to compare and analyze biological sequences to uncover evolutionary relationships, genetic variations, and functional similarities between genes, proteins, and other biological molecules.
 
-## Local pairwise alignment {-}
+## Local pairwise alignment  {.unnumbered}
 
-## Alignment significance {-}
+## Alignment significance  {.unnumbered}
 
-## Do it yourself:  {-}
+## Do it yourself:   {.unnumbered}
 

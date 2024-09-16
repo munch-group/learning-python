@@ -3,10 +3,10 @@
 <!-- ★ -->
 
 
-## Jukes-Cantor model {-}
+## Jukes-Cantor model  {.unnumbered}
 
 
-## Kimura two-parameter model {-}
+## Kimura two-parameter model  {.unnumbered}
 
 
-## GTRM {-}
+## GTRM  {.unnumbered}

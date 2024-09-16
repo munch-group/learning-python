@@ -3,17 +3,17 @@
 
 *This chapter serves to get the practicalities out of the way so you can start programming. Read the whole chapter once carefully before you install anything*
 
-## Install Python {-}
+## Install Python  {.unnumbered}
 
 In this course, we use the Python programming language, and we need the Python program to run the code we will  write. We will use a distribution of Python called *Anaconda*. Anaconda is the easiest way of installing Python on Windows, macOS (Mac), and Linux. To install Anaconda, head to [this](https://www.anaconda.com/products/individual) site. Click "Download". When the download has completed, double-click the file you just downloaded and follow the instructions on the screen. It is important that you accept all the suggested installation settings.
 
-## The text editor {-}
+## The text editor  {.unnumbered}
 
 You will also need a *text editor*. A text editor is where you write your Python code. For this course, we will use *Visual Studio Code* - or *VScode* for short. You can download it from [this page](https://code.visualstudio.com/download). If you open *VScode*, you should see something like [@fig:figure0]. You may wonder why we cannot just Word to create and edit files with programming code. The reason is that a text editor made for programming, such as VScode, only saves the actual characters you type. So unlike, Word, it does not silently save all kinds of formatting, like margins, bold face text, headers, etc. With VScode, what you type is *exactly* what ends up in the file when you save it. In addition, where Word is made for prose, VScode is made for programming and has a lot of features that you will make your programming life easier. 
 
 ![Visual Studio Code (VScode)](./images/vscode.png){#fig:figure0 width=80%}
 
-## The terminal {-}
+## The terminal  {.unnumbered}
 
 The last thing you need is a tool to make Python run the programs you write. Fortunately, that is already installed. On **OSX** this is an application called *Terminal*. You can find it by typing "Terminal" in Spotlight Search. When you start you will see something like @fig:terminal. You may be presented with the following text:
 
@@ -169,7 +169,7 @@ Hopefully, you are now able to use navigate your folders and see what is in them
 | Go to subfolder "notes" | `cd notes` | `cd notes` |
 | Go to parent folder | `cd ..` | `cd ..` | -->
 
-## Create a conda envirionment for the course {-}
+## Create a conda envirionment for the course  {.unnumbered}
 
 In bioinformatics, we install packages and programs so we can use them in our analyses and pipelines. Sometimes, however, the versions of packages you need for one project conflicts with the versions you need for other projects that you work on in parallel. Such conflicts seem like an unsolvable problem. Would it not be fantastic if you could create a small insulated world for each project, which then only contained the packages you needed for that particular project?. If each project had its own isolated world, then there would be no such version conflicts. Fortunately, there is a tool that lets you do just that, and its name is Conda.
 
@@ -201,7 +201,7 @@ conda deactivate
 Notice how it now again says "(base)" on your command prompt. That is because you are back in your base environment. Every time you start a new terminal window, you will need to run `conda activate bioprog` to activate the environment to be able to access the course tools.
 
 
-## You are all set {-}
+## You are all set  {.unnumbered}
 
 Well done! You are all set to start the course. Have a cup of coffee and look forward to your first program. While you sip your coffee, I need to you take an oath (one of three you will take during this course). Raise your right hand! (put the coffee in your left).
 

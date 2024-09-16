@@ -1,4 +1,4 @@
 # Sequence annotation
 <!-- ★ -->
 
-## What it is {-}
+## What it is  {.unnumbered}

@@ -10,13 +10,13 @@
 
 Equation [@eq:some_label] -->
 
-## Recursion {-}
+## Recursion  {.unnumbered}
 
 PLACEHOLDER PAGE
 
 \pagebreak
 
-## Divide and conquer {-}
+## Divide and conquer  {.unnumbered}
 
 PLACEHOLDER PAGE
 

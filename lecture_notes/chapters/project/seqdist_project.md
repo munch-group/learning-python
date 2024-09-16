@@ -9,7 +9,7 @@ On the course page you can download the files you need for this project:
 
 Put the files in a folder dedicated to this project. On most computers you can right-click on the link and choose "Save file as..." or "Download linked file".
 
-## Measuring sequence distance {-}
+## Measuring sequence distance  {.unnumbered}
 
 Clustering is based on the distances between all pairs of sequences. So before you can build your tree you must compute those distances and fill them into a table like that in the book. Here we break that task into three parts:
 
@@ -17,7 +17,7 @@ Clustering is based on the distances between all pairs of sequences. So before y
 2. Make the Jukes-Cantor correction
 3. Generate a (lower triangular) distance matrix
 
-### Compare two sequences {-}
+### Compare two sequences  {.unnumbered}
 
 The first function you must write is one that finds the proportion of different bases between two sequences:
 
@@ -42,7 +42,7 @@ should return
 0.25
 ```
 
-### Make the Jukes-Cantor correction {-}
+### Make the Jukes-Cantor correction  {.unnumbered}
 
 To take into account that some substitutions may fall on top of others you must do the Jukes-Cantor correction you read about in the book. The formula is like this:
 
@@ -76,7 +76,7 @@ should return
 0.10732563273050497
 ```
 
-## Lower triangular distance matrices {-}
+## Lower triangular distance matrices  {.unnumbered}
 
 This project is all about distances between pairs (of sequences), and what would be more natural than to put all the distances in a matrix so you can look up the distance between the sequences with indexes `i` and `j` as the matrix element in row `i` and column `j`. You already know how matrices can be represented by lists of lists. E.g. a matrix like this:
 
@@ -137,7 +137,7 @@ Say your sequences had names: A, B, C, D, E, and F, then the above data structur
 
 There is only one drawback with this reduced representation of the full square matrix: In the full matrix you can get the distance between the sequences with indexes `i` and `j` as *both* `matrix[i][j]` and `matrix[j][i]` because the part above and below the diagonal are the same. Using the lower triangular matrix, you must always use the *largest* index first. Using the smaller one first will give you an `IndexError`. So if you want the distance between sequences with index `2` and `4`, you must use the bigger index first (as the row index): `matrix[4][2]`.
 
-## Generate a distance matrix {-}
+## Generate a distance matrix  {.unnumbered}
 
 *Write a function*, `lower_trian_matrix`, which takes one argument:
 
@@ -170,7 +170,7 @@ You should use `sequence_difference` to compute the proportion of differences be
 
 Start by figuring out what pairs of indexes you need and then figure out how you can make two nested for-loops generate them. Remember that the length of each sublist is equal to its index in the big list.
 
-## Clustering {-}
+## Clustering  {.unnumbered}
 
 Now that you have the distance matrix you are ready for the actual clustering. There are three steps to that:
 
@@ -180,7 +180,7 @@ Now that you have the distance matrix you are ready for the actual clustering. T
 
 Depending on how you choose which pair to join and how you compute the new distances for the joined pair determines what kind of clustering you do. Here we will try a centroid-like linkage called WPGMA. It does not work as well as UPGMA but is a bit easier to implement (you can look up WPGMA on wikipedia).
 
-### Find the pair to join {-}
+### Find the pair to join  {.unnumbered}
 
 Here you want to be able to find the pair with the smallest distance. To do that we identify the cell in the matrix with the smallest value:
 
@@ -206,7 +206,7 @@ Should return
 [1, 0]
 ```
 
-### Decide on a linkage method {-}
+### Decide on a linkage method  {.unnumbered}
 
 You also need a function that computes a new distance from two original ones using the the centroid-like linkage we have decided to use.
 
@@ -231,13 +231,13 @@ Should return:
 0.3
 ```
 
-## Perform the clustering {-}
+## Perform the clustering  {.unnumbered}
 
 The three functions that do the actual clustering are complicated but you should be able to follow what they do. The first one updates the table to reflect that you join a pair. The second updates the list of sequence names (labels) to reflect that you joined a pair. The last one uses the two other functions to cluster pair until there is only one cluster left.
 
 Your task is to carefully type the code for each function and to understand what every line of code does.
 
-### Updating labels {-}
+### Updating labels  {.unnumbered}
 
 The function `update_labels` takes three arguments:
 
@@ -270,7 +270,7 @@ def update_labels(labels, i, j):
 ```
 
 
-### Updating the matrix {-}
+### Updating the matrix  {.unnumbered}
 
 The function `update_table` takes three arguments:
 
@@ -320,7 +320,7 @@ def update_table(table, a, b):
 The colors refer to cell colors on the slide you I showed you at the lecture.
 
 
-### Do the clustering {-}
+### Do the clustering  {.unnumbered}
 
 Now onto the real task, the actual clustering. The function `cluster` takes two arguments:
 
@@ -367,7 +367,7 @@ tree = cluster(sequences, names)
 print(tree)
 ```
 
-### On your own {-}
+### On your own  {.unnumbered}
 
 From here on you are on your own. If you find a FASTA file with aligned (ungapped) homologous sequences, you can use the function below to read it into your program and try your code out on real-world sequences. I will leave it to you to figure out how it works. 
 

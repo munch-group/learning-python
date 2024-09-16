@@ -2,7 +2,7 @@
 
 *This chapter covers the bare necessities of how to make your program read data from a file on your computer and how to make it create a file that it can write results to.*
 
-## Writing files {-}
+## Writing files  {.unnumbered}
 
 To interact with a file on your harddisk you need to know the name of the file and whether you want to write to it or read from it. Then you can use the builtin function `open` to create a file object that lets you read or write to that file. The `open` function takes two arguments: The first is a string, which gives the name of the file. The second argument is also a string and should be `'w'` for "write" if you want to write to the file or `'r'` for "read" if you want to read from the file. To keep things simple we will assume that the file you want to open is always in the same folder (directory) as the Python script that calls the `open` function.
 
@@ -67,7 +67,7 @@ f.close()
 
 Compare the the code to that in @sec:write_to_file. Notice how  the strings we print do end with a newline. This is because the default behaviour for `print` is to add a newline to the end of what it prints - just like when you print to the terminal.
 
-## Reading files {-}
+## Reading files  {.unnumbered}
 
 When you want to read a from an existing file you give the `open` function the name of that file and specify `'r'` for reading as second argument. If the file you name does not exist, Python will tell you that it does not exist (it is nice like that). Before you head into the next rest of this section make sure you redo @sec:write_to_file so the content of workfile.txt is:
 
@@ -142,7 +142,7 @@ Were you surprised that the file object can be an iterator in a for-loop? Just l
 Try to modify your code to use the `print` function instead of the `write` method (see @sec:write_to_file_with_print).
 
 
-## General exercises {-}
+## General exercises  {.unnumbered}
 
 #### Exercise
 Write a function `read_file` that takes the name of a file as argument. The file should read the content of the file and return it. Like:

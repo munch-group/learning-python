@@ -17,13 +17,13 @@ Recent advancements in machine learning and artificial intelligence have also in
 
 In conclusion, genome assembly stands at a fascinating crossroads of biology, computer science, and data analysis. State-of-the-art algorithms continue to evolve, leveraging innovative strategies and leveraging advancements in sequencing technologies and computational methods. These algorithms enable researchers to unlock the mysteries of genetics, uncovering insights into the structure and function of genomes with increasing accuracy and speed.
 
-## Sequencing technologies {-}
+## Sequencing technologies  {.unnumbered}
 
-## Graph-based assembly {-}
+## Graph-based assembly  {.unnumbered}
 
-## Dealing with repeats {-}
+## Dealing with repeats  {.unnumbered}
 
-## Assessing the quality of an asssembly {-}
+## Assessing the quality of an asssembly  {.unnumbered}
 
-## Resequencing {-}
+## Resequencing  {.unnumbered}
 
