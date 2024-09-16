@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>What defines the type of an object? – Learning Python</title>
+<title>Your type of object – Learning Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html">What defines the type of an object?</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html"><span class="chapter-title">Your type of object</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -208,8 +242,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">What defines the type of an object?</span></a>
+  <a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Your type of object</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -297,15 +330,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#what-defines-the-type-of-an-object" id="toc-what-defines-the-type-of-an-object" class="nav-link active" data-scroll-target="#what-defines-the-type-of-an-object">What defines the type of an object?</a></li>
+  <li><a href="#making-your-own-objects" id="toc-making-your-own-objects" class="nav-link" data-scroll-target="#making-your-own-objects">Making your own objects</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html">What defines the type of an object?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/preface.html">Lecture notes</a></li><li class="breadcrumb-item"><a href="../../../lecture_notes/chapters/python/your_own_types_of_objects.html"><span class="chapter-title">Your type of object</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">What defines the type of an object?</h1>
+<h1 class="title"><span class="chapter-title">Your type of object</span></h1>
 </div>
 
 
@@ -322,51 +362,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- # Your own types of objects
-
-*Do you know that type you are? Python objects do, and this chapter is about how they know.*
-
-
-By now, you know that Python values are objects and that there are different *types* of objects. Strings have type `str`, integers have type `int` and lists have type `list`, just to mention a few of the ones we know. Remember that you can use the built-in `type` function to find out what type an object is. Try this:
-
-```python
-print( type('banana') )
-print( type(4) )
-print( type([]) )
-```
-
-And as you already know, objects are "data with associated functionality". Some of this functionality is available in the form of *methods*: For example, the `upper` and `split` methods of string objects, or the `append` and `extend` methods of lists. 
-
-Objects also behave sensibly in different contexts: When if you sum two integers (`4 + 6`) you get their sum `6`, but if you sum two strings (`'ban' + 'ana'`) you get concatenation of the two strings `'banana'`. The two different types of objects each know how to act with the `+` operator. Another example is iteration: If you iterate over a string, you get one character at time in order, but if you iterate over a dictionary, you get the keys in the dictionary (in random order). This super convenient context-aware behaviour, is, in fact, also defined as methods, but more about that below.
-
-Each object carries its own data: different numbers, different stings etc., but their *functionality* is shared by all objects of the same type. So all string objects refer to the same definition of the `upper` and `split` methods in the string *type* as graphically illustrated in figure @fig:objects_and_type.
-
-![Objects and type. Each object carries its own data, but refers to the type for a definition of its methods.](./images/objects_and_type.png){#fig:objects_and_type width=50%}
-
-
-## Making your own objects {-}
-
-Imagine if you could create your own types of objects, carrying a particular kind of data and functionality. "Data" can litterally represent anything. It bioinformatics it could be an open reading frame, a patient profile, or a tree. Fortunately Python lets us do this using something called *classes*. New kinds of objects and the functionality they provide are defined by classes. So by defining a new class you define a new type of object, and the methods you define in that class are available to objects of the type that particular kind (type). 
-
-Lets define a new class, `Point`, that represents a point in a two-dimentional coordinate system. Each such point has an x-value and a y-value as shown in @fig:points, so we need our new point object to hold two numbers representing those two values.
-
-![Points](./images/points.png){#fig:points width=60%}
-
-Here is how we define the `Point` class:
-
-```python
-class Point:
-
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-```
-
-Let us beak it down: We use the keyword `class` followed by the name of class we define. Nested under that statemet we can put a  -->
+<p><em>Do you know that type you are? Python objects do, and this chapter is about how they know.</em></p>
+<section id="what-defines-the-type-of-an-object" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="what-defines-the-type-of-an-object">What defines the type of an object?</h2>
+<p>By now, you know that Python values are objects and that there are different <em>types</em> of objects. Strings have type <code>str</code>, integers have type <code>int</code> and lists have type <code>list</code>, just to mention a few of the ones we know. Remember that you can use the built-in <code>type</code> function to find out what type an object is. Try this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>( <span class="bu">type</span>(<span class="st">'banana'</span>) )</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>( <span class="bu">type</span>(<span class="dv">4</span>) )</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>( <span class="bu">type</span>([]) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And as you already know, objects are “data with associated functionality”. Some of this functionality is available in the form of <em>methods</em>: For example, the <code>upper</code> and <code>split</code> methods of string objects, or the <code>append</code> and <code>extend</code> methods of lists.</p>
+<p>Objects also behave sensibly in different contexts: When if you sum two integers (<code>4 + 6</code>) you get their sum <code>6</code>, but if you sum two strings (<code>'ban' + 'ana'</code>) you get concatenation of the two strings <code>'banana'</code>. The two different types of objects each know how to act with the <code>+</code> operator. Another example is iteration: If you iterate over a string, you get one character at time in order, but if you iterate over a dictionary, you get the keys in the dictionary (in random order). This super convenient context-aware behaviour, is, in fact, also defined as methods, but more about that below.</p>
+<p>Each object carries its own data: different numbers, different stings etc., but their <em>functionality</em> is shared by all objects of the same type. So all string objects refer to the same definition of the <code>upper</code> and <code>split</code> methods in the string <em>type</em> as graphically illustrated in figure <span class="citation" data-cites="fig:objects_and_type">@fig:objects_and_type</span>.</p>
+<div id="fig:objects_and_type" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/objects_and_type.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Objects and type. Each object carries its own data, but refers to the type for a definition of its methods.</figcaption>
+</figure>
+</div>
+</section>
+<section id="making-your-own-objects" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="making-your-own-objects">Making your own objects</h2>
+<p>Imagine if you could create your own types of objects, carrying a particular kind of data and functionality. “Data” can litterally represent anything. It bioinformatics it could be an open reading frame, a patient profile, or a tree. Fortunately Python lets us do this using something called <em>classes</em>. New kinds of objects and the functionality they provide are defined by classes. So by defining a new class you define a new type of object, and the methods you define in that class are available to objects of the type that particular kind (type).</p>
+<p>Lets define a new class, <code>Point</code>, that represents a point in a two-dimentional coordinate system. Each such point has an x-value and a y-value as shown in <span class="citation" data-cites="fig:points">@fig:points</span>, so we need our new point object to hold two numbers representing those two values.</p>
+<div id="fig:points" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./images/points.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Points</figcaption>
+</figure>
+</div>
+<p>Here is how we define the <code>Point</code> class:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Point:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, x, y):</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.x <span class="op">=</span> x</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.y <span class="op">=</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let us beak it down: We use the keyword <code>class</code> followed by the name of class we define. Nested under that statemet we can put a –&gt;</p>
 <!-- $$f(x) = f(x-1)$$ {#eq:some_other_label} -->
 <!-- TODO: Finish chapter about classes -->
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

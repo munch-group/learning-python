@@ -737,6 +737,39 @@
     ]
   },
   {
+    "objectID": "lecture_notes/chapters/python/your_own_types_of_objects.html",
+    "href": "lecture_notes/chapters/python/your_own_types_of_objects.html",
+    "title": "Your type of object",
+    "section": "",
+    "text": "What defines the type of an object?\nBy now, you know that Python values are objects and that there are different types of objects. Strings have type str, integers have type int and lists have type list, just to mention a few of the ones we know. Remember that you can use the built-in type function to find out what type an object is. Try this:\nAnd as you already know, objects are “data with associated functionality”. Some of this functionality is available in the form of methods: For example, the upper and split methods of string objects, or the append and extend methods of lists.\nObjects also behave sensibly in different contexts: When if you sum two integers (4 + 6) you get their sum 6, but if you sum two strings ('ban' + 'ana') you get concatenation of the two strings 'banana'. The two different types of objects each know how to act with the + operator. Another example is iteration: If you iterate over a string, you get one character at time in order, but if you iterate over a dictionary, you get the keys in the dictionary (in random order). This super convenient context-aware behaviour, is, in fact, also defined as methods, but more about that below.\nEach object carries its own data: different numbers, different stings etc., but their functionality is shared by all objects of the same type. So all string objects refer to the same definition of the upper and split methods in the string type as graphically illustrated in figure @fig:objects_and_type.",
+    "crumbs": [
+      "Lecture notes",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Your type of object</span>"
+    ]
+  },
+  {
+    "objectID": "lecture_notes/chapters/python/your_own_types_of_objects.html#what-defines-the-type-of-an-object",
+    "href": "lecture_notes/chapters/python/your_own_types_of_objects.html#what-defines-the-type-of-an-object",
+    "title": "Your type of object",
+    "section": "",
+    "text": "print( type('banana') )\nprint( type(4) )\nprint( type([]) )\n\n\n\n\n\n\nObjects and type. Each object carries its own data, but refers to the type for a definition of its methods.",
+    "crumbs": [
+      "Lecture notes",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Your type of object</span>"
+    ]
+  },
+  {
+    "objectID": "lecture_notes/chapters/python/your_own_types_of_objects.html#making-your-own-objects",
+    "href": "lecture_notes/chapters/python/your_own_types_of_objects.html#making-your-own-objects",
+    "title": "Your type of object",
+    "section": "Making your own objects",
+    "text": "Making your own objects\nImagine if you could create your own types of objects, carrying a particular kind of data and functionality. “Data” can litterally represent anything. It bioinformatics it could be an open reading frame, a patient profile, or a tree. Fortunately Python lets us do this using something called classes. New kinds of objects and the functionality they provide are defined by classes. So by defining a new class you define a new type of object, and the methods you define in that class are available to objects of the type that particular kind (type).\nLets define a new class, Point, that represents a point in a two-dimentional coordinate system. Each such point has an x-value and a y-value as shown in @fig:points, so we need our new point object to hold two numbers representing those two values.\n\n\n\nPoints\n\n\nHere is how we define the Point class:\nclass Point:\n\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\nLet us beak it down: We use the keyword class followed by the name of class we define. Nested under that statemet we can put a –&gt;",
+    "crumbs": [
+      "Lecture notes",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Your type of object</span>"
+    ]
+  },
+  {
     "objectID": "lecture_notes/chapters/python/using_code_from_other_files.html",
     "href": "lecture_notes/chapters/python/using_code_from_other_files.html",
     "title": "Using code from other files",
@@ -744,7 +777,7 @@
     "text": "A module is a file with code",
     "crumbs": [
       "Lecture notes",
-      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Using code from other files</span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Using code from other files</span>"
     ]
   },
   {
@@ -755,7 +788,7 @@
     "text": "Translating a single codon\nWrite a function, translate_codon that takes one argument:\nThe function should return:\nExample usage:\nshould return\nBefore you start coding you should always outline for yourself intuitively what you need to do to complete the task at hand. In this case want to translate, or map, between a three letter string, codon, and the corresponding one letter string for the amino acid that the codon corresponds to. Notice that the keys in the codon_map dictionary are in upper case, so you must make sure that the keys you use are also in upper case. You can translate codon into an upper case version of itself using the upper() method.\nTry this out first:\nNow write the function so it uses the string parameter as a key to look up the corresponding amino acid letter and returns this letter. Before you go on, make a function that does only that.\nBefore you are completely done you need to make your function handle the situation when the argument to the function is not a key in the codon_map dictionary. Use an if-else construct to handle the two cases. The boolean expression must test if the function argument is a key in codon_map. Remember that you can use the in operator to do this.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
     ]
   },
   {
@@ -766,7 +799,7 @@
     "text": "A string, which is a codon.\n\n\n\nA string of length one (one character). If the string argument is a valid codon then this letter should the be an amino acid letter specified by the codon_map dictionary. Note that stop codons are represented by a star ('*'). If the string argument is not a valid codon, the function must return '?'.\n\n\ntranslate_codon('ACG')\n\n'T'\n\n\ncodon = 'TTG'\namino_acid = codon_map[codon]\nprint(amino_acid)",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
     ]
   },
   {
@@ -777,7 +810,7 @@
     "text": "Splitting an open reading frame into codons\nTo translate an entire open reading frame into the corresponding amino acid sequence, you need to split the ORF sequence into codons. When we have done that we can translate each codon using the function translate_codon you just wrote.\nWrite a function, split_codons, that takes one argument:\n\nA string, which is an ORF sequence\n\nThe function must return:\n\nA list of strings. Each string must have length 3 and must represent the-non overlapping triplets in the same sequence as they appear in the string given as argument.\n\nExample usage:\nsplit_codons('ATGTATGCCTGA')\nshould return\n['ATG', 'TAT', 'GCC', 'TGA']\nDivide the problem into simpler tasks like above. You need to loop over the sequence to perform operations on it. Start by writing a function that prints each character:\ndef split_codons(orf):\n    for i in range(len(orf)):\n        print(orf[i])\nNow try to figure out how you can modify the function to make it move over the sequence in jumps of three. Look at the documentation for the range function to see how you can make it iterate over numbers with increments of three like this: 0, 3, 6, 9, 12, … . Modify your function so that it now prints every third character.\nWhat you want is obviously not every third character. You want three characters. I.e. every third character and the two characters that come right after. You can use the index in the for loop to get the corresponding codon using slicing. Modify your function so that it prints each codon.\nNow all that remains is to put each codon on a list that you can return from the function. You can define a list before your for-loop so you have a list to add codons to.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
     ]
   },
   {
@@ -788,7 +821,7 @@
     "text": "Translating an open reading frame\nNow you can use the two functions split_codons and translate_codon to write a function that translates an ORF into a protein sequence.\nWrite a function, translate_orf, that takes one argument:\n\nA string, which is a DNA sequence.\n\nThe function must return\n\nA string, which is the protein sequence translated from the ORF sequence argument.\n\nExample usage:\ntranslate_orf('ATGGAGCTTANCAAATAG')\nshould return\n'MEL?K*'",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Translating open reading frames</span>"
     ]
   },
   {
@@ -799,7 +832,7 @@
     "text": "Count the number of bases in your candidate primer\nBefore you can compute the melting temperature, you need to determine how many times each base occurs in the sequence. You can assume that the only characters in the string are A, T, G, and C.\nWrite a function, count_bases, which takes one argument:\nThe function must return:\nExample usage: If the function is called like this:\nthen it should return (not necessarily with key-value pairs in the same order):",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Primer analysis</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Primer analysis</span>"
     ]
   },
   {
@@ -810,7 +843,7 @@
     "text": "A string, which is a DNA sequence.\n\n\n\nA dictionary, which in which keys are strings that represent bases and values are integers that represent the number of occurrences of each base. If a base is not found in the sequence, its count must be zero.\n\n\ncount_bases(\"ATGG\")\n\n{\"A\": 1, \"C\": 0, \"G\": 2, \"T\": 1}",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Primer analysis</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Primer analysis</span>"
     ]
   },
   {
@@ -821,7 +854,7 @@
     "text": "Compute the melting temperature\nKnowing the base composition in your sequence, you can now calculate the melting temperature the double-stranded DNA that forms when your primer pairs up with the sequence to amplify. If the primer has less than 14 bases the formula for calculating melting temperature is:\n\\[ Temp = (A + T) * 2 + (G + C) * 4 \\]\nand if the primer has 14 bases or more it is calculated like this:\n\\[ Temp = 64.9 + 41 * (G + C - 16.4) / (A + T + G + C) \\]\nThe A, T, C, and G in the formulas represent the numbers of A, T, C and G in the DNA primer.\nYou must write a function that applies these two formulas appropriately by taking the length of the primer into account.\nWrite a function, melting_temp, which takes one argument:\n\nA string, which is a DNA sequence (your primer).\n\nThe function must return:\n\nA number, which represents the melting temperature of the double-stranded DNA corresponding to the DNA string given as argument.\n\nExample usage: If the function is called like this:\nmelting_temp(\"ATG\")\nthen it should return:\n8",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Primer analysis</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Primer analysis</span>"
     ]
   },
   {
@@ -832,7 +865,7 @@
     "text": "Reverse complement the sequence\nIt is possible that one part of the primer forms base pairs with another part of the primer to form a hairpin structure. To figure out if this can happen to your primer, you need to be able to find the reverse complement of DNA sequence. The reverse complement of a DNA sequence is one where the sequence of bases is first reversed, and then each base is replaced with its Watson-Crick complementary base.\nWrite a function, reverse_complement, which takes one argument:\n\nA string, which is a DNA sequence.\n\nThe function must return:\n\nA string, which represents the reverse complement of the DNA string given as argument.\n\nExample usage: If the function is called like this:\nreverse_complement(\"AATTC\")\nthen it should return:\n\"GAATT\"",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Primer analysis</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Primer analysis</span>"
     ]
   },
   {
@@ -843,7 +876,7 @@
     "text": "Check for hairpins\nYou would like to be able to determine if your primer can fold to form a hairpin with some specified minimum number of consequtive base pairs. We assume that hairpin loops are always at least four bases long and that base pairs in the hairpin can only be Watson-Crick basepairs. Here is an example of a hairpin with five basepairs and a loop of four bases (four Cs):\n        C C\n      C     C\n       A - T\n       T - A\n       A - T\n       T - A\n       A - T\nTo test if a sequence can form a hairpin with at least four consequtive base pairs, you need to test if the sequence contains any subsequence of length four whose reverse complement is identical to another nonoverlapping subsequence. To take into account that the hairpin loop is at least four bases long, any such two subsequences must be separated by at least four bases.\nWrite a function, has_hairpin, which takes two arguments:\n\nA string, which is a DNA sequence.\nAn integer, which represents the minimum number of consequtive base pairs in the hairpins to search for.\n\nThe function must return:\n\nTrue if the sequence contains a hairpin of at least the specified length and False otherwise.\n\nExample usage: If the function is called like this:\nprint(has_hairpin(\"ATATACCCCTATAT\", 4))\nthen it should return:\nTrue\nThis is a hard one, so I will give you a bit of help. Here is the function with some parts missing.\ndef has_hairpin(s, k):\n    looplen = 4\n    for i in range(len(s)-k+1):\n        subs = # Hint A\n        right = # Hint B\n        revcl = reverse_complement(subs)\n        if revcl in right[looplen:]:\n            return True\n    return False\nHint A: Here you need to extract a substring of length k starting at i. Hint B: Here you need to extract all the sequence to the right of substr.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Project: Primer analysis</span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Primer analysis</span>"
     ]
   },
   {
@@ -854,7 +887,7 @@
     "text": "Filling in the dynamic programming matrix",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
     ]
   },
   {
@@ -865,7 +898,7 @@
     "text": "Make a matrix\nWe start out by making a list of lists (a matrix) that has the right shape but only holds None values. We use the None values as place-holders, which you can later replace with scores. You can think of it as an empty matrix that you can fill scores into, just as we did at the lectures. If you want to align two sequences like AT and GAT you want a matrix that has 3 rows and 4 columns. Note that the matrix must have one more row than the number of bases in sequence one, and one more column than the number of bases in sequence two.\nWrite a function, empty_matrix, that takes two arguments\n\nAn integer (which represents the length of sequence one + 1).\nAn integer (which represents the length of sequence two + 1).\n\nThe function must return:\n\nA list of lists. The number of sub-lists be must equal to the first integer argument. Each sublist must contain a number of None values equal to the second integer argument.\n\nExample usage:\nempty_matrix(3, 4)\nreturns a list with three lists each of length four:\n[[None, None, None, None], [None, None, None, None], [None, None, None, None]]\nEven though this is a list of lists we can think of it as a three by four matrix:\n[[None, None, None, None], \n [None, None, None, None], \n [None, None, None, None]]\nIf you want to print the matrix in a way that looks like the slides I showed you at the lecture, you can use the print_dp_matrix function (again None represents empty cells):\n          G    A    T\n  None None None None\nA None None None None\nT None None None None\nImportant: You can implement empty_matrix in a way superficially looks ok but will cause you all kinds of grief when you start filling it in. When you create the list of lists (e.g. three lists as above) you need to generate and add three separate lists. If you add the same list three times you do not have three separate rows in your matrix. Instead you have three references to the same row. You can test if you did it right this way – by changing the value of one cell to see what happens:\nempty = empty_matrix(3, 4)\nempty[0][0] = 'Mogens'\nprint(empty)\nIf this only changed one value like below, you are ok:\n[['Mogens', None, None, None], [None, None, None, None], [None, None, None, None]]\nIf it changed the first value in all the lists, it means that all your lists are the same (which is not what you want).\n[['Mogens', None, None, None], ['Mogens', None, None, None], ['Mogens', None, None, None]]\n\n\nFill top row and left column\nNow that you can make a matrix with the correct dimensions, you need to write a function that fills in the top row and the left column in accordance with what the gap score is. E.g. if the gap score is -2 you want the matrix to look something like this when you print it with print_dp_matrix:\n          G    A    T\n     0   -2   -4   -6\nA   -2 None None None\nT   -4 None None None\nWrite a function, prepare_matrix, which takes three arguments:\n\nAn integer (which represents the length of sequence one plus one)\nAn integer (which represents the length of sequence two plus one)\nAn integer, which represents the gap_score used for alignment.\n\nThe function must return:\n\nA list of lists. The number of sub-lists be must equal to the first integer argument. The values in the first sub-list must be multiples of the gap score given as the third argument. The first elements of remaining sub-lists must be multiples of the gap score. All remaining elements of sub-lists must be None.\n\nExample usage:\nprepare_matrix(3, 4, -2)\nmust return:\n[[0, -2, -4, -6], [-2, None, None, None], [-4, None, None, None]]\nHint: You should call empty_matrix inside prepare_matrix to get a matrix filled with None.\nNow all you need to do is replace the right None values with multiples of the gap score. E.g. the third element in the first sub-list is matrix[2][0], which you would need to assign the value: 2 times the gap score. In the same way matrix[3][0] should be 3 times the gap score. So you need to figure out which elements you should replace and which pairs of indexes you need to access those elements. Then use range to generate those indexes and for-loops to loop over them.\n\n\nFill the entire matrix\nNow that we are able to fill the top row and left column we can start thinking about how to fill the whole matrix.\nFor that we need a score matrix of match scores. In Python that is most easily represented as a dictionary of dictionaries like this:\nmatch_scores = {'A': {'A': 2, 'T': 0, 'G': 0, 'C': 0},\n                'T': {'A': 0, 'T': 2, 'G': 0, 'C': 0},\n                'G': {'A': 0, 'T': 0, 'G': 2, 'C': 0},\n                'C': {'A': 0, 'T': 0, 'G': 0, 'C': 2}}\nThat lets you get the score for matching an A with a T like this: match_scores['A']['T']. Note that the match scores are only for uppercase letters (A, T, G, C).\nWrite a function, fill_matrix, which takes four arguments:\n\nA string, which represents the first sequence.\nA string, which represents the second sequence.\nA dictionary of dictionaries like the one shown above, which represents match scores.\nAn integer, which represents the gap score.\n\nThe function must return:\n\nA list of lists of integers, which represents a correctly filled dynamic programming matrix given the two sequences, the match scores, and the gap score.\n\nExample usage: If match_scores is defined as above then\nfill_matrix('AT', 'GAT', match_scores, -2)\nmust return:\n[[0, -2, -4, -6], [-2, 0, 0, -2], [-4, -2, 0, 2]]\nIf you print that matrix using print_dp_matrix it should look like this:\n      G  A  T\n   0 -2 -4 -6\nA -2  0  0 -2\nT -4 -2  0  2\nHint: You should call prepare_matrix inside fill_matrix to get a matrix with the top row and left column filled. Assuming seq1 is sequence one and seq2 is sequence two then you can do it like this:\nmatrix = prepare_matrix(len(seq1)+1, len(seq2)+1, gap_score)\nNow you only need to fill out the rest. To produce the indexes of the elements in the list of lists that you need to assign values to, you need two nested for-loops.\nfor i in range(1, len(seq1)+1):\n    for j in range(1, len(seq2)+1):\n        print(i, j) # just to see what i and j are\nExamine this code and make sure you understand why we give those arguments to range. Each combination of i and j let you access an element matrix[i][j] in matrix (list of lists) that you can to assign a value to. The value to assign to matrix[i][j] (green cell on the slides) is the maximum of three values (the yellow cells on the slide):\n\nThe value of the cell to the left (matrix[i][j-1]) plus the gap score.\nThe cell above (matrix[i-1][j]) plus the gap score.\nThe diagonal cell (matrix[i-1][j-1]) plus the match score for base number i (index i-1) of sequence one and base number j (index j-1) of sequence two.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
     ]
   },
   {
@@ -876,7 +909,7 @@
     "text": "Reconstructing the optimal alignment\nThis is the most difficult part, so I will hold your hand here. Below is first a function that identifies which of three cells (the yellow cells on the slides) some cell (green cell on the slides) is derived from. On the slides, this is the cell pointed to by the red arrow.\ndef get_traceback_arrow(matrix, row, col, match_score, gap_score):\n\n    # yellow cells:\n    score_diagonal = matrix[row-1][col-1]\n    score_left = matrix[row][col-1]\n    score_up = matrix[row-1][col]\n\n    # gree cell:\n    score_current = matrix[row][col]\n\n    if score_current == score_diagonal + match_score:\n        return 'diagonal'\n    elif score_current == score_left + gap_score:\n        return 'left'\n    elif score_current == score_up + gap_score:\n        return 'up'\nWrite (no copy paste) this into your file and make sure that it works and that you understand exactly how it works before you go on.\nHere is a function that uses get_traceback_arrow to do the traceback. It reconstructs the alignment starting from the last column adding columns in front as the traceback proceeds. It is big, so it breaks across three pages.\ndef trace_back(seq1, seq2, matrix, score_matrix, gap_score):\n\n    # Strings to store the growing alignment strings:\n    aligned1 = ''\n    aligned2 = ''\n# continues...\n    # The row and col index of the bottom right cell:\n    row = len(seq1)\n    col = len(seq2)\n\n    # Keep stepping backwards through the matrix untill\n    # we get to the top row or the left col:\n    while row &gt; 0 and col &gt; 0:\n\n        # The two bases we available to match:\n        base1 = seq1[row-1]\n        base2 = seq2[col-1]\n\n        # The score for mathing those two bases:\n        match_score = score_matrix[base1][base2]\n\n        # Find out which cell the score in the current cell was derived from:\n        traceback_arrow = get_traceback_arrow(matrix, row, col, match_score, gap_score)\n\n        if traceback_arrow == 'diagonal':\n                # last column of the sub alignment is base1 over base2:\n            aligned1 = base1 + aligned1\n            aligned2 = base2 + aligned2\n            # next cell is the diagonal cell:\n            row -= 1\n            col -= 1\n        elif traceback_arrow == 'up':\n                # last column in the sub alignment is base1 over a gap:\n            aligned1 = base1 + aligned1\n            aligned2 = '-' + aligned2\n            # next cell is the cell above:\n            row -= 1\n        elif traceback_arrow == 'left':\n                # last column in the sub alignment is a gap over base2:\n            aligned1 = '-' + aligned1\n            aligned2 = base2 + aligned2\n            # next cell is the cell to the left:\n            col -= 1\n# continues...\n    # If row is not zero, step along the top row to the top left cell:\n    while row &gt; 0:\n        base1 = seq1[row-1]\n        aligned1 = base1 + aligned1\n        aligned2 = '-' + aligned2\n        row -= 1\n\n    # If col is not zero, step upwards in the left col to the top left cell:\n    while col &gt; 0:\n        base2 = seq2[col-1]\n        aligned1 = '-' + aligned1\n        aligned2 = base2 + aligned2\n        col -= 1\n\n    return [aligned1, aligned2]\nOnce you have written it into your file, make sure you understand the correspondence to the sequences of events on the lecture slides.\nNow you can write a function you can call to do perform the alignment. You get to do that yourself. It just calls fill_matrix and then trace_back to get the optimal alignment\nWrite a function, align, that takes four arguments:\n\nA string, which represents sequence one.\nA string, which represents sequence two.\nA dictionary of dictionaries, which represents the match scores (as described above).\nAn integer, which represents the gap score.\n\nThe function must return:\n\nA list of length two. The first element of that list must be a string, representing the aligned sequence one. The second element must be a string, representing the aligned sequence two.\n\nExample usage:\nalign('ATAT', 'GATGAT', score_matrix, -2)\nmust return:\n['-AT-AT', 'GATGAT']\nOnce you have written that function you can print your alignment like this:\nalignment = align('ATAT', 'GATGAT', score_matrix, -2)\nfor s in alignment:\n    print(s)",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Pairwise global alignment</span>"
     ]
   },
   {
@@ -887,7 +920,7 @@
     "text": "Read an open reading frame and count its codons",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
     ]
   },
   {
@@ -898,7 +931,7 @@
     "text": "Read ORFs from a file\nYou can use this code to read the ORFs into your script:\nf = open('sample_orfs.txt', 'r')\norf_list = list()\nfor line in f:\n    seq = line.strip()\n    orf_list.append(seq)\nf.close()\nTry to print the list to see it. Then pick out the first ORF in the list so you can use that to test your code:\ntest_orf = orf_list[0]\n\n\nSplit the ORF into codons\nYou need a function that splits the ORF into codons. This one you have already implemented in the exercise about translating DNA – and if, not here it is in my version to get you started.\ndef split_codons(orf):\n    codon_list = []\n    for i in range(0, len(orf)-2, 3):\n        codon_list.append(orf[i:i+3])\n    return codon_list\nBefore you go on, make sure you understand/remember how this function works and what it returns.\n\n\nCount codons in an ORF\nNow you need to count the number of times each codon occurs in the ORF.\nWrite a function, count_codons, that take one argument:\n\nA string, which represents the open reading frame.\n\nThe function must return:\n\nA dictionary where keys are strings representing codons and associated values are integers representing the number of times each codon occurs in the ORF given as argument.\n\nExample usage:\ncount_codons(\"ATGTCATCATGA\")\nshould return:\n{'CTT': 0, 'ATG': 1, 'ACA': 0, 'ACG': 0, 'ATC': 0, 'AAC': 0, \n 'ATA': 0, 'AGG': 0, 'CCT': 0, 'ACT': 0, 'AGC': 0, 'AAG': 0, \n 'AGA': 0, 'CAT': 0, 'AAT': 0, 'ATT': 0, 'CTG': 0, 'CTA': 0, \n 'CTC': 0, 'CAC': 0, 'AAA': 0, 'CCG': 0, 'AGT': 0, 'CCA': 0, \n 'CAA': 0, 'CCC': 0, 'TAT': 0, 'GGT': 0, 'TGT': 0, 'CGA': 0, \n 'CAG': 0, 'TCT': 0, 'GAT': 0, 'CGG': 0, 'TTT': 0, 'TGC': 0, \n 'GGG': 0, 'TAG': 0, 'GGA': 0, 'TGG': 0, 'GGC': 0, 'TAC': 0, \n 'TTC': 0, 'TCG': 0, 'TTA': 0, 'TTG': 0, 'TCC': 0, 'ACC': 0, \n 'TAA': 0, 'GCA': 0, 'GTA': 0, 'GCC': 0, 'GTC': 0, 'GCG': 0, \n 'GTG': 0, 'GAG': 0, 'GTT': 0, 'GCT': 0, 'TGA': 1, 'GAC': 0, \n 'CGT': 0, 'GAA': 0, 'TCA': 2, 'CGC': 0}\n– though not necessarily with key-value pairs in that order.\nIn the function, you should use the split_codons function to split the ORF into a list of codons. Then create an empty dictionary that you can populate with counts. You want all the possible codons to be in your dictionary. That way, the codons you do not find in your ORF will have a count of 0. In this case, such absence is also valuable information. To achieve this you must start by filling the dictionary with a key for each codon and give each a count of 0. You can do that by iterating over the keys in the dictionary that maps codons to amino acids. Then you must iterate over all the codons in the list of codons produced by the split_codons function and add counts to the dictionary as you go.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
     ]
   },
   {
@@ -909,7 +942,7 @@
     "text": "Group codon counts by amino acid\nHaving counted how many times each codon appears in the ORF, you need to group the counted codons by the amino acid they encode.\nWrite a function, group_counts_by_amino_acid, which takes one argument:\n\nA dictionary, as that returned by count_codons.\n\nThe function must return:\n\nA dictionary of dictionaries, which pairs each amino acid with a dictionary with counts of how many times each codon is used to encode that amino acid in the ORF.\n\nExample usage: Assuming counts is the dictionary returned by count_codons as in the previous example.\ngrouped_counts = group_counts_by_amino_acid(counts)\nthen group_counts_by_amino_acid should return:\n{'A': {'GCA': 0, 'GCC': 0, 'GCT': 0, 'GCG': 0}, \n 'C': {'TGC': 0, 'TGT': 0}, \n 'E': {'GAG': 0, 'GAA': 0}, \n 'D': {'GAT': 0, 'GAC': 0}, \n 'G': {'GGT': 0, 'GGG': 0, 'GGA': 0, 'GGC': 0}, \n 'F': {'TTC': 0, 'TTT': 0}, \n 'I': {'ATT': 0, 'ATC': 0, 'ATA': 0}, \n 'H': {'CAC': 0, 'CAT': 0}, \n 'K': {'AAG': 0, 'AAA': 0}, \n '*': {'TAG': 0, 'TGA': 1, 'TAA': 0}, \n 'M': {'ATG': 1}, \n 'L': {'CTT': 0, 'CTG': 0, 'CTA': 0, 'CTC': 0, 'TTA': 0, 'TTG': 0}, \n 'N': {'AAT': 0, 'AAC': 0}, \n 'Q': {'CAA': 0, 'CAG': 0},\n 'P': {'CCT': 0, 'CCG': 0, 'CCA': 0, 'CCC': 0}, \n 'S': {'TCT': 0, 'AGC': 0, 'TCG': 0, 'AGT': 0, 'TCC': 0, 'TCA': 2}, \n 'R': {'AGG': 0, 'CGC': 0, 'CGG': 0, 'CGA': 0, 'AGA': 0, 'CGT': 0}, \n 'T': {'ACC': 0, 'ACA': 0, 'ACG': 0, 'ACT': 0}, \n 'W': {'TGG': 0}, \n 'V': {'GTA': 0, 'GTC': 0, 'GTT': 0, 'GTG': 0}, \n 'Y': {'TAT': 0, 'TAC': 0}}\n– though not necessarily with key-value pairs in that order.\nSo if we pretend the resulting dictionary of dictionaries is called d, then d['S'] will be a dictionary where keys are codons encoding the ‘S’ amino acid and the values are the counts of those codons. That means that you can access a particular count like this:\nd['S']['TCA'] \nIn the above example, this count is 2. So the task is really just to distribute counts given as the first argument into groups for each amino acid. Depending on what you call your variables it could look something like this:\ngrouped_counts[acid][codon] = codon_counts[codon]\nYour function should begin by defining an empty dictionary to add to. Then use a for-loop to run through all codon/amino-acid pairs and populate your dictionary of dictionaries.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
     ]
   },
   {
@@ -920,7 +953,7 @@
     "text": "Turn counts into frequencies\nNow you know how many times each codon represents a certain amino acid, but we would like to know with which frequency a certain codon represents an amino acid. So you need to normalize the counts so they become frequencies. You do that by dividing each codon count by the total number of codons encoding the same amino acid. We split the solution to this problem in two. We first write a helper function that turns codon counts for one amino acid into frequencies.\nWrite a function, normalize_counts, which takes one argument:\n\nA dictionary, where keys are strings representing codons and values are integers representing the counts of these codons.\n\nThe function must return:\n\nA dictionary, where keys are strings representing codons and values are floats representing the frequency at which each codon appear. That is, the count of that codon divided by the total of all codon counts in the dictionary. The frequencies for codons that encode the same amino acid must of sum to one. That means that in cases where the total count is zero, the function must return None.\n\nExample usage:\nnormalize_counts({'ATT': 8, 'ATC': 10, 'ATA': 2})\nshould return:\n{'ATC': 0.5, 'ATA': 0.1, 'ATT': 0.4}\n– though not necessarily with key-value pairs in that order.\nNow you have solved part of the task, what remains is to now use that function to normalise the codon counts of each amino acid in your grouped counts:\nWrite a function, normalize_grouped_counts, which takes one argument:\n\nA dictionary of dictionaries, as that returned by group_counts_by_amino_acid.\n\nThe function must return:\n\nA new dictionary of dictionaries where the values of the inner dictionaries are frequencies instead of counts as in the example in the introduction. You should not include amino acids for which there are no counted codons.\n\nExample usage: Assuming gr_counts is the dictionary of dictionaries returned by grouped_group_counts_by_amino_acid in the example above.\nnormalize_grouped_counts(gr_counts)\nshould return:\n{'*': {'TAA': 0.0, 'TGA': 1.0, 'TAG': 0.0}, \n'M': {'ATG': 1.0}, \n'S': {'AGC': 0.0, 'TCG': 0.0, 'TCC': 0.0, 'TCT': 0.0, 'AGT': 0.0, 'TCA': 1.0}}\n– though not necessarily with key-value pairs in that order.\nHere is some help to get you started:\ndef normalize_grouped_counts(grouped_counts):\n    grouped_freqs = {}\n    for aa in grouped_counts:\n        counts = grouped_counts[aa]\nAmino acids with no codon counts should not be part of the data structure. Remember that in this case normalize_counts returns None, so you can simply test if the return value from normalize_counts is None",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
     ]
   },
   {
@@ -931,7 +964,7 @@
     "text": "Compute the codon usage\nNow all that remains is to tie together the functions you have written in a final function that generates your big data structure from an ORF:\nWrite a function, codon_usage, which takes one argument:\n\nA string, which is an ORF.\n\nThe function must return:\n\nA dictionary of dictionaries, same as that returned by normalize_grouped_counts.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Codon usage in *Streptococcus* bacteria</span>"
     ]
   },
   {
@@ -942,7 +975,7 @@
     "text": "Compute the similarity of two sequences\nWe need to compare our unknown HIV sequence to all the HIV sequences of known subtypes. That way we can identify the sequence of a known subtype that is most similar to your unknown sequence. We will then assume that our unknown sequence has the same subtype as this sequence. To accomplish this we first need to write some code that compares two sequences so we can compare our HIV sequence to each of the other HIV sequences.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -953,7 +986,7 @@
     "text": "Compare two sequences\nWrite a function sequence_similarity that takes two arguments:\n\nA string which is a DNA sequence.\nA string of the same length as argument one, which is also a DNA sequence.\n\nThe function must return:\n\nA float, which is the proportion of bases that are the same in two DNA sequences.\n\nExample usage:\nsequence_similarity('AGTC' 'AGTT')\nshould return 0.75.\nStart out defining your function like this:\ndef sequence_similarity(seq1, seq2):\n    # your code here...\nRemember that range(len(seq1)) generates the numbers you can use to index the string seq1. You can use those numbers as indexes to look up positions in both strings. You will need a for-loop in your function and a variable that keeps track of how many similarities you have seen as you iterate through the sequences.\n\n\nCompare aligned sequences\nAll sequences, including the unknown sequence, are from the same multiple alignment. This ensures that sequence positions match up across all sequences but also means that a lot of gap characters ('-') are inserted. To compute similarities between such sequences you need to make function much like seqeuence_similarity that does not consider sequence positions where both bases are a gap ('-') characters. In other words, you must not only count the number of characters that are the same, you also need to count how many alignment columns that are \"-\" for both sequences. E.g. the following mini alignment has five such columns and four columns where the bases are the same. So in the following alignment, the similarity is 0.8 (4/5):\nA-CT-A\nA-CTTA\nWrite a function alignment_similarity that takes two arguments:\n\nA string which is a DNA sequence with gap characters.\nA string of the same length as argument one, which is also a DNA sequence with gap characters.\n\nThe function must return:\n\nA float, which is the proportion of bases that are the same in two DNA sequences.\n\nalignment_similarity('A-CT-A', 'A-CTTA')\nshould return 0.8.\nHint: Use an if-statement to test if the two characters at some index are equal to '-' in both sequences. You can use an expression like this:\nseq1[i] == '-' and seq2[i] == '-'\nOnce your function has computed both the number of identical bases and the number of alignment columns that are not both '-', you can have it return the similarity as the ratio of the two.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -964,7 +997,7 @@
     "text": "Read the HIV sequences into your program\nTo use your alignment_similarity function to assess similarity between your unknown sequence and the sequences of known subtype, you need to read the sequences into your program. Here is a function that will read the sequences from one of the files you downloaded into a list:\ndef read_data(file_name):\n    f = open(file_name)\n    sequence_list = list()\n    for line in f:\n        seq = line.strip()\n        sequence_list.append(seq)\n    f.close()\n    return sequence_list\nYou can use that function to read the unknown sequence into your program:\nunknown_list = read_data('unknown_type.txt')\nIn this case, the list only contains the one unknown HIV sequence in unknown_type.txt.\nYou also need to load the typed HIV sequences into your program. Here is a function that returns a dictionary in which the keys are subtypes ('A', 'B', 'C' and 'D') and each value is a lists of sequences with that subtype:\ndef load_typed_sequences():\n    return {'A': read_data('subtypeA.txt'),\n            'B': read_data('subtypeB.txt'),\n            'C': read_data('subtypeC.txt'),\n            'D': read_data('subtypeD.txt') }\nIf you use the function like this:\ntyped_data = load_typed_sequences()\nthen you can access the list of sequences of subtype A like this: typed_data['A'].",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -975,7 +1008,7 @@
     "text": "Compare your HIV sequence to HIV sequences of known subtype\nTo type you HIV sequence you must compare your sequence to all the database sequences to see which group has the best matching sequence.\nWrite a function get_similarities that takes two arguments:\n\nA string, which is your unknown HIV sequence.\nA list of strings, each of which is an HIV sequence of known type.\n\nThe function must return:\n\nA list of floats, which should be the similarities between the unknown sequence given as the first argument and the list of sequences given as the second argument.\n\nExample usage:\nget_similarities(unknown_list[0], typed_data['A'])\nshould return:\n[0.8553288474061211, 0.8721742704480066,\n 0.854924397221087, 0.8481709291032696,\n 0.8498330281159108] \nThe function should use the function alignment_similarity to compare your unknown sequence (unknown_list[0]) to each of the sequences of some subtype. Start out like this:\ndef get_similarities(unknown, typed_sequences):\n    # Your code here...\n    \nIn your function you need to define a list that you can append the similarities you compute to:\nsimilarities = []\nThis is the list of results that your function must return. To compute the similarity between you unknown sequence and each of the sequences of known subtype, you can use your alignment_similarity function inside a for-loop.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -986,7 +1019,7 @@
     "text": "Compute maximum similarity to each subtype\nTo predict the subtype of the unknown HIV sequence you need to compare the unknown sequence to all the sequences of each of the different subtypes. The subtype of the sequence with the highest similarity to your unknown sequence is then our predicted subtype (or our best guess).\nWrite a function get_max_similarities that takes two arguments:\n\nA string, which is your unknown HIV sequence.\nA dictionary, like the one returned by load_typed_sequences.\n\nThe function must return:\n\nA dictionary, in which keys are strings representing each subtype ('A', 'B', 'C', and 'D') and values are floats representing the maximum similarity between the unknown sequence and the sequences of a subtype. The dictionary could look like this (it does not, you need to compute the similarities yourself.):\n\n{'A': 0.89, 'B': 0.95, 'C': 0.82, 'D': 0.99}\nTo get the highest number in a list of numbers, you can use the max function in Python. It works like this:\nnumbers = [3, 8, 53, 12, 7]\nprint(max(numbers))  # prints 53\nFor example, to get the highest similarity between the unknown sequence and sequences in typed_data['A']:\nsubtypeA_similarities = get_similarities(unknown_list[0], typed_data['A'])\nsubtypeA_max = max(subtypeA_similarities)",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -997,7 +1030,7 @@
     "text": "Identify the HIV subtype\nNow for the grand finale! You ultimately want to be able to write code like this:\nunknown_list = read_data('unknown_type.txt')\ntyped_data = load_typed_sequences()\nsubtype = predict_subtype(unknown_list[0], typed_data)\nprint(\"Patient HIV is subtype {}\".format(subtype))\nSo all you need now is the predict_subtype function.\nWrite a function predict_subtype that takes two arguments:\n\nA string, which is your unknown HIV sequence.\nA dictionary, like the one returned by load_typed_sequences.\n\nThe function must return:\n\nA string of length one (either 'A', 'B', 'C', or 'D') representing the predicted subtype of your unknown HIV sequence.\n\nThe function should use get_max_similarities to compute the dictionary of max similarities and then extract from that dictionary the key with the highest value (similarity). So the function must return 'A' if the unknown sequence is most similar to a sequence of subtype A, 'B' if the unknown sequence is most similar to a sequence of subtype B and so on.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Identifying the subtype of an HIV sequence</span>"
     ]
   },
   {
@@ -1008,7 +1041,7 @@
     "text": "Measuring sequence distance\nClustering is based on the distances between all pairs of sequences. So before you can build your tree you must compute those distances and fill them into a table like that in the book. Here we break that task into three parts:",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1019,7 +1052,7 @@
     "text": "Compare two sequences\nMake the Jukes-Cantor correction\nGenerate a (lower triangular) distance matrix\n\n\nCompare two sequences\nThe first function you must write is one that finds the proportion of different bases between two sequences:\nWrite a function, sequence_difference, which takes two arguments:\n\nA string, which represents a DNA sequence.\nA string, which represents a DNA sequence of the same length as argument one.\n\nThe function must return:\n\nA float, which represents the proportion of different bases between the two sequences.\n\nExample usage:\nsequence_difference('AAATTAAA', 'AAAAAAAA')\nshould return\n0.25\n\n\nMake the Jukes-Cantor correction\nTo take into account that some substitutions may fall on top of others you must do the Jukes-Cantor correction you read about in the book. The formula is like this:\n\\[ K = -\\frac{3}{4} \\ln(1 - \\frac{4}{3}*D) \\]\nWhere \\(D\\) is the proportion of differences as returned by seqeunce_diff and \\(K\\) is the Jukes-Cantor corrected distance. In the top of seqdistproject.py it already says:\nfrom math import log\nThat line makes the log (logarithm) builtin function from the math python library available to your programme. Try to find its Python documentation to see how you use it.\nWrite a function, jukes_cantor, which takes one argument:\n\nA float, which represents a proportion of different bases between two sequences.\n\nThe function must return:\n\nA float, which represents the Jukes-Cantor corrected distance corresponding the proportion of differences given as argument.\n\nExample usage:\njukes_cantor(0.1)\nshould return\n0.10732563273050497",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1030,7 +1063,7 @@
     "text": "Lower triangular distance matrices\nThis project is all about distances between pairs (of sequences), and what would be more natural than to put all the distances in a matrix so you can look up the distance between the sequences with indexes i and j as the matrix element in row i and column j. You already know how matrices can be represented by lists of lists. E.g. a matrix like this:\n0.0  0.1  0.3  0.3  0.1  0.2\n0.1  0.0  0.2  0.4  0.1  0.1\n0.3  0.2  0.0  0.4  0.2  0.3\n0.3  0.4  0.4  0.0  0.2  0.1\n0.1  0.1  0.2  0.2  0.0  0.1\n0.2  0.1   0.3  0.1  0.1 0.0\n\ncan be expressed as a list of lists like this:\n[[0.0, 0.1, 0.3, 0.3, 0.1, 0.2],\n [0.1, 0.0, 0.2, 0.4, 0.1, 0.1],\n [0.3, 0.2, 0.0, 0.4, 0.2, 0.3],\n [0.3, 0.4, 0.4, 0.0, 0.2, 0.1],\n [0.1, 0.1, 0.2, 0.2, 0.0, 0.1],\n [0.2, 0.1, 0.3, 0.1, 0.1, 0.0]]\nNotice how the diagonal is all zeros because these distances represent the distance of a sequence to itself. Also, notice that the part above the diagonal is a mirror the part below the diagonal (in bold). This is all a bit redundant, especially in this project where you will have to reduce the matrix as you group (or cluster) sequences together. We want something nice and lean where we only have the numbers we need – and that is the lower triangular matrix:\n0.1\n0.3 0.2\n0.3 0.4 0.4\n0.1 0.1 0.2 0.2\n0.2 0.1 0.3 0.1 0.1\nIn Python this is still just a list of lists, only, each sublist now has the same length as its index in the big list (E.g. [0.3, 0.2] has index 2 in the list and has length 2):\nmatrix = [[],\n              [0.1],\n              [0.3, 0.2],\n              [0.3, 0.4, 0.4],\n              [0.1, 0.1, 0.2, 0.2],\n              [0.2, 0.1, 0.3, 0.1, 0.1]]\nHere I am just writing it nicely. If you where to print that list of lists it would look like this:\n[[], [0.1], [0.3, 0.2], [0.3, 0.4, 0.4], [0.1, 0.1, 0.2, 0.2], [0.2, 0.1, 0.3, 0.1, 0.1]]\nSay your sequences had names: A, B, C, D, E, and F, then the above data structure represents distances between each pair like this:\nA \nB 0.1\nC 0.3 0.2\nD 0.3 0.4 0.4\nE 0.1 0.1 0.2 0.2\nF 0.2 0.1 0.3 0.1 0.1\n   A   B   C   D   E   F\nThere is only one drawback with this reduced representation of the full square matrix: In the full matrix you can get the distance between the sequences with indexes i and j as both matrix[i][j] and matrix[j][i] because the part above and below the diagonal are the same. Using the lower triangular matrix, you must always use the largest index first. Using the smaller one first will give you an IndexError. So if you want the distance between sequences with index 2 and 4, you must use the bigger index first (as the row index): matrix[4][2].",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1041,7 +1074,7 @@
     "text": "Generate a distance matrix\nWrite a function, lower_trian_matrix, which takes one argument:\n\nA list of strings. All strings have equal length and represent DNA sequences.\n\nThe function must return:\n\nA list of lists of floats, which represent the lower triangular matrix of Jukes-Cantor distances between DNA sequences given as argument.\n\nExample usage:\nsequences = ['TAAAAAAAAAAA', \n             'TTAAAAAAAAAA', \n             'AAAAAAAAAAGG', \n             'AAAAAAAAGGGG']\nlower_trian_matrix(sequences)\nhere lower_trian_matrix should return:\n[[], \n [0.08833727674228764], \n [0.30409883108112323, 0.4408399986765892], \n [0.6081976621622466, 0.8239592165010822, 0.18848582121067953]]\nYou should use sequence_difference to compute the proportion of differences between each pair of sequences and jukes_cantor to produce the corrected distance to fill into the matrix.\nStart by figuring out what pairs of indexes you need and then figure out how you can make two nested for-loops generate them. Remember that the length of each sublist is equal to its index in the big list.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1052,7 +1085,7 @@
     "text": "Clustering\nNow that you have the distance matrix you are ready for the actual clustering. There are three steps to that:\n\nFind the pair you want to join\nCompute the distances between the joined pair and all other elements (linkage)\nKeep going until you only have one left\n\nDepending on how you choose which pair to join and how you compute the new distances for the joined pair determines what kind of clustering you do. Here we will try a centroid-like linkage called WPGMA. It does not work as well as UPGMA but is a bit easier to implement (you can look up WPGMA on wikipedia).\n\nFind the pair to join\nHere you want to be able to find the pair with the smallest distance. To do that we identify the cell in the matrix with the smallest value:\nWrite a function, find_lowest_cell, which takes one argument:\n\nA list of lists, which represents a lower triangular distance matrix as returned by lower_trian_matrix.\n\nThe function must return:\n\nA list of two integers, which represent the row and column index of the cell with the smallest value in the matrix.\n\nRemember that the row index is always smaller than the column index. The two indexes tell you which two elements to join next.\nExample usage: Assuming that matrix is the lower triangular matrix returned by lower_trian_matrix in the previous example, then\nfind_lowest_cell(matrix)\nShould return\n[1, 0]\n\n\nDecide on a linkage method\nYou also need a function that computes a new distance from two original ones using the the centroid-like linkage we have decided to use.\nWrite a function, link, that takes two arguments:\n\nA float, which represents a matrix element.\nA float, which represents another matrix element.\n\nThe function must return:\n\nA float, which is the average of the two arguments\n\nExample usage:\nlink(0.4, 0.2)\nShould return:\n0.3",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1063,7 +1096,7 @@
     "text": "Perform the clustering\nThe three functions that do the actual clustering are complicated but you should be able to follow what they do. The first one updates the table to reflect that you join a pair. The second updates the list of sequence names (labels) to reflect that you joined a pair. The last one uses the two other functions to cluster pair until there is only one cluster left.\nYour task is to carefully type the code for each function and to understand what every line of code does.\n\nUpdating labels\nThe function update_labels takes three arguments:\n\nA list of strings representing sequence names.\nAn integer representing the index of a sequence name.\nAn integer representing the index of another sequence name.\n\nThe function does not return anything, but it updates the list of names to reflect that you joined a pair. If your list looks like this before you call the function:\nlabels = ['A', 'B', 'C', 'D']\nThen after you call the function like this update_labels(labels, 1, 0), the list will look like this:\n['(A,B)', 'C', 'D']\nHere is the function:\ndef update_labels(labels, i, j):\n\n    # turn the label at first index into a combination of both labels\n    labels[j] = \"({},{})\".format(labels[j], labels[i])\n\n    # Remove the (now redundant) label in the first index\n    del labels[i]\n\n\nUpdating the matrix\nThe function update_table takes three arguments:\n\nA list of lists, which represents a lower triangular distance matrix.\nAn integer representing the index of one of the elements to join.\nAn integer representing the index of the other element to join.\n\nThe way this function is implemented, it is assumed that the second argument is always larger than the third argument. I.e. the second argument is a row index and the third argument is a column index.\nThe function does not return anything, but it updates the matrix to reflect that a pair has been joined. If your matrix looks like this before you call the function:\nm = [[], [0.1], [0.3, 0.4], [0.6, 0.8, 0.2]]\nThen after you call the function like this update_table(m, 1, 0), the matrix will look like this:\n[[], [0.35], [0.7, 0.2]]\nHere is the function:\ndef update_table(table, a, b):\n\n    # For the lower index, reconstruct the entire row (ORANGE)\n    for i in range(0, b):\n        table[b][i] = link(table[b][i], table[a][i])\n\n    # Link cells to update the column above the min cell (BLUE)\n    for i in range(b+1, a):\n        table[i][b] = link(table[i][b], table[a][i])\n        \n    # Link cells to update the column below the min cell (RED)\n    for i in range(a+1, len(table)):\n        table[i][b] = link(table[i][b], table[i][a])\n\n    # Delete cells we no longer need (lighter colors)\n    for i in range(a+1, len(table)):\n        # Remove the (now redundant) first index column entry\n        del table[i][a]\n    # Remove the (now redundant) first index row\n    del table[a] \nThe colors refer to cell colors on the slide you I showed you at the lecture.\n\n\nDo the clustering\nNow onto the real task, the actual clustering. The function cluster takes two arguments:\n\nA list of strings representing DNA sequences of equal length.\nA list of strings representing sequence names.\n\nThe function returns:\n\nA string representing the generated clustering.\n\nHere is the function:\ndef cluster(sequences, names):\n\n    table = lower_trian_matrix(sequences)\n    labels = names[:]\n\n    # Until all labels have been joined...\n    while len(labels) &gt; 1:\n        # Locate lowest cell in the table\n        i, j = find_lowest_cell(table)\n\n        # Join the table on the cell co-ordinates\n        update_table(table, i, j)\n\n        # Update the labels accordingly\n        update_labels(labels, i, j)\n\n    # Return the final label\n    return labels[0]\nHere is a simple example of how you can use your new clustering code:\nnames = ['A', 'B', 'C', 'D']\nsequences = ['TAAAAAAAAAAA', \n             'TTAAAAAAAAAA', \n             'AAAAAAAAAAGG', \n             'AAAAAAAAGGGG']\n\ntree = cluster(sequences, names)\nprint(tree)\n\n\nOn your own\nFrom here on you are on your own. If you find a FASTA file with aligned (ungapped) homologous sequences, you can use the function below to read it into your program and try your code out on real-world sequences. I will leave it to you to figure out how it works.\ndef read_fasta(filename):\n    f = open(filename, 'r')\n    record_list = []\n    header = \"\"\n    sequence = \"\"\n    for line in f:\n        line = line.strip() ## get rid of whitespace and newline\n        if line.startswith(\"&gt;\"):\n            if header != \"\": ## if it is the first header\n                record_list.append([header, sequence])\n                sequence = \"\"\n            header = line[1:]\n        else:\n            sequence += line\n    record_list.append([header, sequence])\n    return record_list",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Clustering sequences based on distance ⁕</span>"
     ]
   },
   {
@@ -1074,7 +1107,7 @@
     "text": "Finding Open Reading Frames",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
     ]
   },
   {
@@ -1085,7 +1118,7 @@
     "text": "Find the start positions of ORFs in a DNA sequence\nThe first task is to write a function that finds all the possible positions where an ORF can begin.\nWrite a function, find_start_positions, which takes one argument:\n\nA string, which is a DNA sequence.\n\nThe function must return:\n\nA list of integers, which represent the indexes of the first base in start codons in the DNA sequence argument.\n\nExample usage:\nfind_start_positions('TATGCATGATG')\nshould return\n[1, 5, 8]\nYour function should contain a for-loop that iterates over all possible positions in a DNA string where a codon can begin. Not surprisingly, these are all the positions except for the last two. So start out with this:\ndef find_start_positions(seq):\n    for i in range(len(seq) - 2):\n        print(i)\nNow, instead of just printing i, try and make it print the three bases following i using the slicing technique:\ntriplet = seq[i:i+3]\nI.e. if your sequence is 'TATGCATGATG' it should first print 'TAT' then 'ATG' then 'TGC' and so on.\nWhen you have this working you should change the code so that triplets are only printed if they are start codons. You can use an if-statement that tests if each triplet is equal to start_codon.\nThen try and make your function print i only when i is the first base of a start codon.\nFinally, modify the function so all the relevant values of i are collected in a list using the same technique as in the split_codons(orf) function, and then return this list from the function.\n\n\nFinding the next occurrence of some codon in an ORF\nNow that you can find where the ORFs begin in our sequence you must also be able to identify where each of these end. As you know, an ORF ends at any of three different stop codons in the same reading frame as the start codon. So, starting at the start codon of the ORF, we need to be able to find the next occurrence of some specific codon. I.e. you should look at all codons after the start codon and find the first occurrence of some specified codon. If the function does not find that codon in the string it should return None.\nWrite a function, find_next_codon, that takes three arguments:\n\nA string, which is the DNA sequence.\nAn integer, which is the index in the sequence where the ORF starts.\nA string, which is the codon to find the next occurrence of.\n\nThe function must return:\n\nAn integer, which is the index of the first base in the next in-frame occurrence of the codon. If the function does not find that codon in the string it should return None.\n\nExample usage:\nfind_next_codon('AAAAATTTAATTTAA', 1, 'TTT')\nshould return\n10\nYour function should contain a for-loop that iterates over all the relevant starts of codons. Remember that no valid codon can start at the last two positions in the sequence. E.g. if the second argument is 7 and the length of the sequence is 20 then the relevant indexes are 7, 10, 13, 16.\nStart by writing a function just with a for-loop that lets you print these indexes produced by range. Figure out how to make the range function iterate over the appropriate numbers.\ndef find_next_codon(seq, start, codon):\n    for idx in range( ?? ):\n        print(idx)\nWhen you have that working, use the slicing technique to instead print the codons that start at each index.\nFinally, add an if-statement that tests if each codon is equal to codon. When this is true, the function should return the value of idx.\n\n\nFinding the first stop codon in an ORF\nNow that you can find the next occurrence of any codon, you are well set up to write a function that finds the index for the beginning of the next in-frame stop codon in an ORF.\nWrite a function, find_next_stop_codon, that takes two arguments:\n\nA string, which is the DNA sequence.\nAn integer, which is the index in the sequence where the ORF starts.\n\nThe function must return:\n\nAn integer, which is the index of the first base in the next in-frame stop codon. If there is no in-frame stop codon in the sequence the function should return None.\n\nExample usage:\nfind_next_stop_codon('AAAAATAGATGAAAA', 2)\nshould return\n5\nHere is some inspiration:\n\nYou should define a list to hold the indexes for the in-frame stop codons we find.\nThen we loop over the three possible stop codons to find the next in-frame occurrence of each one from the start index. You can use find_next_codon for this. Remember that it returns None if it does not find any. If it does find a position you can add it to your list.\nAt the end, you should test if you have any indexes in your list.\nIf you do, you should return the smallest index in the list. I.e the ones closest to the start codon.\nIf you did not find any stop codons the function must return None to indicate this.\n\n\n\nFinding ORFs\nNow you can write a function that uses find_start_positions and find_next_stop_codon to extract the start and end indexes of each ORF in a genomic sequence.\nWrite a function, find_orfs, that takes one argument:\n\nA string, which is a DNA sequence.\n\nThe function should return:\n\nA list, which contains lists with two integers. The list returned must contain a list for each ORF in the sequence argument. These lists each contain two integers. The first integer represents the start of the ORF, the second represents the end. The function should handle both uppercase and lowercase sequences.\n\nExample usage:\nfind_orfs(\"AAAATGGGGTAGAATGAAATGA\")\nshould return\n[[3, 9], [13, 19]]\nStart by using find_start_positions to get a list of all the start positions in sequence:\ndef find_orfs(seq):\n    start_positions = find_start_positions(seq)\nWhen you have that working, add a for-loop that iterates over the start positions. Inside the for-loop, you can then get the next in-frame stop codon for each start position by calling find_next_stop_codon. Try to print the start and end indexes you find to make sure the code does what you think.\nFinally, you need to add a [start, stop] list for each ORF to the big list that the function returns. To append a list to a list you do write something like this:\norf_coordinate_list.append([start, stop])\nTest your function. Chances are that some of the end positions you get are None. This is because some of the start codons were not followed by an in-frame stop codon. Add an if-statement to your function that controls that only start-stop pairs with a valid stop coordinate are added to the list of results.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
     ]
   },
   {
@@ -1096,7 +1129,7 @@
     "text": "Translation of open reading frames\nWe need to translate the reading frames we find into the proteins they may encode. So why not use the code you already wrote in the programming project where you translated open frames? Copy the content of translationproject.py into orfproject.py. Now you can use the function translate_orf to translate your ORFs.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
     ]
   },
   {
@@ -1107,7 +1140,7 @@
     "text": "Put everything together\n\nRead in genomic sequences\nThe file e_coli_O157_H157_str_Sakai.fasta contains the genome that we want to analyze to find open reading frames. This is an especially nasty strain of Escherichia coli O157:H7 isolated after a massive outbreak of infection in school children in Sakai City, Japan, associated with consumption of white radish sprouts.\nYou can use the function below to read the genome sequence into a string.\ndef read_genome(file_name):\n    f = open(file_name, 'r')\n    lines = f.readlines()\n    header = lines.pop(0)\n    substrings = []\n    for line in lines:\n        substrings.append(line.strip())\n    genome = ''.join(substrings)\n    f.close()\n    return genome\nNow for the grand finale: Using read_genome, find_orfs and translate_orf you can write a function that finds all protein sequences produced by open reading frames in the genome.\nWrite a function, find_candidate_proteins, that takes one argument:\n\nA string, which is a genome DNA sequence.\n\nThe function must return\n\nA list of strings, which each represent a possible protein sequence.\n\nNote that this is a full genome so finding all possible proteins will take a while (~5 min.). You can start by working on the first 1000 bases:\nExample usage:\ngenome = read_genome('e_coli_O157_H157_str_Sakai.fasta')\nfirst_1000_bases = genome[:1000]\nfind_candidate_proteins(first_1000_bases)\nshould return\n['MSLCGLKKESLTAASELVTCRE*', 'MKRISTTITTTITTTITITITTGNGAG*',\n 'MQNVFCGLPIFWKAMPGRGRWPPSSLPPPKSPTTWWR*', 'MPGRGRWPPSSLPPPKSPTTWWR*',\n 'MLYPISAMPNVFLPNF*', 'MPNVFLPNF*', 'MSCMALVC*', 'MALVC*']\nThe function should call find_orfs to get the list of start-end pairs. For each index pair, you must then slice the ORF out of the sequence (remember that the end index represents the first base in the stop codon), translate the ORF to protein, and add it to a list of proteins that the function can return.\nHint: To check your result note that all returned sequences should start with a start codon 'M', end with a stop codon '*' and contain no stop codons in the middle.\n\n\nOn your own\nThis is where this project ends, but you can continue if you like. Given a long list of candidate proteins of all sizes, what would you do to narrow down your prediction to a smaller set of very likely genes? If you have some ideas, then try them out.\n\nMaybe you can rank them by length? What is the expected minimum length of proteins?\nMaybe you can look for a Shine-Delgarno motif upstream of the start codon? You know how to do that from the lectures.\nYou can also try to BLAST them against the proteins in Genbank. The true ones should have some homologs in other species.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Finding genes in bacteria</span>"
     ]
   },
   {
@@ -1118,7 +1151,7 @@
     "text": "Read and analyze the sequencing reads\nThe first task is to read and parse the input data. The sequence reads for the mini-assembly are in the file sequencing_reads.txt. The first two lines of the file look like this:\nEach line represents a read. The first field on each line is the name of the read and the second field is the read sequence itself. So for the first line Read1 is the name and ATGCG... is the sequence.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Genome assembly</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Project: Genome assembly</span>"
     ]
   },
   {
@@ -1129,7 +1162,7 @@
     "text": "Read1 GGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTCGTCCAGACCCCTAGC\nRead2 CTTTACCCGGAAGAGCGGGACGCTGCCCTGCGCGATTCCAGGCTCCCCACGGG\n\n\nRead the sequencing reads into your program\nWrite a function, read_data, that takes one argument:\n\nA string, which is the name of the data file.\n\nThe function must return\n\nA dictionary, where the keys are the names of reads and the values are the associated read sequences. Both keys and values must be strings.\n\nExample usage:\nread_data('sequencing_reads.txt')\nshould return a dictionary with the following content (maybe not with key-value pairs in that order)\n{'Read1': 'GGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTCGTCCAGACCCCTAGC',\n 'Read3': 'GTCTTCAGTAGAAAATTGTTTTTTTCTTCCAAGAGGTCGGAGTCGTGAACACATCAGT',\n 'Read2': 'CTTTACCCGGAAGAGCGGGACGCTGCCCTGCGCGATTCCAGGCTCCCCACGGG',\n 'Read5': 'CGATTCCAGGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTC',\n 'Read4': 'TGCGAGGGAAGTGAAGTATTTGACCCTTTACCCGGAAGAGCG',\n 'Read6': 'TGACAGTAGATCTCGTCCAGACCCCTAGCTGGTACGTCTTCAGTAGAAAATTGTTTTTTTCTTCCAAGAGGTCGGAGT'}\nHere is some scaffold code to get you started:\ndef read_data(file_name):\n    input_file = open(file_name)\n    # ...\n    for line in input_file:\n         # ...    \n    # ...\n    \n    input_file.close() \n    \nThe line variable in the for loop holds each line in the file including the \\n newline character at the end. To split each line into the name of the read and the read sequence, you can use the split method of strings. You can see the documentation for that method by typing pydoc str.split in your terminal.\n\n\nCompute the mean length of reads\nHaving written that function we would like to get some idea about how long the reads are. More often than not there are too many reads to look at them manually, so we need to make a function that computes the mean length of the reads.\nWrite a function, mean_length, that takes one argument:\n\nA dictionary, in which keys are read names and values are read sequences (this is a dictionary like that returned by read_data).\n\nThe function must return\n\nA float, which is the average length of the sequence reads.\n\nOne way to do this is to loop over the keys in the dictionary like this:\ndef mean_length(reads):\n    count = 0\n    total = 0\n    for name in reads:\n        seq = reads[name]\n        # ...\n        # ...\n    # ...\n    return total / count\nRemember that you can use the len function to find the length of a read.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Genome assembly</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Project: Genome assembly</span>"
     ]
   },
   {
@@ -1140,7 +1173,7 @@
     "text": "Compute overlaps between reads\nNext thing is to figure out which reads overlap each other. To do that we need a function that takes two read sequences and computes their overlap. Remember that in the input data none of the reads are completely nested in another read.\n\nCompute the overlap between two reads\nWe know that there are no sequencing errors, so in the overlap, the sequence match will be perfect. To compute the overlap between the 3’ (right) end of the left read with the 5’ (left) end of the right read, you need to loop over all possible overlaps honoring that one sequence is the left one and the other is the right one. In the for loop, start with the largest possible overlap ( min(len(left), len(right))) and evaluate smaller and smaller overlaps until you find an exact match.\nWrite a function, get_overlap, that takes two arguments\n\nA string, which is the left read sequence.\nA string, which is the right read sequence.\n\nThe function must return\n\nA string, which is the overlapping sequence. If there is no overlap it should return an empty string.\n\nExample usage:\ns1 = \"CGATTCCAGGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTC\"\ns2 = \"GGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTCGTCCAGACCCCTAGC\"\nget_overlap(s1, s2)\nshould return the string\n'GGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTC'\nand get_overlap(s2, s1)\nshould return the string\n'C'\nFrom these two examples it seems that s1 and s2 overlap and that s1 is the left one and s2 is the right one. Treating s2 as the left one and s1 as the right one only gives an overlap of one base (we expect a few bases of overlap even for unrelated sequences).\n\n\n\n\nCompute all read overlaps\nWhen you have written get_overlap you can use it to evaluate the overlap between all pairs of reads in both left-right and right-left orientations.\nWrite a function, get_all_overlaps, that takes one argument:\n\nA dictionary with read data as returned by read_data.\n\nThe function must return\n\nA dictionary of dictionaries, specifying the number of overlapping bases for a pair of reads in a specific left-right orientation. Computing the overlap of a read to itself is meaningless and must not be included. Assuming the resulting dictionary of dictionaries is called d, then d['Read2'] will be a dictionary where keys are the names of reads that have an overlap with read 'Read2' when 'Read2' is put in the left position, and the values for these keys are the number of overlapping bases for those reads.\n\nExample usage: assuming that reads is a dictionary returned by read_data then:\nget_all_overlaps(reads)\nshould return the following dictionary of dictionaries (but not necessarily with the same ordering of the key-value pairs):\n{'Read1': {'Read3': 0, 'Read2': 1, 'Read5': 1, 'Read4': 0, 'Read6': 29},\n 'Read3': {'Read1': 0, 'Read2': 0, 'Read5': 0, 'Read4': 1, 'Read6': 1},\n 'Read2': {'Read1': 13, 'Read3': 1, 'Read5': 21, 'Read4': 0, 'Read6': 0},\n 'Read5': {'Read1': 39, 'Read3': 0, 'Read2': 1, 'Read4': 0, 'Read6': 14},\n 'Read4': {'Read1': 1, 'Read3': 1, 'Read2': 17, 'Read5': 2, 'Read6': 0},\n 'Read6': {'Read1': 0, 'Read3': 43, 'Read2': 0, 'Read5': 0, 'Read4': 1}}\nHint: You can use the get_overlap function you just made to find the overlap between a pair of reads. To generate all combinations of reads you need two for-loops. One looping over reads in left positions and another (inside the first one) looping over reads in right position. Remember that we do not want the overlap of a read to itself, so there should be an if-statement in the checking of the left and right reads are the same.\n\n\nPrint overlaps as a nice table\nThe dictionary returned by get_all_overlaps is a little messy to look at. We want to print it in a nice matrix-like format so we can better see which pairs overlap in what orientations.\nThis pretty_print function, should take one argument:\n\nA dictionary of dictionaries as returned by get_all_overlaps.\n\nThe function should not return anything but must print a matrix exactly as shown in the example below with nicely aligned and right-justified columns. The first column must hold names of reads in left orientation. The top row holds names of reads in right orientation. Remaining cells must each hold the number of overlapping bases for a left-right read pair. The diagonal corresponds to overlaps to the read itself. You must put dashes in these cells.\nExample usage: assuming that overlaps is a dictionary of dictionaries returned by get_all_overlaps then:\npretty_print(overlaps)\nshould print exactly\n       Read1  Read2  Read3  Read4  Read5  Read6 \nRead1      -      1      0      0      1     29 \nRead2     13      -      1      0     21      0\nRead3      0      0      -      1      0      1\nRead4      1     17      1      -      2      0 \nRead5     39      1      0      0      -     14 \nRead6      0      0     43      1      0      -\nThis function is hard to get completely right. So to spare you the frustration, this one is on me:\ndef pretty_print(d):\n    print('      ', end='')\n    for j in sorted(d):\n        print(\"{: &gt;6}\".format(j), end='')\n    print()\n    for i in sorted(d):\n        print(\"{: &gt;6}\".format(i), end='')\n        for j in sorted(d):\n            if i == j:\n                s = '     -'\n            else:\n                s = \"{: &gt;6}\".format(d[str(i)][str(j)])\n            print(s, end='')\n        print()\nMake sure you understand how it works. You can look up in the documentation what \"{: &gt;6}\".format(i) does.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Genome assembly</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Project: Genome assembly</span>"
     ]
   },
   {
@@ -1151,7 +1184,7 @@
     "text": "Find the right order of reads\nNow that we know how the reads overlap we can chain them together pair by pair from left to right to get the order in which they represent the genomic sequence. To do this we take the first (left-most) read and identify which read has the largest overlap to its right end. Then we take that read and find the read with the largest overlap to the right end of that - and so on until we reach the rightmost (last) read.\n\nFind the first read\nThe first thing you need to do is to identify the first (leftmost) read so we know where to start. This read is identified as the one that has no significant (&gt;2) overlaps to its left end (it only has a good overlap when positioned to the left of other reads). In the example output from pretty_print above the first read would be read 'Read4' because the 'Read4' column has no significant overlaps (no one larger than two).\nWe break the problem in two and first write a function that gets all the overlaps to the left end of a read (i.e. when it is in the right position):\nWrite a function, get_left_overlaps, that takes two arguments:\n\nA dictionary of dictionaries as returned from get_all_overlaps.\nA string, which represents the name of a read.\n\nThe function must return\n\nA sorted list of integers, which represent the overlaps of other reads to its left end.\n\nExample usage: assuming that overlaps is a dictionary of dictionaries returned by get_all_overlaps then.\nget_left_overlaps(overlaps, 'Read1')\nshould return\n[0, 0, 1, 13, 39]\nHint: once you have made a list of left overlaps, you can use the builtin function sorted to make a sorted version of the list that you can return from the function.\nOK, now that we have a function that can find all the overlaps to the left end of a given read, all we need to do is find the particular read that have no signifiant (&gt;2) overlaps to its left end.\nWrite a function, find_first_read, that takes one argument:\n\nA dictionary of dictionaries as returned from get_all_overlaps.\n\nThe function must return\n\nA string containing the name of the first read.\n\nExample usage: assuming that overlaps is a dictionary of dictionaries returned by get_all_overlaps then.\nfind_first_read(overlaps)\nshould return\n'Read4'\n\n\nFind the order of reads\nNow that we have the first read we can find the correct ordering of reads. We want a list of the read names in the right order.\nGiven the first (left) read, the next read is the one that has the largest overlap to the right end of that read. To figure out which read that is, we use our dictionary of overlaps. If the first read is 'Read4' then overlaps['Read4'] is a dictionary of reads with overlap to the right end of read 'Read4'. So to find the name of the read with the largest overlap you must write a function that finds the key associated with the largest value in a dictionary. We do that first:\nWrite a function, find_key_for_largest_value, that takes one argument:\n\nA dictionary.\n\nThe function must return the key associated with the largest value in the dictionary argument.\nHaving written find_key_for_largest_value you can use it as a tool in the function the finds the order of reads:\nWrite a function, find_order_of_reads, that takes two arguments:\n\nA string, which is the name of the first (left-most) read (that returned by find_first_read).\nA dictionary of dictionaries, of all overlaps (that returned by get_all_overlaps).\n\nThe function must return\n\nA list of strings, which are read names in the order in which they represent the genomic sequence.\n\nHints: You know the first read is given by the first argument to the function, you also know that you can find the next read in the chain of overlapping reads by using the find_key_for_largest_value function, and you know that you should keep adding on reads to the chain as long as the overlap is larger than two (you can use a for-loop with an if-statement inside to check that the overlap is larger than 2).\nExample usage: assuming that overlaps is a dictionary of dictionaries returned by get_all_overlaps then:\nfind_order_of_reads('Read4', overlaps)\nshould return:\n['Read4', 'Read2', 'Read5', 'Read1', 'Read6', 'Read3']\nMake sure you understand why this is the right list of read names before you try to implement the function.",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Genome assembly</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Project: Genome assembly</span>"
     ]
   },
   {
@@ -1162,7 +1195,7 @@
     "text": "Reconstruct the genomic sequence\nNow that you have the number of overlapping bases between reads and the correct order of the reads you can reconstruct the genomic sequence.\n\nReconstruct the genomic sequence from the reads\nWrite a function, reconstruct_sequence, that takes three arguments:\n\nA list of strings, which are the names of reads in the order identified by find_order_of_reads.\nA dictionary, with read data as returned from read_data.\nA dictionary of dictionaries with overlaps as returned from get_all_overlaps.\n\nThe function must return\n\nA string, which is the genomic sequence.\n\nExample usage: assuming that order is the list of strings returned by find_order_of_reads, that reads is the dictionary returned by read_data and that overlaps is a dictionary of dictionaries returned by get_all_overlaps then:\nreconstruct_sequence(order, reads, overlaps)    \nshould return one long DNA string (had to break it in three to make it fit on the page):\nTGCGAGGGAAGTGAAGTATTTGACCCTTTACCCGGAAGAGCGGGACGCTGCCCTGCGCGATT\nCCAGGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTCGTCCAGACCCCTAGCTGGTA\nCGTCTTCAGTAGAAAATTGTTTTTTTCTTCCAAGAGGTCGGAGTCGTGAACACATCAGT\nHint: iterate over the reads in order and use the overlap information to extract and join the appropriate parts of the reads.\n\n\nPutting the whole thing together\nNow that you have written functions to take care of each step you can write one last function that uses them to do the entire assembly.\nWrite a function, assemble_genome, that takes one argument:\n\nA string, which is the name of a file with sequencing reads in the format described in the beginning of this project description.\n\nThe function must return\n\nA string, which is the genome assembled from the sequencing reads\n\nExample usage:\nassemble_genome('sequencing_reads.txt')\nshould return the assembled genome:\nTGCGAGGGAAGTGAAGTATTTGACCCTTTACCCGGAAGAGCGGGACGCTGCCCTGCGCGATT\nCCAGGCTCCCCACGGGGTACCCATAACTTGACAGTAGATCTCGTCCAGACCCCTAGCTGGTA\nCGTCTTCAGTAGAAAATTGTTTTTTTCTTCCAAGAGGTCGGAGTCGTGAACACATCAGT",
     "crumbs": [
       "Programming projects",
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Project: Genome assembly</span>"
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Project: Genome assembly</span>"
     ]
   },
   {
@@ -1183,7 +1216,7 @@
     "text": "Week 1",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1194,7 +1227,7 @@
     "text": "Monday\nUnfortunately, the Monday recording failed :/\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1205,7 +1238,7 @@
     "text": "Week 2\n\nMonday\nThe sound quality is terrible on this one, sorry.\n\n\n\nWednesday\nThe sound quality is terrible on this one, sorry.",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1216,7 +1249,7 @@
     "text": "Week 3\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1227,7 +1260,7 @@
     "text": "Week 4\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1238,7 +1271,7 @@
     "text": "Week 5",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1249,7 +1282,7 @@
     "text": "Monday\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1260,7 +1293,7 @@
     "text": "Week 6\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1271,7 +1304,7 @@
     "text": "Week 7\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1282,7 +1315,7 @@
     "text": "Week 8\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1293,7 +1326,7 @@
     "text": "Week 9\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1304,7 +1337,7 @@
     "text": "Week 10\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1315,7 +1348,7 @@
     "text": "Week 11\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1326,7 +1359,7 @@
     "text": "Week 12\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1337,7 +1370,7 @@
     "text": "Week 13\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   },
   {
@@ -1348,7 +1381,7 @@
     "text": "Week 14\n\nMonday\n\n\n\nWednesday",
     "crumbs": [
       "Supplementary",
-      "<span class='chapter-number'>27</span>  <span class='chapter-title'>Lecture recordings</span>"
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Lecture recordings</span>"
     ]
   }
 ]
