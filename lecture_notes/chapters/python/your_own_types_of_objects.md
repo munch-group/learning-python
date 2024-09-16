@@ -1,4 +1,4 @@
-# Your type of object
+# Your type of object {.unnumbered}
 
 *Do you know that type you are? Python objects do, and this chapter is about how they know.*
 

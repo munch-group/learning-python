@@ -1,6 +1,4 @@
-<!-- TODO: Add Chapter: "Using code from other files" -->
-
-# Using code from other files
+# Using code from other files {.unnumbered}
 
 *This chapter is about  ...*
 

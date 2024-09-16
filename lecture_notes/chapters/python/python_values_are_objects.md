@@ -1,4 +1,4 @@
-# Python values are objects
+# Python values are objects {.unnumbered}
 
 *This chapter introduces the notion of an object, one of the most central aspects of Python. Once you get catch your breath, you will love that all Python values are objects.*
 

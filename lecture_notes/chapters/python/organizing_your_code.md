@@ -1,4 +1,4 @@
-# Organising your code
+# Organising your code {.unnumbered}
 
 *This chapter is about how you can organize your code into chunks that you can call upon to perform a well defined tasks in your program.*
 

@@ -1,5 +1,5 @@
 
-# General exercises  {.unnumbered}
+# General exercises {.unnumbered}
 
 #### Exercise
 

@@ -1,4 +1,4 @@
-# Lists of things
+# Lists of things {.unnumbered}
 
 *This chapter is about lists and dictionaries that are Python values that can contain other Python values. Lists and dictionaries lets you build relationships between values, which is what data structures represent.*
 

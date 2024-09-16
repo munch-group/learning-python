@@ -1,6 +1,6 @@
 
 
-# How to learn from this book
+# How to learn from this book {.unnumbered}
 
 These lecture notes are inspired by the many different books and resources I have used in this course over the years. Especially, "Learning Python the hard way" and "How to think like a computer scientist". Writing my own notes allows me to fully implement the following ideas, which I think best supports learning in the introduction to programming:
 

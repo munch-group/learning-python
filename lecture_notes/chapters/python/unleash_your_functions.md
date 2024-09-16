@@ -2,7 +2,7 @@
 <!-- TODO: write recursion chapter -->
 <!-- Serve to make you understnad exactly how functions work. If you understand recursion, you will undertand functions too. -->
 
-# Unleash your functions
+# Unleash your functions {.unnumbered}
 
 *At time of "printing" this chapter was not finished. So I have added some empty pages so you can merge the chapter into the pdf later without messing up the chapter, exercise and page numbers*
 

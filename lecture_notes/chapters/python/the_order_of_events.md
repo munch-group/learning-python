@@ -1,4 +1,4 @@
-# The order of events
+# The order of events {.unnumbered}
 
 *This chapter is about how Python interprets (or evaluates) the code you write. It has a few fancy long words that may seem foreign to you. Do not let that throw you off. They are all just fancy names for something very simple.*
 

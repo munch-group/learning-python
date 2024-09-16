@@ -1,4 +1,4 @@
-# Gluing values in sequence
+# Gluing values in sequence {.unnumbered}
 
 ## Tuples  {.unnumbered}
 

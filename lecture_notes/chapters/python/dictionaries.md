@@ -1,4 +1,4 @@
-# Pairs of things
+# Pairs of things {.unnumbered}
 
 <!-- \includegraphics[height=\fontcharht\font`\B]{picture.png} -->
 
