@@ -772,12 +772,12 @@
   {
     "objectID": "lecture_notes/chapters/python/using_code_from_other_files.html",
     "href": "lecture_notes/chapters/python/using_code_from_other_files.html",
-    "title": "A module is a file with code {-} –>",
+    "title": "Using code from other files",
     "section": "",
-    "text": "]{.hidden .quarto-markdown-envelope-contents render-id=“quarto-int-sidebar:/lecture_notes/chapters/python/using_code_from_other_files.html&lt;span-class=‘chapter-number’&gt;19–&lt;span-class=‘chapter-title’&gt;A-module-is-a-file-with-code-{-}—&gt;”} Using code in other files Programming projects 20  Project: Translating open reading frames 21  Project: Primer analysis 22  Project: Pairwise global alignment 23  Project: Codon usage in Streptococcus bacteria 24  Project: Identifying the subtype of an HIV sequence 25  Project: Clustering sequences based on distance ⁕ 26  Project: Finding genes in bacteria 27  Project: Genome assembly Supplementary 28  Lecture recordings Lecture notes 19  A module is a file with code {-} –&gt; :::",
+    "text": "A module is a file with code",
     "crumbs": [
       "Lecture notes",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>A module is a file with code {-} --></span>"
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Using code from other files</span>"
     ]
   },
   {
