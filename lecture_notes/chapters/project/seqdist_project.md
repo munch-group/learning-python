@@ -1,4 +1,4 @@
-# Project: Clustering sequences based on distance ⁕
+# Clustering sequences based on distance ⁕
 
 *This chapter is about clustering sequence based on the evolutionary distance between them.*
 

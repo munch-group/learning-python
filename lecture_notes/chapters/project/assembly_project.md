@@ -1,4 +1,4 @@
-# Project: Genome assembly
+# Genome assembly
 
 *This chapter is a programming project where you will assemble a small genomic sequence from a set of short sequencing reads.*
 

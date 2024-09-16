@@ -1,6 +1,6 @@
 
 
-# Project: Primer analysis
+# Primer analysis
 
 Say you have a short sequence that you want to use as a PCR primer. To evaluate if it a suitable primer, you need to know the melting temperature of the sequence. You also need to make sure that it will not fold up on itself so that it cannot bind to the DNA sequence you want to amplify.
 

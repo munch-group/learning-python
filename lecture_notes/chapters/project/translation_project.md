@@ -1,4 +1,4 @@
-# Project: Translating open reading frames
+# Translating open reading frames
 
 *This chapter is about translating DNA into protein. If bacteria can do it, so can you.*
 

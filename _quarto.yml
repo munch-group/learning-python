@@ -63,7 +63,8 @@ format:
       - custom.scss
     toc-depth: 2
     notebook-links: global
-    number-sections: false
+    # number-sections: false
+    number-sections: true
 
 # website:
 #   sidebar:

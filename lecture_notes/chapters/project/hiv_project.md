@@ -1,4 +1,4 @@
-# Project: Identifying the subtype of an HIV sequence
+# Identifying the subtype of an HIV sequence
 
 *This chapter is a programming project where you will put your new programming skills to use analyzing an HIV DNA sequences.*
 
