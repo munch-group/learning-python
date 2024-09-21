@@ -43,9 +43,10 @@ The sound quality is terrible on this one, sorry.
  
 
 ### Wednesday
-<!-- 
-{{< video https://www.youtube.com/embed/ >}}
- -->
+
+The sound is missing from most of this one. The mic battery ran out...
+
+{{< video https://www.youtube.com/embed/DthrBNwxmiM >}}
 
 ## Week 5
 
