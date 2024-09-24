@@ -34,13 +34,11 @@ The sound quality is terrible on this one, sorry.
 
 {{< video https://www.youtube.com/embed/CHcq4_-isTM >}}
 
-
 ## Week 4
 
 ### Monday
 
 {{< video https://www.youtube.com/embed/e86mF44Sgyo >}}
- 
 
 ### Wednesday
 
@@ -51,6 +49,9 @@ The sound is missing from most of this one. The mic battery ran out...
 ## Week 5
 
 ## Monday
+
+No recording.
+
 <!-- 
 {{< video https://www.youtube.com/embed/ >}}
  -->
